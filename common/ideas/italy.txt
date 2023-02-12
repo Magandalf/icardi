@@ -1,0 +1,444 @@
+ideas = {
+	hidden_ideas = {
+
+		ITA_production_boost = {
+			removal_cost = -1
+			allowed = {
+				always = no # Added via focus
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = generic_morale_bonus
+			modifier = {
+				industrial_capacity_factory=1
+			}
+
+		}
+		ITA_retention = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = generic_navy_bonus
+			modifier={
+				line_change_production_efficiency_factor = 1
+			}
+		}
+		ITA_air_deployment = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = generic_navy_bonus
+			modifier={
+				air_training_xp_gain_factor = 10
+			}
+		}
+	}
+	country = {
+		ITA_atlantikschlacht = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = generic_navy_bonus
+			modifier={naval_speed_factor = 0.15 navy_fuel_consumption_factor= -0.5
+			}
+		}
+		ITA_operation_sealion = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = generic_navy_bonus
+			modifier={
+				invasion_preparation = -0.3
+				amphibious_invasion = 0.10
+				naval_strike = 0.2
+			}
+		}
+		corporations = {
+			picture = generic_production_bonus
+			allowed = {
+				original_tag = ITA
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor=-0.03
+				local_resources_factor=0.1
+			}
+		}
+		Ita_modernizations = {
+			picture = generic_production_bonus
+			allowed = {
+				original_tag = ITA
+			}
+			removal_cost = -1
+			modifier = {
+				production_factory_max_efficiency_factor = 0.05
+			}
+		}
+		syndicalism = {
+			picture = generic_production_bonus
+			allowed = {
+				original_tag = ITA
+			}
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.10
+			}
+		}
+		Ita_fortress_italy = {
+			picture = generic_production_bonus
+			allowed = {
+				original_tag = ITA
+			}
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.25
+				consumer_goods_factor = -0.05
+				production_speed_arms_factory_factor = -0.4
+				production_speed_dockyard_factor = -0.4
+			}
+		}
+		desert_fox = {
+			picture = chi_incompetent_officers
+			allowed = {
+				original_tag = ITA
+			}
+			removal_cost = -1
+			modifier = {
+				army_infantry_attack_factor = 0.1
+				army_armor_attack_factor = 0.1
+			}
+		}
+		desert_fox_2 = {
+			picture = chi_incompetent_officers
+			allowed = {
+				original_tag = ITA
+			}
+			removal_cost = -1
+			modifier = {
+				army_infantry_defence_factor = 0.1
+				army_morale_factor = 0.1
+			}
+		}
+		alpine_forts = {
+			picture = chi_incompetent_officers
+			allowed = {
+				original_tag = "ITA"
+			}
+			allowed_civil_war = {
+				NOT = {
+					has_government = communism
+				}
+				NOT = {
+					any_other_country = {
+						original_tag = ITA
+						has_government = fascism
+					}
+				}
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.05
+			}
+		}
+		victor_emmanuel = {
+			allowed = {
+				original_tag = ITA
+			}
+			allowed_civil_war = {
+				NOT = {
+					has_government = communism
+				}
+				NOT = {
+					any_other_country = {
+						original_tag = ITA
+						has_government = fascism
+					}
+				}
+			}
+			removal_cost = -1
+			modifier = {
+				production_speed_synthetic_refinery_factor=-0.2
+				stability_factor = 0.05
+			}
+		}
+		vittoria_mutilata = {
+			allowed = {
+				original_tag = "ITA"
+			}
+			removal_cost = -1
+			research_bonus = {
+				naval_equipment = 0.1
+			}
+			modifier = {
+				operative_slot = 1
+				agency_upgrade_time = -0.30
+			}
+		}
+		ITA_roman = {
+			picture = tfv_can_conscription_crisis
+			allowed = {
+				original_tag = ITA
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.10
+				heat_attrition_factor = -0.5
+				acclimatization_hot_climate_gain_factor = 0.1
+			}
+		}
+		ITA_german_millitary_cooperation_focus = {
+			picture = german_advisors
+			allowed = {
+				original_tag = ITA
+			}
+			allowed_civil_war = {
+				OR = {
+					AND = {
+						has_government = fascism
+						GER = {
+							has_government = fascism
+						}
+					}
+					AND = {
+						has_government = communism
+						GER = {
+							has_government = communism
+						}
+					}
+					AND = {
+						has_government = democratic
+						GER = {
+							has_government = democratic
+						}
+					}
+				}
+			}
+			removal_cost = -1
+			research_bonus = {
+				land_doctrine = 0.10
+			}
+			research_bonus = {
+				naval_doctrine = 0.10
+			}
+		}
+	}
+	tank_manufacturer =  { 
+		use_list_view = yes
+		designer = yes
+		fiat = {
+			cost= 100
+			allowed = {
+				original_tag = ITA
+			}
+			research_bonus = {
+				armor = 0.15
+			}
+			modifier = { tank_manufacturer_cost_factor = -1 }
+			equipment_bonus = {
+				medium_tank_chassis = {
+					reliability = 0.05
+					soft_attack = 0.1
+					hard_attack = 0.1
+				}
+				medium_tank_aa_chassis = {
+					reliability = 0.05
+					air_attack = 0.1
+				}
+				medium_tank_artillery_chassis = {
+					reliability = 0.05
+					soft_attack = 0.15
+				}
+				medium_tank_destroyer_chassis = {
+					reliability = 0.05
+					hard_attack = 0.15
+				}
+				light_tank_chassis = {
+					reliability = 0.05
+					soft_attack = 0.1
+					hard_attack = 0.1
+				}
+				light_tank_aa_chassis = {
+					reliability = 0.05
+					air_attack = 0.1
+				}
+				light_tank_artillery_chassis = {
+					reliability = 0.05
+					soft_attack = 0.15
+				}
+				light_tank_destroyer_chassis = {
+					reliability = 0.05
+					hard_attack = 0.15
+				}	
+			}
+		}
+	}
+	materiel_manufacturer =  { 
+		use_list_view = yes
+		designer = yes
+		beretta = {
+			allowed = {
+				original_tag = ITA
+			}
+			research_bonus = {
+				infantry_weapons = 0.15
+				motorized_equipment = 0.15
+			}
+			traits = { infantry_equipment_manufacturer motorized_equipment_manufacturer}
+		}
+		
+		breda = {
+			allowed = {
+				original_tag = ITA
+			}
+			research_bonus = {
+				artillery = 0.15
+				support_tech = 0.15
+			}
+			traits = { artillery_manufacturer support_equipment_manufacturer }
+		}
+	}
+	aircraft_manufacturer =  { 
+		use_list_view = yes
+		designer = yes
+		macchi = {
+			allowed = {
+				OR = {
+					original_tag = ITA
+					original_tag = SWE
+				}
+			}
+			modifier = { aircraft_manufacturer_cost_factor = -1 }
+			cost = 100
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			equipment_bonus = {
+				small_plane_airframe = {
+					build_cost_ic = -0.15
+					air_agility = 0.1
+					air_attack = 0.1
+					maximum_speed = 0.1
+				}
+			}
+		}
+		savoia_marchetti = {
+			allowed = {
+				original_tag = ITA
+			}
+			modifier = { aircraft_manufacturer_cost_factor = -1 }
+			cost = 100
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			traits = { medium_aircraft_manufacturer }
+		}
+		caproni = {
+			allowed = {
+				original_tag = ITA
+			}
+			modifier = { aircraft_manufacturer_cost_factor = -1 }
+			cost = 100
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			traits = { naval_aircraft_manufacturer }
+		}
+		piaggio = {
+			allowed = {
+				OR = {
+					original_tag = ITA
+					original_tag = SWE
+				}
+			}
+			cost = 100
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			modifier = { aircraft_manufacturer_cost_factor = -1 }
+			equipment_bonus = {
+				small_plane_cas_airframe = {
+					build_cost_ic = -0.1
+				}
+			}
+			traits = { CAS_manufacturer }
+		}
+	}
+	industrial_concern = {
+		danieli = {
+			allowed = {
+				original_tag = ITA
+			}
+			research_bonus = {
+				industry = 0.15
+			}
+			traits = { industrial_concern }
+		}
+	}
+	naval_manufacturer =  { 
+		use_list_view = yes
+		designer = yes
+		crda = {
+			allowed = {
+				original_tag = ITA
+			}
+			available = {
+			}
+			modifier = { naval_manufacturer_cost_factor = -1 }	
+			cost = 100
+			research_bonus = {
+				naval_equipment = 0.25
+			}
+			traits = { med_fleet_naval_manufacturer }
+		}
+				
+		ansaldo = {			
+			allowed = {
+				original_tag = ITA
+			}
+			available = {
+			}
+			cost = 100
+			modifier = { naval_manufacturer_cost_factor = -1 }			
+			research_bonus = {
+				naval_equipment = 0.25
+			}
+			
+			traits = { atlantic_fleet_naval_manufacturer }
+		}
+
+		odero_terni_orlando = {
+						
+			allowed = {
+				original_tag = ITA
+			}
+			available = {
+			}
+			cost = 100
+			modifier = { naval_manufacturer_cost_factor = -1 }		
+						
+			research_bonus = {
+				naval_equipment = 0.25
+			}
+			
+			traits = { raiding_fleet_naval_manufacturer }
+		}
+	}
+}
+
