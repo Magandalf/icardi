@@ -129,7 +129,7 @@ guiTypes = {
 			spriteType = "GFX_superevent_custom_flammenwerfer"
 			position = { x=13 y= 8}
 			Orientation = "UPPER_LEFT"
-			scale=0.75
+			scale=1.5
 			alwaystransparent = yes
 		}
 		}
@@ -148,7 +148,7 @@ guiTypes = {
 			textureFile = ""
 			font = "hoi_36header"
 			borderSize = {x = 0 y = 0}
-			text = "Lobbysimulator 3000"
+			text = "HFU 3.0 - SERB EDITON"
 			maxWidth = 900
 			maxHeight = 32
 			format = center	

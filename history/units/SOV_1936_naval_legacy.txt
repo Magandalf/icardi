@@ -2,10 +2,10 @@
 units= {
 	fleet = {
 		name = "Severnyy Flot"
-		naval_base =2931
+		naval_base =3151
 		task_force = {
 			name = "Severnyy Flot"
-			location =2931
+			location =3151
 			ship = { name = "Dzerzhinskiy" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SOV } } }
 			ship = { name = "Nezamozhnik" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SOV } } }
 			ship = { name = "Petrovskiy" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SOV } } }
@@ -15,7 +15,7 @@ units= {
 		}
 		task_force = {
 			name = "Severnyy Podvodniy Flot"
-			location =2931
+			location =3151
 			ship = { name = "D-1" definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV } } }
 			ship = { name = "D-2" definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV } } }
 			ship = { name = "D-3" definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV } } }
@@ -26,10 +26,10 @@ units= {
 	}
 	fleet = {
 		name = "Baltiyskiy Flot"
-		naval_base =2944
+		naval_base =3151
 		task_force = {
 			name = "Baltiyskiy Flot"
-			location =2944
+			location =3151
 			ship = { name = "Marat" pride_of_the_fleet = yes definition = battleship equipment = { battleship_1 = { amount = 1 owner = SOV } } }
 			ship = { name = "Oktyabrskaya Revolutsiya" definition = battleship equipment = { battleship_1 = { amount = 1 owner = SOV } } }
 			ship = { name = "Engels" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SOV } } }
@@ -44,7 +44,7 @@ units= {
 		}
 		task_force = {
 			name = "Baltiyskiy Podvodniy Flot"
-			location =2944
+			location =3151
 			ship = { name = "Shch-301" definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV } } }
 			ship = { name = "Shch-302" definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV } } }
 			ship = { name = "Shch-303" definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV } } }
@@ -70,10 +70,10 @@ units= {
 	}
 	fleet = {
 		name = "Chernomorskiy Flot"
-		naval_base =3458
+		naval_base =3151
 		task_force = {
 			name = "Chernomorskiy Flot"
-			location =3458
+			location =3151
 			ship = { name = "Parizhskaya Kommuna" definition = battleship equipment = { battleship_1 = { amount = 1 owner = SOV } } }
 			ship = { name = "Krasni Kavkaz" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = SOV } } }
 			ship = { name = "Krasny Krym" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = SOV } } }
@@ -82,7 +82,7 @@ units= {
 		}
 		task_force = {
 			name = "Chernomorskiy Podvodniy Flot"
-			location =3458
+			location =3151
 			ship = { name = "Shch-121" definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV } } }
 			ship = { name = "Shch-122" definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV } } }
 			ship = { name = "Shch-123" definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV } } }

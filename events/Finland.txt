@@ -59,8 +59,8 @@ country_event = {
 			base = 9
 		}
 		white_peace = FIN
-		transfer_state = 142
-		transfer_state = 143
+		transfer_state = 146
+		transfer_state = 147
 	}
 }
 country_event = {

@@ -208,39 +208,6 @@ on_actions = {
 			}
 			if = {
 				limit = {
-					OR = {
-						tag = FRA
-						tag = GER
-					}
-					NOT = { is_in_faction_with = ENG }
-					FROM = { has_country_flag = secret_staff_talks_british_staff_plan }
-				}
-				hidden_effect = { FROM = { add_timed_idea = { idea = HOL_staff_plan_eng days = 180 } } }
-			}
-			if = {
-				limit = {
-					OR = {
-						tag = ENG
-						tag = GER
-					}
-					NOT = { is_in_faction_with = FRA }
-					FROM = { has_country_flag = secret_staff_talks_french_staff_plan }
-				}
-				hidden_effect = { FROM = { add_timed_idea = { idea = HOL_staff_plan_fra days = 180 } } }
-			}
-			if = {
-				limit = {
-					OR = {
-						tag = FRA
-						tag = ENG
-					}
-					NOT = { is_in_faction_with = GER }
-					FROM = { has_country_flag = secret_staff_talks_german_staff_plan }
-				}
-				hidden_effect = { FROM = { add_timed_idea = { idea = HOL_staff_plan_ger days = 180 } } }
-			}
-			if = {
-				limit = {
 					original_tag = TUR
 					has_civil_war = yes
 					FROM = {

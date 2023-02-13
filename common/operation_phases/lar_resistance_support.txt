@@ -5,8 +5,8 @@ resistance_support_arms_depots = {
 	picture = "GFX_phase_resistance_support_arms_depots"
 	icon = "GFX_phase_resistance_support_arms_depots_small"
 	equipment = {
-		support_equipment = 10
-		infantry_equipment = 2000
+		support_equipment = 300
+		infantry_equipment = 2000  
 	}
 }
 

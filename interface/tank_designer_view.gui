@@ -3,14 +3,13 @@ guiTypes = {
 	containerWindowType = {
 		name = "tank_designer_view"
 		position = { x=0 y=0 }
-		size = { width = 1122 height = 542 }
+		size = { width = 1091 height = 542 }
 		moveable = yes
 		fade_time = 500
 		fade_type = linear
 		orientation = CENTER
 		origo = center
 		show_sound = "ui_tank_designer_panel_appear"
-		clipping = no
 
 		background = {
 			name = "Background"
@@ -103,9 +102,11 @@ guiTypes = {
 			@fixed_btn_mod_col_5 = 366
 			@fixed_btn_mod_col_6 = 439
 			@fixed_btn_mod_col_7 = 512
+			
 
 			@fixed_btn_mod_row_0 = 1
 			@fixed_btn_mod_row_1 = 300
+			
 
 			# Code checks this position to know if module is in upper or low row to
 			# give the tooltip the correct anchor 
@@ -118,58 +119,76 @@ guiTypes = {
 			# defines the position of an instance of the window
 			# equipment_designer_module_slot_entry
 
-			positionType = {
+			positionType = {            #gun
 				name = "pos_custom_module_slot_window_0"
 				position = { x=@fixed_btn_mod_col_0 y=@fixed_btn_mod_row_0 }
 			}
 
-			positionType = {
+			positionType = {            #turret
 				name = "pos_custom_module_slot_window_1"
 				position = { x=@fixed_btn_mod_col_1 y=@fixed_btn_mod_row_0 }
 			}
 
-			positionType = {
+			positionType = {            #suspension
 				name = "pos_custom_module_slot_window_2"
 				position = { x=@fixed_btn_mod_col_0 y=@fixed_btn_mod_row_1 }
 			}
 
-			positionType = {
+			positionType = {            #armor
 				name = "pos_custom_module_slot_window_3"
 				position = { x=@fixed_btn_mod_col_1 y=@fixed_btn_mod_row_1 }
 			}
 
-			positionType = {
+			
+
+			positionType = {             #engine
 				name = "pos_custom_module_slot_window_4"
 				position = { x=@fixed_btn_mod_col_2 y=@fixed_btn_mod_row_1 }
+			}
+
+			positionType = {              #radio
+				name = "pos_custom_module_slot_window_5"
+				position = { x=@fixed_btn_mod_col_3 y=@fixed_btn_mod_row_1 }
 			}
 
 			######################################################################
 			# Special module slot below
 			######################################################################
 
+            positionType = {
+				name = "pos_custom_module_slot_window_4"
+				position = { x=@fixed_btn_mod_col_0 y=@fixed_btn_mod_row_0 }
+			}
+
 			positionType = {
 				name = "pos_custom_module_slot_window_5"
-				position = { x=@fixed_btn_mod_col_2 y=@fixed_btn_mod_row_0 }
+				position = { x=@fixed_btn_mod_col_1 y=@fixed_btn_mod_row_0 }
 			}
 
 			positionType = {
 				name = "pos_custom_module_slot_window_6"
-				position = { x=@fixed_btn_mod_col_3 y=@fixed_btn_mod_row_0 }
+				position = { x=@fixed_btn_mod_col_2 y=@fixed_btn_mod_row_0 }
 			}
 
 			positionType = {
 				name = "pos_custom_module_slot_window_7"
-				position = { x=@fixed_btn_mod_col_4 y=@fixed_btn_mod_row_0 }
+				position = { x=@fixed_btn_mod_col_3 y=@fixed_btn_mod_row_0 }
 			}
 
 			positionType = {
 				name = "pos_custom_module_slot_window_8"
-				position = { x=@fixed_btn_mod_col_5 y=@fixed_btn_mod_row_0 }
+				position = { x=@fixed_btn_mod_col_4 y=@fixed_btn_mod_row_0 }
 			}
 			positionType = {
 				name = "pos_custom_module_slot_window_9"
+				position = { x=@fixed_btn_mod_col_5 y=@fixed_btn_mod_row_0 }
+			}
+			positionType = {
+				name = "pos_custom_module_slot_window_10"
 				position = { x=@fixed_btn_mod_col_6 y=@fixed_btn_mod_row_0 }
 			}
+			
+			
 
 			######################################################################
 			# Equipment upgrades
@@ -264,13 +283,13 @@ guiTypes = {
 		iconType = {
 			name = "tag_icon_bg"
 			spriteType = "GFX_role_icon_bg"
-			position = { x = 251 y = 442 }
+			position = { x = 450 y = 200 }
 			alwaystransparent = yes
 		}
 
 		buttonType = {
 			name = "niche_button"
-			position = { x = 260 y = 449 }
+			position = { x = 459 y = 205 }
 			spriteType = "GFX_niche_icon_strip"
 			clicksound = "ui_tank_designer_company_icon"
 			pdx_tooltip = "DESIGNER_SELECT_NICHE"
@@ -663,7 +682,7 @@ guiTypes = {
 			buttonType = {
 				name = "name_reset"
 				position = { x = -31 y = -1 }
-				quadTextureSprite ="GFX_NV_btn_reset"
+				quadTextureSprite ="GFX_checkbox_small_red"
 				clicksound = "ui_tank_designer_reset"
 				orientation = "upper_right"
 			}
@@ -791,15 +810,6 @@ guiTypes = {
 		}
 
 		buttonType = {
-			name = "toggle_comparison_button"
-			position = {x=-97 y=4}
-			spriteType = "GFX_equip_overview_button"
-			orientation = "UPPER_RIGHT"
-			clicksound = click_default
-			pdx_tooltip = "EQUIPMENT_COMPARISON"
-		}
-		
-		buttonType = {
 			name = "close_button"
 			position = { x = -44 y = 6 }
 			quadTextureSprite ="GFX_closebutton"
@@ -905,309 +915,11 @@ guiTypes = {
 				# code inserts equipment_module_category_entry or equipment_module_entry here
 			}
 		}
-		
-		
-		containerWindowType = {
-			name = "designer_intel_container"
-			size = { width = 317 height = 540 }
-			position = { x = 1108 y = 2 }
-			clipping = no
-			
-			background = {
-				name = "background"
-				quadTextureSprite ="GFX_tiled_window_1b_border" 
-			}
-			
-			
-			
-			containerWindowType = {  
-				name = "our_filter_entry"
-				position = { x = 12 y = 14 }
-				size = { width = 168 height = 50 }
-				clipping = no
-
-				background = {
-					name = "Background"
-					quadTextureSprite ="GFX_diplo_filter_entry"
-					clicksound = click_scroll
-				}
-				
-				instantTextboxType = {
-					name = "name"
-					position = { x = 6 y = 7 }
-					font = "hoi_16mbs"
-					text = "OUR_EQUIPMENT"
-					maxWidth = 110
-					maxHeight = 18
-					fixedsize = yes
-					format = center
-					alwaystransparent = yes			
-				}
-			}
-			
-			containerWindowType = {
-				name = "foreign_filter_entry"
-				position = { x = 132 y = 14 }
-				size = { width = 164 height = 50 }
-				clipping = no
-
-				background = {
-					name = "Background"
-					quadTextureSprite ="GFX_diplo_filter_entry"
-					clicksound = click_scroll
-				}
-				
-				instantTextboxType = {
-					name = "name"
-					position = { x = 6 y = 7 }
-					font = "hoi_16mbs"
-					text = "FOREIGN_EQUIPMENT" 
-					maxWidth = 110
-					maxHeight = 18
-					fixedsize = yes
-					format = center
-					alwaystransparent = yes			
-				}
-			}
-			
-			containerWindowType = {
-				name = "obsolete_filter_entry"
-				position = { x = 12 y = 46 }
-				size = { width = 164 height = 50 }
-				clipping = no
-
-				background = {
-					name = "Background"
-					quadTextureSprite ="GFX_diplo_filter_entry"
-					clicksound = click_scroll
-				}
-				
-				instantTextboxType = {
-					name = "name"
-					position = { x = 6 y = 7 }
-					font = "hoi_16mbs"
-					text = "OBSOLETE_EQUIPMENT" 
-					maxWidth = 110
-					maxHeight = 18
-					fixedsize = yes
-					format = center
-					alwaystransparent = yes			
-				}
-			}
-			
-			containerWindowType = {
-				name = "gridbox_container"
-				size = { width = 256 height = 444 }
-				position = { x = 0 y = 84 }
-				clipping = yes 
-				#moveable = no
-				#autohide_scrollbars = no  
-				
-				verticalScrollbar = "right_vertical_slider"
-				scroll_wheel_factor = 42
-				smooth_scrolling = yes
-				
-				background = {
-					name = "Background"
-					spriteType ="GFX_tiled_window_transparent"
-				}
-				
-				gridBoxType = {
-					name = "acquired_variants_grid"
-					position = { x = 13 y = 0 }
-					size = { width = 260 height = 470 }
-					slotsize = { width = 260 height = 60 }
-					max_slots_horizontal = 1
-					format = UPPER_LEFT
-
-					# contains designer_equipment_entry
-				
-				}
-			}
-			
-			containerWindowType = {
-				name = "country_filter_container"
-				size = { width = 70 height = 509 }
-				position = { x = 247 y = 16 }
-				clipping = yes
-				#moveable = no
-				#autohide_scrollbars = no  
-				
-				verticalScrollbar = "right_vertical_slider" 
-				scroll_wheel_factor = 42 
-				smooth_scrolling = yes
-				
-				background = {
-					name = "Background" 
-					spriteType ="GFX_tiled_window_transparent" 
-				}
-				
-				gridBoxType = {  
-					name = "variant_country_filter_gridbox"
-					position = { x = 13 y = 3 }
-					size = { width = 100 height = 502 } 
-					slotsize = { width = 60 height = 34 }
-					max_slots_horizontal = 1
-					format = UPPER_LEFT
-
-					# contains designer_creator_entry
-				
-				}
-			}
-			
-		}
-		
-		containerWindowType = {
-			name = "referenced_info"
-			position = { x=535 y=291}
-			size = { width=536 height=202 }
-			
-			clipping = no
-			
-			iconType = {
-				name ="stat_card_header"
-				spriteType = "GFX_tank_designer_stat_card_header"
-				position = { x = -1 y = -42 }
-				alwaystransparent = no
-			}			
-			
-			buttonType = {
-				name = "close_referenced_info"
-				position = { x = -10 y = -36 } 
-				quadTextureSprite ="GFX_closebutton"
-				buttonFont = "Main_14_black"
-				shortcut = "ESCAPE"
-				Orientation = "UPPER_RIGHT"
-				clicksound = click_close
-				pdx_tooltip = "CLOSE"
-			}
-			
-			instantTextboxType = {
-				name = "referenced_variant_name"
-				position = { x = 18 y = -34 }
-				textureFile = ""
-				font = "hoi_30header"
-				borderSize = {x = 0 y = 0}
-				text = "EQUIPMENT_DESIGNER_TITLE"
-				maxWidth = 460
-				maxHeight = 20
-				format = left
-				multiline = no
-			}
-			
-			background = {
-				name = "background"
-				quadTextureSprite = "GFX_tank_designer_stat_card"
-			}
-			
-			instantTextboxType = {
-				name = "base_stats_label"
-				position = { x = 15 y = 5 }
-				font = "hoi4_typewriter22"
-				text = "DESIGNER_BASE_STATS_LABEL"
-				maxWidth = 165
-				maxHeight = 20
-				format = left
-				fixedsize = yes
-			}
-
-			containerWindowType = {
-				name = "ref_base_stats"
-				position = { x = 10 y = 27 }
-				size = { width = 181 height = 224 }
-				clipping = yes
-
-				background = {
-					name = "Background"
-					quadTextureSprite ="GFX_tiled_window_transparent"
-				}
-
-				verticalScrollbar = "right_vertical_slider"
-
-				gridboxtype = {
-					name = "stats_grid"
-					position = { x = 2 y = 0 }
-					size = { width = 165 height = 100%% }
-					slotsize = { width = 165 height = 20 }
-					max_slots_horizontal = 1
-					format = "UPPER_LEFT"
-				}
-			}
-
-			instantTextboxType = {
-				name = "combat_stats_label"
-				position = { x = 197 y = 5 }
-				font = "hoi4_typewriter22"
-				text = "DESIGNER_COMBAT_STATS_LABEL"
-				maxWidth = 165
-				maxHeight = 20
-				format = left
-				fixedsize = yes
-			}
-
-			containerWindowType = {
-				name = "ref_combat_stats"
-				position = { x = 193 y = 27 }
-				size = { width = 184 height = 224 }
-				clipping = yes
-
-				background = {
-					name = "Background"
-					quadTextureSprite ="GFX_tiled_window_transparent"
-				}
-
-				verticalScrollbar = "right_vertical_slider"
-
-				gridboxtype = {
-					name = "stats_grid"
-					position = { x = 2 y = 0 }
-					size = { width = 165 height = 100%% }
-					slotsize = { width = 165 height = 20 }
-					max_slots_horizontal = 1
-					format = "UPPER_LEFT"
-				}
-			}
-
-			instantTextboxType = {
-				name = "misc_stats_label"
-				position = { x = 382 y = 5 }
-				font = "hoi4_typewriter22"
-				text = "FE_MISC_STATS"
-				maxWidth = 165
-				maxHeight = 20
-				format = left
-				fixedsize = yes
-			}
-
-			containerWindowType = {
-				name = "ref_misc_stats"
-				position = { x = 376 y = 27 }
-				size = { width = 185 height = 224 }
-				clipping = yes
-
-				background = {
-					name = "Background"
-					quadTextureSprite ="GFX_tiled_window_transparent"
-				}
-
-				verticalScrollbar = "right_vertical_slider"
-
-				gridboxtype = {
-					name = "stats_grid"
-					position = { x = 2 y = 0 }
-					size = { width = 165 height = 100%% }
-					slotsize = { width = 165 height = 20 }
-					max_slots_horizontal = 1
-					format = "UPPER_LEFT"
-				}
-			}
-		}
-		
 	}
 
 	# tank role entry for the drop-down menu
 	containerWindowType = {
-		name = "tank_designer_role_entry"
+		name = "designer_role_entry"
 		size = { width = 277 height = 50 }
 		clipping = no
 		

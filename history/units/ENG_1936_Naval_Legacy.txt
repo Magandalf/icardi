@@ -1,12 +1,15 @@
 ﻿units = {
 	fleet = {
 		name = "Home Command Legacy Test"
-		naval_base =10040
+		naval_base =9458
 		task_force = {
 			name = "Home Fleet"
-			location =10040
+			location =9458
 			ship = { name = "HMS Furious" definition = carrier equipment = { carrier_1 = { amount = 1 owner = ENG } }
-				
+				air_wings = {
+					fighter_equipment_0 =  { owner = "ENG" amount = 9 }
+					nav_bomber_equipment_1 =  { owner = "ENG" amount = 12 }
+				}
 			}
 			ship = { name = "HMS Nelson" definition = battleship equipment = { battleship_1 = { amount = 1 owner = ENG version_name = "Nelson Class" } } }
 			ship = { name = "HMS Rodney" definition = battleship equipment = { battleship_1 = { amount = 1 owner = ENG version_name = "Nelson Class" } } }
@@ -43,7 +46,7 @@
 		}
 		task_force = {
 			name = "Reserve Fleet"
-			location =8682
+			location =9458
 			ship = { name = "HMS Queen Elizabeth" definition = battleship equipment = { battleship_1 = { amount = 1 owner = ENG version_name = "Queen Elizabeth Class" } } }
 			ship = { name = "HMS Valiant" definition = battleship equipment = { battleship_1 = { amount = 1 owner = ENG version_name = "Queen Elizabeth Class" } } }
 			ship = { name = "HMS Frobisher" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = ENG } } }
@@ -58,9 +61,12 @@
 		}
 		task_force = {
 			name = "Channel Force"
-			location =8682
+			location =9458
 			ship = { name = "HMS Courageous" definition = carrier equipment = { carrier_1 = { amount = 1 owner = ENG } }
-				
+				air_wings = {
+					fighter_equipment_0 =  { owner = "ENG" amount = 9 }
+					nav_bomber_equipment_1 =  { owner = "ENG" amount = 24 }
+				}
 			}
 			ship = { name = "HMS Resolution" definition = battleship equipment = { battleship_1 = { amount = 1 owner = ENG } } }
 			ship = { name = "HMS Revenge" definition = battleship equipment = { battleship_1 = { amount = 1 owner = ENG } } }
@@ -79,7 +85,7 @@
 		}
 		task_force = {
 			name = "Humber Force"
-			location =10233
+			location =9458
 			ship = { name = "HMS Broke" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
 			ship = { name = "HMS Wanderer" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
 			ship = { name = "HMS Whitehall" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
@@ -91,7 +97,7 @@
 		}
 		task_force = {
 			name = "Northern Patrol"
-			location =10040
+			location =9458
 			ship = { name = "HMS Diomede" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = ENG } } }
 			ship = { name = "HMS Dragon" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = ENG } } }
 			ship = { name = "HMS Effingham" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = ENG } } }
@@ -101,14 +107,14 @@
 		}
 		task_force = {
 			name = "Rosyth Escort Force"
-			location =5814
+			location =9458
 			ship = { name = "HMS Wallace" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
 			ship = { name = "HMS Valorous" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
 			ship = { name = "HMS Whitley" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
 		}
 		task_force = {
 			name = "Nore Fleet"
-			location =3278
+			location =9458
 			ship = { name = "HMS London" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = ENG version_name = "County Class" } } }
 			ship = { name = "HMS Curacoa" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = ENG } } }
 			ship = { name = "HMS Campbell" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
@@ -128,7 +134,7 @@
 		}
 		task_force = {
 			name = "Portsmouth Fleet"
-			location =8682
+			location =9458
 			ship = { name = "HMS Suffolk" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = ENG version_name = "County Class" } } }
 			ship = { name = "HMS Skate" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
 			ship = { name = "HMS Saladin" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
@@ -139,7 +145,7 @@
 		}
 		task_force = {
 			name = "Western Approaches Fleet"
-			location =505
+			location =9458
 			ship = { name = "HMS Montrose" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
 			ship = { name = "HMS Sturdy" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
 			ship = { name = "HMS Valentine" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
@@ -157,7 +163,7 @@
 		}
 		task_force = {
 			name = "North Atlantic Fleet"
-			location =3867
+			location =9458
 			ship = { name = "HMS Colombo" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = ENG } } }
 			ship = { name = "HMS Capetown" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = ENG } } }
 			ship = { name = "HMS Wryneck" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
@@ -173,7 +179,7 @@
 		}
 		task_force = {
 			name = "2nd Submarine Flotilla"
-			location =10040
+			location =9458
 			ship = { name = "HMS Oxley" definition = submarine equipment = { submarine_1 = { amount = 1 owner = ENG version_name = "O/P/R Class" } } }
 			ship = { name = "HMS Swordfish" definition = submarine equipment = { submarine_1 = { amount = 1 owner = ENG version_name = "S Class" } } }
 			ship = { name = "HMS Sturgeon" definition = submarine equipment = { submarine_1 = { amount = 1 owner = ENG version_name = "S Class" } } }
@@ -185,7 +191,7 @@
 		}
 		task_force = {
 			name = "5th Submarine Flotilla"
-			location =8682
+			location =9458
 			ship = { name = "HMS Oberon" definition = submarine equipment = { submarine_1 = { amount = 1 owner = ENG version_name = "O/P/R Class" } } }
 			ship = { name = "HMS Thames" definition = submarine equipment = { submarine_1 = { amount = 1 owner = ENG version_name = "O/P/R Class" } } }
 			ship = { name = "HMS L23" definition = submarine equipment = { submarine_1 = { amount = 1 owner = ENG } } }
@@ -201,12 +207,15 @@
 	}
 	fleet = {
 		name = "Mediterranean Command"
-		naval_base =3812
+		naval_base =9458
 		task_force = {
 			name = "Mediterranean Fleet"
-			location =3812
+			location =9458
 			ship = { name = "HMS Glorious" definition = carrier equipment = { carrier_1 = { amount = 1 owner = ENG } }
-				
+				air_wings = {
+					fighter_equipment_0 =  { owner = "ENG" amount = 6 }
+					nav_bomber_equipment_1 =  { owner = "ENG" amount = 24 }
+				}
 			}
 			ship = { name = "HMS Warspite" definition = battleship equipment = { battleship_1 = { amount = 1 owner = ENG version_name = "Queen Elizabeth Class" } } }
 			ship = { name = "HMS Barham" definition = battleship equipment = { battleship_1 = { amount = 1 owner = ENG version_name = "Queen Elizabeth Class" } } }
@@ -252,7 +261,7 @@
 		}
 		task_force = {
 			name = "1st Submarine Flotilla"
-			location =3812
+			location =9458
 			ship = { name = "HMS Sealion" definition = submarine equipment = { submarine_1 = { amount = 1 owner = ENG version_name = "S Class" } } }
 			ship = { name = "HMS Shark" definition = submarine equipment = { submarine_1 = { amount = 1 owner = ENG version_name = "S Class" } } }
 			ship = { name = "HMS Snapper" definition = submarine equipment = { submarine_1 = { amount = 1 owner = ENG version_name = "S Class" } } }
@@ -265,17 +274,17 @@
 	}
 	fleet = {
 		name = "North and South Americas Command"
-		naval_base =1916
+		naval_base =9458
 		task_force = {
 			name = "America and West Indies Fleet"
-			location =11694
+			location =9458
 			ship = { name = "HMS Berwick" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = ENG version_name = "County Class" } } }
 			ship = { name = "HMS York" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = ENG version_name = "County Class" } } }
 			ship = { name = "HMS Orion" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = ENG version_name = "Emerald Class" } } }
 		}
 		task_force = {
 			name = "South Atlantic Fleet"
-			location =1916
+			location =9458
 			ship = { name = "HMS Neptune" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = ENG version_name = "Emerald Class" } } }
 			ship = { name = "HMS Dauntless" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = ENG } } }
 			ship = { name = "HMS Vansittart" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
@@ -284,33 +293,36 @@
 		}
 		task_force = {
 			name = "South America Squadron"
-			location =11669
+			location =9458
 			ship = { name = "HMS Exeter" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = ENG version_name = "County Class" } } }
 			ship = { name = "HMS Cumberland" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = ENG version_name = "County Class" } } }
 			ship = { name = "HMS Ajax" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = ENG version_name = "Emerald Class" } } }
 		}
 		task_force = {
 			name = "3rd Submarine Flotilla"
-			location =1916
+			location =9458
 			ship = { name = "HMS Severn" definition = submarine equipment = { submarine_1 = { amount = 1 owner = ENG version_name = "O/P/R Class" } } }
 			ship = { name = "HMS Clyde" definition = submarine equipment = { submarine_1 = { amount = 1 owner = ENG version_name = "O/P/R Class" } } }
 		}
 	}
 	fleet = {
 		name = "Far East Command"
-		naval_base =11178
+		naval_base =9458
 		task_force = {
 			name = "East Indies Fleet"
-			location =9378
+			location =9458
 			ship = { name = "HMS Danae" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = ENG } } }
 			ship = { name = "HMS Durban" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = ENG } } }
 			ship = { name = "HMS Despatch" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = ENG } } }
 		}
 		task_force = {
 			name = "China Fleet"
-			location =9241
+			location =9458
 			ship = { name = "HMS Eagle" definition = carrier equipment = { carrier_1 = { amount = 1 owner = ENG } }
-				
+				air_wings = {
+					fighter_equipment_0 =  { owner = "ENG" amount = 18 }
+					nav_bomber_equipment_1 =  { owner = "ENG" amount = 18 }
+				}
 			}
 			ship = { name = "HMS Kent" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = ENG version_name = "County Class" } } }
 			ship = { name = "HMS Cornwall" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = ENG version_name = "County Class" } } }
@@ -324,13 +336,13 @@
 		}
 		task_force = {
 			name = "New Zealand Division"
-			location =11740
+			location =9458
 			ship = { name = "HMS Achilles" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = ENG version_name = "Emerald Class" } } }
 			ship = { name = "HMS Leander" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = ENG version_name = "Emerald Class" } } }
 		}
 		task_force = {
 			name = "4th Submarine Flotilla"
-			location =11178
+			location =9458
 			ship = { name = "HMS Olympus" definition = submarine equipment = { submarine_1 = { amount = 1 owner = ENG version_name = "O/P/R Class" } } }
 			ship = { name = "HMS Parthian" definition = submarine equipment = { submarine_1 = { amount = 1 owner = ENG version_name = "O/P/R Class" } } }
 			ship = { name = "HMS Proteus" definition = submarine equipment = { submarine_1 = { amount = 1 owner = ENG version_name = "O/P/R Class" } } }
@@ -391,26 +403,6 @@ instant_effect = {
 		}
 		requested_factories = 1
 		progress = 0.33
-		amount = 1
-	}
-	add_equipment_production = {
-		equipment = {
-			type = submarine_1
-			creator = "ENG"
-			version_name = "S Class"
-		}
-		requested_factories = 1
-		progress = 0.50
-		amount = 1
-	}
-	add_equipment_production = {
-		equipment = {
-			type = submarine_1
-			creator = "ENG"
-			version_name = "S Class"
-		}
-		requested_factories = 1
-		progress = 0.40
 		amount = 1
 	}
 	add_equipment_production = {

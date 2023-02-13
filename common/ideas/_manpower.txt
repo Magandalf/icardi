@@ -27,8 +27,6 @@ ideas = {
 					}
 					NOT = { has_idea = HUN_treaty_of_triannon }
 				}
-				NOT = { has_idea = undisturbed_isolation }
-				NOT = { has_idea = isolation }
 			}
 			ai_will_do = {
 				factor = 1
@@ -50,14 +48,11 @@ ideas = {
 			available = {
 				#has_manpower_for_recruit_change_to =  { value = 0.025 group = mobilization_laws }
 				has_war_support > 0.1
-				NOT = { has_idea = undisturbed_isolation }
-				NOT = { has_idea = isolation }
 				if = {
 					limit = {
 						original_tag = AST
 						has_dlc = "Together for Victory"
 					}
-					has_completed_focus = AST_citizen_military_forces
 				}
 			}
 			modifier = {
@@ -102,7 +97,6 @@ ideas = {
 						original_tag = AST
 						has_dlc = "Together for Victory"
 					}
-					has_completed_focus = AST_citizen_military_forces
 				}
 				if = {
 					limit = {
@@ -172,8 +166,6 @@ ideas = {
 						original_tag = AST
 						has_dlc = "Together for Victory"
 					}
-					has_completed_focus = AST_citizen_military_forces
-					has_completed_focus = AST_fight_work_or_perish
 				}
 				if = {
 					limit = {
@@ -195,6 +187,14 @@ ideas = {
 						has_dlc = "Death or Dishonor"
 					}
 					NOT = { has_idea = HUN_treaty_of_triannon }
+					NOT = { has_idea = HUN_manpower_cap }
+				}
+				if = {
+					limit = {
+						original_tag = ROM
+						has_dlc = "Death or Dishonor"
+					}
+					NOT = { has_idea = HUN_manpower_cap }
 				}
 			}
 			ai_will_do = {

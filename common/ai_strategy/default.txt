@@ -17,9 +17,13 @@
 
 default_unit_production = {
 	enable = {
-	always=yes
 	}
 
+	ai_strategy = {
+		type = role_ratio
+		id = paratroopers
+		value = 0
+	}
 
 	ai_strategy = {
 		type = role_ratio
@@ -159,7 +163,6 @@ default_garrison_production = {
 }
 default_area_priority = {
 	enable = {
-	always=yes
 	}
 
 	ai_strategy = {
@@ -273,6 +276,11 @@ DEFAULT_template_design = {
 		value = -50
 	}
 
+	ai_strategy = {
+		type = template_prio
+		id = paratroopers
+		value = -50
+	}
 
 	ai_strategy = {
 		type = template_prio
@@ -322,6 +330,11 @@ DEFAULT_template_design = {
 		value = 10
 	}
 
+	ai_strategy = {
+		type = template_prio
+		id = paratroopers
+		value = -50
+	}
 
 	ai_strategy = {
 		type = template_prio

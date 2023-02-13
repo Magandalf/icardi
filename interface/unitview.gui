@@ -5,24 +5,24 @@ guiTypes = {
 		position = { x = 0 y  = 0 }
 		size = { width = 25 height = 25 }
 		Orientation = upper_left
-		
+
 		buttonType = {
 			name = "button"
 			quadTextureSprite = "GFX_tiled_window_color_picker"
 			size = { x = 25 y = 25 }
-			position = { x=0 y =0}	
+			position = { x=0 y =0}
 			scale = 0.8
 		}
 	}
-	
-	
+
+
 	containerWindowType = {
 		name = "color_picker_root"
 		position = {x=730 y=300}
 		size = { width = 350 height = 100 }
 		Orientation = upper_left
 		clipping = no
-	
+
 		containerWindowType = {
 			name = "color_picker"
 			position = {x=87 y=0}
@@ -36,12 +36,12 @@ guiTypes = {
 			peek_position = { x = 107 y = 0 }
 			peek_check_top_left = { x = 300 y = 0 }
 			peek_check_size = { width = 100 height = 100 }
-			
+
 			background = {
 				name = "Background"
 				quadTextureSprite ="GFX_color_picker_bg"
 			}
-			
+
 			gridBoxType = {
 				name = "presets"
 				position = { x = 213 y = 17 }
@@ -51,23 +51,23 @@ guiTypes = {
 				max_slots_horizontal = 3
 				max_slots_vertical = 3
 			}
-			
+
 			iconType = {
 				name = "hue_slider_background"
 				spriteType = "GFX_hue_slider_background"
 				position = {x= 10 y =18}
 			}
-			
+
 			scrollbarType = {
-				name = "hue_slider"	
+				name = "hue_slider"
 				slider = "listboxSliderButton"
 				track= "listboxTrackButton"
 				leftbutton = "downButton"
 				rightbutton = "upButton"
 				size = {x =232 y =15 }
 				position = {x= -6 y =18}
-				priority = 100			
-				borderSize = {x = 12 y = 12}	
+				priority = 100
+				borderSize = {x = 12 y = 12}
 				maxValue =1
 				minValue =0
 				stepSize =0.01
@@ -75,7 +75,7 @@ guiTypes = {
 				horizontal = 1
 
 				guiButtonType = {
-					name = "listboxSliderButton"	
+					name = "listboxSliderButton"
 					quadTextureSprite = "GFX_color_picker_scroll_drager"
 					position = { x=0 y =0}
 				}
@@ -83,40 +83,40 @@ guiTypes = {
 				guiButtonType = {
 					name = "listboxTrackButton"
 					quadTextureSprite = "GFX_color_picker_scroll_track"
-					position = { x=12 y =12}		
-				}	
+					position = { x=12 y =12}
+				}
 
 				guiButtonType = {
 					parent = "listboxSliderButton"
 					name = "upButton"
 					quadTextureSprite = "GFX_scroll_up"
-					position = { x=0 y =0}	
+					position = { x=0 y =0}
 				}
-				
+
 				guiButtonType = {
 					parent = "listboxSliderButton"
 					name = "downButton"
 					quadTextureSprite = "GFX_scroll_down"
-					position = { x=0 y =120}	
+					position = { x=0 y =120}
 				}
 			}
-			
+
 			iconType = {
 				name = "sat_slider_background"
 				spriteType = "GFX_sat_slider_background"
 				position = {x= 10 y =46}
 			}
-			
+
 			scrollbarType = {
-				name = "sat_slider"	
+				name = "sat_slider"
 				slider = "listboxSliderButton"
 				track= "listboxTrackButton"
 				leftbutton = "downButton"
 				rightbutton = "upButton"
 				size = {x =232 y =15 }
 				position = {x= -6 y =46}
-				priority = 100			
-				borderSize = {x = 12 y = 12}	
+				priority = 100
+				borderSize = {x = 12 y = 12}
 				maxValue =1
 				minValue =0
 				stepSize =0.01
@@ -124,7 +124,7 @@ guiTypes = {
 				horizontal = 1
 
 				guiButtonType = {
-					name = "listboxSliderButton"	
+					name = "listboxSliderButton"
 					quadTextureSprite = "GFX_color_picker_scroll_drager"
 					position = { x=0 y =0}
 				}
@@ -132,40 +132,40 @@ guiTypes = {
 				guiButtonType = {
 					name = "listboxTrackButton"
 					quadTextureSprite = "GFX_color_picker_scroll_track"
-					position = { x=12 y =12}		
-				}	
+					position = { x=12 y =12}
+				}
 
 				guiButtonType = {
 					parent = "listboxSliderButton"
 					name = "upButton"
 					quadTextureSprite = "GFX_scroll_up"
-					position = { x=0 y =0}	
+					position = { x=0 y =0}
 				}
-				
+
 				guiButtonType = {
 					parent = "listboxSliderButton"
 					name = "downButton"
 					quadTextureSprite = "GFX_scroll_down"
-					position = { x=0 y =120}	
+					position = { x=0 y =120}
 				}
 			}
-			
+
 			iconType = {
 				name = "val_slider_background"
 				spriteType = "GFX_val_slider_background"
 				position = {x= 10 y =75}
 			}
-			
+
 			scrollbarType = {
-				name = "val_slider"	
+				name = "val_slider"
 				slider = "listboxSliderButton"
 				track= "listboxTrackButton"
 				leftbutton = "downButton"
 				rightbutton = "upButton"
 				size = {x =232 y =15 }
 				position = {x= -6 y =75}
-				priority = 100			
-				borderSize = {x = 12 y = 12}	
+				priority = 100
+				borderSize = {x = 12 y = 12}
 				maxValue =1
 				minValue =0
 				stepSize =0.01
@@ -173,7 +173,7 @@ guiTypes = {
 				horizontal = 1
 
 				guiButtonType = {
-					name = "listboxSliderButton"	
+					name = "listboxSliderButton"
 					quadTextureSprite = "GFX_color_picker_scroll_drager"
 					position = { x=0 y =0}
 				}
@@ -181,24 +181,24 @@ guiTypes = {
 				guiButtonType = {
 					name = "listboxTrackButton"
 					quadTextureSprite = "GFX_color_picker_scroll_track"
-					position = { x=12 y =12}		
-				}	
+					position = { x=12 y =12}
+				}
 
 				guiButtonType = {
 					parent = "listboxSliderButton"
 					name = "upButton"
 					quadTextureSprite = "GFX_scroll_up"
-					position = { x=0 y =0}	
+					position = { x=0 y =0}
 				}
-				
+
 				guiButtonType = {
 					parent = "listboxSliderButton"
 					name = "downButton"
 					quadTextureSprite = "GFX_scroll_down"
-					position = { x=0 y =120}	
+					position = { x=0 y =120}
 				}
 			}
-			
+
 			buttonType = {
 				name = "group_marker"
 				position = {x=321 y=10}
@@ -208,31 +208,31 @@ guiTypes = {
 
 			buttonType = {
 				name ="change_group_marker_up"
-				quadTextureSprite = "GFX_change_armygroup_template_up"	
+				quadTextureSprite = "GFX_change_armygroup_template_up"
 				position = { x = 292 y = 10 }
-			}	
+			}
 
 			buttonType = {
 				name ="change_group_marker_down"
-				quadTextureSprite = "GFX_change_armygroup_template_down"	
+				quadTextureSprite = "GFX_change_armygroup_template_down"
 				position = { x = 292 y = 73 }
 			}
-			
+
 			iconType = {
 				name ="orders_group_icon"
-				spriteType = "GFX_theatre_army_shield"	
+				spriteType = "GFX_theatre_army_shield"
 				position = { x = 289 y = 38 }
-			}					
+			}
 		}
 	}
-	
+
 	containerWindowType = {
 		name = "armies_view"
 		position = {x=0 y=79}
 		size = { width=340 height=100%% }
 		Orientation = upper_left
 		clipping = no
-		
+
 		containerWindowType = {
 			name = "army_badges_window"
 			position = {x=1 y=1}
@@ -249,11 +249,11 @@ guiTypes = {
 		 		size = {width=18 height=18}
 				startValue = 0
 				background = {
-					name = "Background"	
+					name = "Background"
 					quadTextureSprite = "GFX_scrollbar_vertical_bg"
 				}
 				slider = {
-					name = "Slider"	
+					name = "Slider"
 					quadTextureSprite = "GFX_scroll_drager"
 					position = { x = -2 y = -2 }
 				}
@@ -271,19 +271,19 @@ guiTypes = {
 				increaseButton = {
 					name = "Increase"
 					quadTextureSprite = "GFX_scroll_down"
-					position = { x=-17 y = -19}	
+					position = { x=-17 y = -19}
 				}
 			}
 		}
-	
-	
+
+
 		containerWindowType = {
 			name = "expeditionary_force_button_container"
 			position = {x=158 y=-6}
 			size = { width=422 height=240 }
 			Orientation = upper_left
 			clipping = yes
-			
+
 			containerWindowType = {
 				name = "content"
 				position = { x=0 y= -50 }
@@ -293,7 +293,7 @@ guiTypes = {
 				animation_time = 300
 				size = { width=422 height=240 }
 				Orientation = upper_left
-					
+
 				buttonType = {
 					name = "expeditionary_force_button"
 					position = {x=0 y=0}
@@ -396,20 +396,20 @@ guiTypes = {
 			clicksound = click_default
 		}
 
-		iconType = { 
+		iconType = {
 			name = "div_count_bg"
 			position = {x=311 y=6}
 			spriteType ="GFX_div_count_bg"
 			frame = 1
 		}
 
-		iconType = { 
+		iconType = {
 			name = "group_div_count_bg"
 			position = {x=311 y=3}
 			spriteType ="GFX_group_div_count_bg"
 			frame = 1
 		}
-		
+
 		iconType = {
 			name = "supply_icon"
 			spriteType = "GFX_supply_strip"
@@ -496,7 +496,6 @@ guiTypes = {
 			maxHeight = 32
 			format = center
 			Orientation = "UPPER_LEFT"
-			alwaystransparent = yes
 		}
 
 		buttonType = {
@@ -535,11 +534,11 @@ guiTypes = {
 		iconType = {
 			name = "skill_bg"
 			spriteType = "GFX_land_battle_leader_skill_bg"
-			centerposition = yes	
+			centerposition = yes
 			position = { x=211 y=55 }
 			scale = 0.7
 		}
-		
+
 		instantTextboxType = {
 			name = "leader_skill"
 			position = {x=196 y=41}
@@ -549,7 +548,7 @@ guiTypes = {
 			format = center
 			text = "3"
 		}
-		
+
 		instantTextBoxType = {
 			name = "title"
 			position = {x=70 y=38}
@@ -741,7 +740,7 @@ guiTypes = {
 
 		buttonType = {
 			name = "toggle_armies_divisions_button"
-			position = {x=387 y=77}	
+			position = {x=387 y=77}
 			spriteType = "GFX_army_group_toggle_armies_divisions_btn"
 			clicksound = click_default
 			pdx_tooltip = "TOGGLE_ARMY_GROUP_VIEW_ARMIES_DIVISIONS"
@@ -884,17 +883,23 @@ guiTypes = {
 				spriteType = "GFX_redeployment_type_icon"
 				clicksound = click_default
 				shortcut = "b"
+			}
 
+			buttonType = { #invisible
+				name = "redeployment_toggle_button"
+				position = {x=-560 y=7}
+				spriteType = "GFX_tiled_window_transparent"
+				clicksound = click_default
 				shortcut = "ctrl+b"
 			}
-			
+
 			buttonType = {
 				name = "btn_consolidate_selection"
 				position = {x=191 y=7}
 				spriteType = "GFX_consolidate"
 				clicksound = click_default
 			}
-			
+
 			iconType ={
 				name ="convoys_icon_bg"
 				spriteType = "GFX_generic_mini_bg"
@@ -1134,11 +1139,11 @@ guiTypes = {
 					size = {width=18 height=18}
 					startValue = 0
 					background = {
-						name = "Background"	
+						name = "Background"
 						quadTextureSprite = "GFX_scrollbar_vertical_bg"
 					}
 					slider = {
-						name = "Slider"	
+						name = "Slider"
 						quadTextureSprite = "GFX_scroll_drager"
 						position = { x = -2 y = -2 }
 					}
@@ -1156,7 +1161,7 @@ guiTypes = {
 					increaseButton = {
 						name = "Increase"
 						quadTextureSprite = "GFX_scroll_down"
-						position = { x=-17 y = -19}	
+						position = { x=-17 y = -19}
 					}
 				}
 			}
@@ -1170,15 +1175,15 @@ guiTypes = {
 				background = {
 					name = "Background"
 					quadTextureSprite ="GFX_unitlist_unassigned_bg"
-					position = {x=5 y=-10}				
+					position = {x=5 y=-10}
 				}
-				
+
 				instantTextboxType = {
 					name = "divisions_count"
 					position = {x=18 y=2}
 					font = "hoi_16mbs"
 					maxWidth = 370
-					maxHeight = 23 
+					maxHeight = 23
 					format = center
 					text = "UNASSIGNED_UNIT_DESCRIPTION"
 				}
@@ -1193,7 +1198,7 @@ guiTypes = {
 		Orientation = upper_left
 		clipping = yes
 
-			
+
 		containerWindowType = {
 			name = "content"
 			position = {x=0 y=-240}
@@ -1202,12 +1207,12 @@ guiTypes = {
 			hide_animation_type = decelerated
 			animation_time = 300
 			size = { width=422 height=222 }
-					
+
 			background = {
 				name = "Background"
 				quadTextureSprite ="GFX_tiled_window_1b_thin_border"
 			}
-			
+
 			iconType = {
 				name = "army_group_header"
 				spriteType = "GFX_expeditionary_header"
@@ -1223,9 +1228,9 @@ guiTypes = {
 				text = "REQUEST_EXPEDITIONARIES"
 				maxWidth = 500
 				maxHeight = 20
-				format = left	
+				format = left
 			}
-			
+
 			buttonType = {
 				name = "close_button"
 				position = {x=373 y=8}
@@ -1233,7 +1238,7 @@ guiTypes = {
 				pdx_tooltip = "CLOSE"
 				clicksound = click_close
 			}
-			
+
 			containerWindowType = {
 				name = "country_grid_container"
 				position = { x=8 y=30 }
@@ -1241,12 +1246,12 @@ guiTypes = {
 				verticalScrollbar = "right_vertical_slider"
 				smooth_scrolling = yes
 				margin = { top = 13 bottom = 12 }
-		
+
 				background = {
-					name = "Background"		
+					name = "Background"
 					quadTextureSprite ="GFX_tiled_window_transparent"
 				}
-				
+
 				gridboxtype = {
 					name = "country_grid"
 					position = { x = 0 y = 0 }
@@ -1256,20 +1261,20 @@ guiTypes = {
 					max_slots_horizontal = 1
 				}
 			}
-			
+
 			containerWindowType = {
 				name = "expeditionary_force_total_units_bg_container"
 				position = {x=9 y=162}
 				size = { width=413 height=145 }
-				
+
 				background = {
 					name = "Background"
 					quadTextureSprite ="GFX_new_expedionary_forces_total_units_bg"
 				}
 
-				
+
 			}
-			
+
 			instantTextboxType = {
 				name = "total_units"
 				position = { x=29 y=179 }
@@ -1281,7 +1286,7 @@ guiTypes = {
 				fixedsize = yes
 				format = left
 			}
-			
+
 			buttonType = {
 				name = "send_button"
 				quadTextureSprite = "GFX_button_123x34"
@@ -1291,7 +1296,7 @@ guiTypes = {
 			}
 		}
 	}
-	
+
 	containerWindowType = {
 		name = "expeditionary_force_container_country_entry"
 		position = {x=0 y=0}
@@ -1307,14 +1312,14 @@ guiTypes = {
 			position = { x = 17 y = 6 }
 			alwaystransparent = yes
 		}
-		
+
 		iconType ={
 			name ="small_flag_frame_thin"
 			spriteType = "GFX_small_flag_frame_thin"
 			position = { x = 14 y = 4 }
 			alwaystransparent = yes
-		}		
-		
+		}
+
 		instantTextboxType = {
 			name = "country_name"
 			position = { x=63 y=10 }
@@ -1326,21 +1331,21 @@ guiTypes = {
 			fixedsize = yes
 			format = left
 		}
-		
+
 		iconType ={
 			name ="bg"
 			spriteType = "GFX_generic_box_smallest"
 			position = { x=303 y=7 }
 			Orientation = "UPPER_LEFT"
 		}
-		
+
 		iconType = {
 			name = "accept_icon"
 			position = { x = 270 y = 10 }
 			spriteType ="GFX_accept_decline_icon"
 			frame = 1
 		}
-		
+
 		instantTextboxType = {
 			name = "num_units"
 			position = { x=317 y=11 }
@@ -1352,7 +1357,7 @@ guiTypes = {
 			fixedsize = yes
 			format = center
 		}
-		
+
 		buttonType = {
 			name = "units_sub_1x"
 			position = { x=294 y=7 }
@@ -1376,7 +1381,7 @@ guiTypes = {
 			font = "hoi_16mbs"
 			clicksound = click_default
 			pdx_tooltip = "PRODUCTION_SUB_FACTORIES_CLICK"
-		}	
+		}
 		buttonType = {
 			name = "units_add_1x"
 			position = { x=360 y=7 }
@@ -1400,9 +1405,9 @@ guiTypes = {
 			font = "hoi_16mbs"
 			clicksound = click_default
 			pdx_tooltip = "PRODUCTION_ADD_FACTORIES_CLICK"
-		}	
+		}
 	}
-	
+
 	containerWindowType = { # Property pdx_tooltip will do nothing on elements in this container. Tooltips must be set in code.
 		name = "army_division_view"
 		position = {x=0 y=0}
@@ -1427,7 +1432,7 @@ guiTypes = {
 			fixedsize = yes
 		}
 
-		iconType = { 
+		iconType = {
 			name = "unit_level"
 			spriteType = "GFX_unit_level"
 			position = { x=97 y=5 }
@@ -1440,26 +1445,26 @@ guiTypes = {
 			rotation = 1.5708
 		}
 
-		buttonType = { 
+		buttonType = {
 			name = "unitinfo_button"
-			spriteType = "GFX_unitlist_unitinfo_button" 
+			spriteType = "GFX_unitlist_unitinfo_button"
 			position = { x=22 y=1 }
 		}
 
-		buttonType = { 
+		buttonType = {
 			name = "unit_icon"
 			spriteType = "GFX_unit_infantry_icon_medium" # <- Replaced in code
 			position = { x=21 y=-6 }
 			clicksound = click_default
 		}
 
-		iconType = { 
+		iconType = {
 			name = "fake_unit_icon_indicator"
 			spriteType = "GFX_unit_infantry_icon_medium"
 			position = { x=89 y=3 }
 			scale = 0.7
 		}
-		
+
 		iconType = {
 			name = "bar_org"
 			spriteType = "GFX_navieslist_bar_org"
@@ -1467,7 +1472,7 @@ guiTypes = {
 			rotation = 1.5708
 		}
 
-		iconType = { 
+		iconType = {
 			name = "bar_str"
 			spriteType = "GFX_navieslist_bar_str"
 			position = { x=19 y=24 }
@@ -1569,9 +1574,8 @@ guiTypes = {
 
 		iconType = {
 			name = "low_supply"
-			spriteType = "GFX_unitcounter_supply_status_strip"
+			spriteType = "GFX_mapicon_low_supply"
 			position = { x=40 y=16 }
-			scale = 0.75
 		}
 
 		gridboxtype = {
@@ -1629,7 +1633,7 @@ guiTypes = {
 		}
 	}
 
-	containerWindowType = 
+	containerWindowType =
 	{
 		name = "stat_entry"
 		position = {x=0 y=0}
@@ -1754,13 +1758,13 @@ guiTypes = {
 		}
 	}
 
-	containerWindowType = 
+	containerWindowType =
 	{
 		name = "stat_equipment_entry_naval"
 		position = {x=0 y=0}
 		size = { width = 50 height = 50 }
 
-		
+
 		iconType =
 		{
 			name ="equipment_icon"
@@ -1772,14 +1776,13 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "equipment_name"
-			position = { x = -75 y = -20 }
+			position = { x = -100 y = -20 }
 			font = "hoi_24header"
 			borderSize = {x = 0 y = 0}
 			text = "name"
-			fixedsize = yes
-			maxWidth = 350
+			maxWidth = 450
 			maxHeight = 20
-			format = center
+			format = right
 		}
 
 		iconType = {
@@ -1833,7 +1836,7 @@ guiTypes = {
 
 		iconType = {
 			name = "unit_icon"
-			position = { x = 1 y = 12 }
+			position = { x = 1 y = 4 }
 			spriteType = "GFX_locked_icon"
 			Orientation = CENTER_LOWER
 		}
@@ -1865,14 +1868,6 @@ guiTypes = {
 			spriteType = "GFX_unit_stats_view_tabs"
 			position = { x=130 y=487 }
 			buttonText = "UNIT_STATS_TEMPLATE_TAB"
-			font = "hoi_18mbs"
-		}
-
-		buttonType = {
-			name = "history_tab_button"
-			spriteType = "GFX_unit_stats_view_tabs"
-			position = { x=250 y=487 }
-			buttonText = "UNIT_STATS_HISTORY_TAB"
 			font = "hoi_18mbs"
 		}
 
@@ -1920,90 +1915,10 @@ guiTypes = {
 			maxHeight = 20
 		}
 
-		containerWindowType =
-		{
-			name = "commanding_officer_header_list_entry"
-			position = { x = 562 y = 34 }
-			size = { width = 270 height = 30 }
-
-			Background = {
-				name = "commanding_officer_list_entry_bg"
-				quadTextureSprite = "GFX_unit_stats_list_entry_bg2"
-				alwaystransparent = yes
-			}
-		}
-
-		instantTextboxType = {
-			name = "commanding_officer_title_text"
-			position = { x = 574 y = 39 }
-			font = "hoi_18mbs"
-			text = "COMMANDER_TITLE_TEXT_DIVISION"
-			maxWidth = 340
-			maxHeight = 20
-			format = left
-		}
-
-
-		#containerWindowType = {
-		#	name = "officer_portrait_entry"
-		#	position = {x=524 y=-4}
-		#	size = { width=84 height=150 }
-		#	Orientation = upper_left
-		#	clipping = no
-		#	scale = 1
-		#
-		#
-		#
-		#	iconType = {
-		#		name = "idea_traits"
-		#		position = { x = 83 y = 104 }
-		#		spriteType = "GFX_idea_traits_strip"
-		#		centerposition = yes
-		#		alwaystransparent = yes
-		#		frame = 1
-		#	}
-		#}
-
-		buttonType = {
-			name = "portraittime"
-			position = { x = 568 y = 60 }
-			quadTextureSprite = "GFX_idea_HOL_wilhelmina"
-			alwaystransparent= yes
-		}
-
-		buttonType = {
-			name = "promote_officer"
-			quadTextureSprite ="GFX_leader_selection_button"
-			position = { x=740 y=34 }
-			buttonText = "PROMOTE"
-			font = "hoi_16mbs"
-			frame = 1
-		 }
-
 		iconType = {
-			name = "idea_traits"
-			position = { x = 611 y = 104 }
-			spriteType = "GFX_chevrons"
-			centerposition = yes
-			alwaystransparent = yes
-			frame = 1
-			scale = 0.68
-		}
-
-		instantTextboxType = {
-			name = "commanding_officer"
-			position = { x = 632  y = 72 }
-			font = "hoi_18mbs"
-			text = ""
-			maxWidth = 190
-			maxHeight = 20
-			format = left
-		}
-
-		iconType = { 
 			name = "unit_level"
-			spriteType = "GFX_unit_level" 
-			position = { x = 464 y = 38 }
+			spriteType = "GFX_unit_level"
+			position = { x = 496 y = 38 }
 		}
 
 		iconType = {
@@ -2106,7 +2021,7 @@ guiTypes = {
 				name = "support_grid"
 				position = { x = 4 y = 78 }
 				size = { width = 85 height = 100%% }
-				slotsize = { width = 82 height = 51 }
+				slotsize = { width = 82 height = 42 }
 				format = "UPPER_LEFT"
 			}
 
@@ -2114,7 +2029,7 @@ guiTypes = {
 				name = "regiments_grid"
 				position = { x = 110 y = 78 }
 				size = { width = 445 height = 100%% }
-				slotsize = { width = 82 height = 51 }
+				slotsize = { width = 82 height = 43 }
 				format = "UPPER_LEFT"
 			}
 		}
@@ -2206,96 +2121,9 @@ guiTypes = {
 		}
 
 		containerWindowType = {
-			name = "history_tab"
-			position = { x=3 y=47}
-			size = { width=100% height=100%% }
-			#verticalScrollbar = "right_vertical_slider"
-
-			iconType = {
-				name = "unit_template_tab_bg"
-				quadTextureSprite ="GFX_unit_stats_template_tab_bg"
-				position = { x= 1 y = 21 }
-				Orientation = "UPPER_LEFT"
-				alwaystransparent = yes
-			}
-
-			containerWindowType = {
-				name = "history_entry_container"
-				position = { x=14 y=17 }
-				size = { width=614 height=348 }
-				#clipping = yes
-
-				instantTextboxType = {
-					name = "history_entry_label"
-					position = { x = 12 y = 12 }
-					font = "hoi_24header"
-					text = "HISTORY_ENTRY_LABEL"
-					maxWidth = 180
-					maxHeight = 20
-					format = left
-				}
-
-				instantTextboxType = {
-					name = "history_kill_count"
-					position = { x = 272 y = 10 }
-					font = "hoi_18mbs"
-					text = "Kill Count"
-					maxWidth = 260
-					maxHeight = 20
-					format = left
-				}
-
-				instantTextboxType = {
-					name = "history_experience_count"
-					position = { x = 272 y = 30 }
-					font = "hoi_18mbs"
-					text = "Experience Count"
-					maxWidth = 260
-					maxHeight = 20
-					format = left
-				}
-
-				listboxType = {
-					name = "history_entry_grid"
-					position = { x = 0 y = 84 }
-					size = { x = 498 y = 260 }
-					scrollbartype = "standardlistbox_slider"
-					spacing = 4
-				}
-			}
-
-			containerWindowType = {
-				name = "medal_instance_container"
-				position = { x=10 y=9 }
-				size = { width=105 height=200 }
-				clipping = no
-
-				instantTextboxType = {
-					name = "base_medals_label"
-					position = { x = 14 y = 59 }
-					font = "hoi_18mbs"
-					text = "INSTANCED_MEDALS"
-					maxWidth = 100
-					maxHeight = 20
-					format = left
-				}
-
-				gridboxtype = {
-					name = "medals_grid"
-					position = { x = 100 y = 48 }
-					size = { width = 155 height = 80 }
-					slotsize = { width = 40 height = 60 }
-					max_slots_horizontal = 9
-					format = "UPPER_LEFT"
-				}
-			}
-
-		}
-
-		containerWindowType = {
 			name = "equipment"
-			position = { x=560 y=118 }
-			size = { width=296 height=359 }
+			position = { x=560 y=33 }
+			size = { width=296 height=453 }
 			verticalScrollbar = "right_vertical_slider"
 			scroll_wheel_factor = 40
 			smooth_scrolling = yes
@@ -2318,7 +2146,7 @@ guiTypes = {
 		containerWindowType = {
 			name = "adjuster_container"
 			position = { x = 10 y = 336 }
-			
+
 			instantTextboxType = {
 				name = "adjuster_label"
 				position = { x = 10 y = 0 }
@@ -2328,7 +2156,7 @@ guiTypes = {
 				maxHeight = 20
 				format = left
 			}
-			
+
 			containerWindowType = {
 				name = "adjuster_stats"
 				position = { x=0 y= 17 }
@@ -2342,7 +2170,7 @@ guiTypes = {
 					name = "Background"
 					quadTextureSprite ="GFX_tiled_window_transparent"
 				}
-				
+
 				gridboxtype = {
 					name = "stats_grid"
 					position = { x = 0 y = 0 }
@@ -2353,7 +2181,7 @@ guiTypes = {
 				}
 			}
 		}
-		
+
 		iconType = {
 			name = "template_change_icon"
 			spriteType = "GFX_upgrades_icon"
@@ -2468,7 +2296,7 @@ guiTypes = {
 			}
 		}
 
-		iconType = { 
+		iconType = {
 			name = "type_icon"
 			spriteType = "GFX_unit_infantry_icon_medium" # <- Replaced in code
 			position = { x=20 y=35 }
@@ -2506,7 +2334,7 @@ guiTypes = {
 			expandButton = {
 				name = "expand_button"
 				position = { x = -26 y = 4 }
-				quadTextureSprite ="GFX_expand_button"
+				quadTextureSprite ="GFX_collapse_or_close" # Frame 1 = down, 2 = up, 3 = cancel
 				buttonFont = "Main_14_black"
 				Orientation = "UPPER_RIGHT"
 				clicksound = click_default
@@ -2633,7 +2461,7 @@ guiTypes = {
 			position = {x=13 y=280}
 			spriteType = "GFX_NV_btn_pride"
 		}
-		
+
 		instantTextboxType = {
 			name = "ship_title"
 			position = { x = 35 y = 0 }
@@ -2683,7 +2511,7 @@ guiTypes = {
 			frame = 2
 		}
 
-		iconType = { 
+		iconType = {
 			name = "type_icon"
 			spriteType = "GFX_unit_infantry_icon_medium" # <- Replaced in code
 			position = { x=17 y=43 }
@@ -2711,7 +2539,7 @@ guiTypes = {
 			maxHeight = 20
 		}
 
-		iconType = { 
+		iconType = {
 			name = "unit_level"
 			spriteType = "GFX_unit_level"
 			position = { x = 496 y = 38 }
@@ -2732,7 +2560,7 @@ guiTypes = {
 			maxHeight = 20
 			format = center
 		}
-		
+
 		containerWindowType = {
 			name = "history"
 			position = { x=2 y=70}
@@ -2997,184 +2825,4 @@ guiTypes = {
 			spriteType = "GFX_ace_none"
 		}
 	}
-
-	containerWindowType = {
-		name = "army_history_entry"
-		size = { width = 496 height = 52 }
-		clipping = no
-
-		background = {
-			name = "Background"
-			position = { x = -4 y = 0 }
-			quadTextureSprite ="GFX_mini_tooltip"
-		}
-
-		iconType = {
-			name ="medal_icon"
-			spriteType = "GFX_unit_level"
-			position = { x = 8 y = -11 }
-			scale = 0.92
-		}
-
-		dropDownBoxType = {
-			name = "medal_dropdown"
-			position = { x = 44 y = 2 }
-			size = { width = 340 height = 94 }
-			#clipping = no
-
-			expandButton = {
-				name = "expand_button"
-				position = { x = -28 y = 0 }
-				spriteType = "GFX_add_medal_button"
-				clicksound = click_default
-			}
-
-			expandedWindow = {
-				name = "expanded_window"
-				position = { x=0 y= -300 }
-				show_position = { x = -46 y = 42 }
-				show_animation_type = decelerated
-				hide_animation_type = accelerated
-				animation_time = 0
-				size = { width=520 height=234 }
-				verticalScrollbar = "right_vertical_slider"
-				scroll_wheel_factor = 50
-				smooth_scrolling = yes
-				margin = { top = 10 bottom = 10 left = 6 right = 12 }
-				#clipping = no
-
-				background = {
-					name = "Background"
-					quadTextureSprite ="GFX_tiled_window_1b_thin_border"
-					position = { x = 0 y = 0 }
-				}
-
-				gridBoxType = {
-					name = "medals_grid"
-					position = { x = 0 y = 4 }
-					size = { width = 500 height = 200 }
-					slotsize = { width = 190 height = 52 }
-					max_slots_horizontal = 1
-					format = "UPPER_LEFT"
-				}
-			}
-		}
-
-		instantTextboxType = {
-			name = "date_field"
-			position = { x = 75 y = 5 }
-			font = "hoi_18mbs"
-			borderSize = { x = 0 y = 0 }
-			text = "Maus"
-			maxWidth = 100
-			maxHeight = 40
-			format = left
-			vertical_alignment = center
-			alwaystransparent = yes
-		}
-
-		instantTextboxType = {
-			name = "text_field"
-			position = { x = 174 y = 5 }
-			font = "hoi_18"
-			borderSize = { x = 0 y = 0 }
-			text = "Maus"
-			maxWidth = 320
-			maxHeight = 40
-			format = left
-			vertical_alignment = center
-			alwaystransparent = yes
-		}
-	}
-
-	containerWindowType = {
-		name = "medal_button_entry"
-		size = { width = 485 height = 48 }
-		clipping = no
-		position = { x = 3 y = 0 }
-		background = {
-			name = "Background"
-			quadTextureSprite ="GFX_mini_tooltip"
-		}
-
-		iconType = {
-			name ="medal_icon"
-			spriteType = "GFX_unit_level"
-			position = { x = 2 y = -9 }
-			scale = 0.8
-		}
-
-		instantTextboxType = {
-			name = "name"
-			position = { x = 44 y = 5 }
-			textureFile = ""
-			font = "hoi_18mbs"
-			borderSize = {x = 0 y = 0}
-			text = "Maus"
-			maxWidth = 370
-			maxHeight = 15
-			format = left
-			multiline = no
-		}
-
-		instantTextboxType = {
-			name = "modifier"
-			position = { x = 44 y = 26 }
-			textureFile = ""
-			font = "hoi_16mbs"
-			borderSize = {x = 0 y = 0}
-			text = "Maus"
-			maxWidth = 370
-			maxHeight = 15
-			format = left
-			multiline = no
-		}
-
-		instantTextboxType = {
-			name = "cost"
-			position = { x = 390 y = 15 }
-			textureFile = ""
-			font = "hoi_18mbs"
-			borderSize = {x = 0 y = 0}
-			text = "888.8"
-			maxWidth = 80
-			maxHeight = 15
-			format = right
-			multiline = no
-		}
-
-	}
-
-	containerWindowType = {
-		name = "medal_instance_entry"
-		size = { width = 80 height = 80 }
-		clipping = no
-
-		#background = {
-		#	name = "Background"
-		#	quadTextureSprite ="GFX_mini_tooltip"
-		#}
-
-		iconType = {
-			name ="medal_icon"
-			spriteType = "GFX_unit_level"
-			position = { x = -4 y = 0 }
-		}
-
-		instantTextboxType = {
-			name = "number"
-			position = { x = 0 y = 20 }
-			textureFile = ""
-			font = "hoi_18mbs"
-			#borderSize = {x = 0 y = 0}
-			text = "x9"
-			maxWidth = 40
-			maxHeight = 15
-			format = centre
-			orientation = UPPER_LEFT
-			multiline = no
-		}
-
-	}
-
 }

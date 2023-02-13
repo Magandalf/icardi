@@ -29,7 +29,7 @@ guiTypes = {
 			maxWidth = 250
 			maxHeight = 36
 		}
-	
+
 		iconType ={
 			name ="experience_bg"
 			spriteType = "GFX_generic_box_smallest"
@@ -638,7 +638,6 @@ guiTypes = {
 				clicksound = click_default
 			}
 		}
-
 		containerWindowType = {
 			name = "plane_range_upgrade"
 			position = { x = 30 y = 100 }

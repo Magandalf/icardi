@@ -2,10 +2,10 @@
 units= {
 	fleet = {
 		name = "Kriegsmarine"
-		naval_base =214
+		naval_base =6325
 		task_force = {
 			name = "Hochseeflotte"
-			location =214
+			location =6325
 			ship = { name = "FazeHeart Class" pride_of_the_fleet = yes definition = heavy_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = GER version_name = "Admiral Hipper Class" } } }
 			ship = { name = "Highcastle Class" definition = heavy_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = GER version_name = "Admiral Hipper Class" } } }
 			ship = { name = "Nürnberg" definition = light_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = GER version_name = "Leipzig Class" } } }
@@ -18,8 +18,8 @@ units= {
 			ship = { name = "Leopard" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "Type 24 Class" } } }
 			ship = { name = "Luchs" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "Type 24 Class" } } }
 			ship = { name = "Tiger" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "Type 24 Class" } } }
-			ship = { name = "Schleswig-Holstein" definition = battleship start_experience_factor = 0.2 equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = GER version_name = "Deutschland Class" } } }
-			ship = { name = "Schlesien" definition = battleship start_experience_factor = 0.2 equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = GER version_name = "Deutschland Class" } } }
+			ship = { name = "Schleswig-Holstein" definition = battleship start_experience_factor = 0.2 equipment = { ship_hull_heavy_2 = { amount = 1 owner = GER version_name = "Scharnhorst Class" } } } 
+			ship = { name = "Schlesien" definition = battleship start_experience_factor = 0.2 equipment = { ship_hull_heavy_2 = { amount = 1 owner = GER version_name = "Scharnhorst Class" } } }
 			ship = { name = "Möwe" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "Type 24 Class" } } }
 			ship = { name = "Albatros" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "Type 24 Class" } } }
 			ship = { name = "Seeadler" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "Type 24 Class" } } }
@@ -55,7 +55,7 @@ instant_effect = {
 			version_name = "Zerstörer 1934 Class"
 		}
 		requested_factories = 20
-		progress = 0.75
+		progress = 0.65
 		amount = 1
 	}
 	add_equipment_production = {
@@ -75,7 +75,7 @@ instant_effect = {
 			version_name = "Admiral Hipper Class"
 		}
 		requested_factories = 20
-		progress = 0.95
+		progress = 0.80
 		amount = 1
 	}
 	add_equipment_production = {
@@ -85,7 +85,7 @@ instant_effect = {
 			version_name = "Admiral Hipper Class"
 		}
 		requested_factories = 20
-		progress = 0.25
+		progress = 0.80
 		amount = 1
 	}
 	add_equipment_production = {
@@ -106,36 +106,6 @@ instant_effect = {
 		}
 		requested_factories = 20
 		progress = 0.60
-		amount = 1
-	}
-	add_equipment_production = {
-		equipment = {
-			type = ship_hull_light_2
-			creator = "GER"
-			version_name = "Zerstörer 1934A Class"
-		}
-		requested_factories = 20
-		progress = 0.25
-		amount = 1
-	}
-	add_equipment_production = {
-		equipment = {
-			type = ship_hull_light_2
-			creator = "GER"
-			version_name = "Zerstörer 1934A Class"
-		}
-		requested_factories = 20
-		progress = 0.25
-		amount = 1
-	}
-	add_equipment_production = {
-		equipment = {
-			type = ship_hull_light_2
-			creator = "GER"
-			version_name = "Zerstörer 1934A Class"
-		}
-		requested_factories = 20
-		progress = 0.25
 		amount = 1
 	}
 }

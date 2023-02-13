@@ -5,8 +5,8 @@ GER = {
 	color_ui = rgb { 138 155 116 }
 }
 ENG = {
-	color = rgb { 201 56 93 }
-	color_ui = rgb { 255 73 121 }
+	color = rgb { 179 11 0 }
+	color_ui = rgb { 179 11 0 }
 }
 SOV = {
 	color = rgb { 156 47 38 }
@@ -15,15 +15,6 @@ SOV = {
 SWE = {
 	color = rgb { 36 132 247 }
 	color_ui = rgb { 47 172 255 }
-}
-SAF = {
-	color = rgb { 195 107 160 }
-	color_ui = rgb { 198 169 248 }
-}
-MON = {
-	#color = HSV { 0.1 0.15 0.4 }
-	color = rgb { 108 140 42 }
-	color_ui = rgb { 209 247 133 }
 }
 FRA = {
 	color = rgb { 57 113 228 }
@@ -75,17 +66,16 @@ ITA = {
 	color_ui = rgb { 87 165 82 }
 }
 ROM = {
-	color = rgb { 230 190 0 }
+	color = rgb { 215 196 72 }
 	color_ui = rgb { 255 255 120 }
 }
 YUG = {
 	color = rgb { 72 73 126 }
 	color_ui = rgb { 94 95 164 }
 }
-
 TUR = {
-	color = rgb { 0 0 0 }
-	color_ui = rgb { 0 0 0 }
+	color = rgb { 171 190 152 }
+	color_ui = rgb { 222 247 198 }
 }
 GRE = {
 	color = rgb { 93 181 227 }
@@ -131,10 +121,6 @@ JAP = {
 	color = rgb { 220 220 220 }
 	color_ui = rgb { 220 220 220 }
 }
-NZL = {
-	color = rgb { 152 130 191 }
-	color_ui = rgb { 198 169 248 }
-}
 PER = {
 	color = rgb { 71 113 97 }
 	color_ui = rgb { 92 147 126 }
@@ -155,11 +141,7 @@ INS = {
 	color = rgb { 128  158  118 }
 	color_ui = rgb { 128  158  118 }
 }
-MAN = {
-	color = rgb { 212  96  20 }
-	color_ui = rgb { 255  120  71 }
-}
 SWI = {
-	color = rgb { 224 5 5 }
-	color_ui = rgb { 193 81 81 }
+	color = rgb { 0 0 0 }
+	color_ui = rgb { 0 0 0 }
 }

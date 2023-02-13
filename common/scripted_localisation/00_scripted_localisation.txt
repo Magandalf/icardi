@@ -57,116 +57,6 @@ defined_text = { # for shared tree
 		localization_key = CHI_vietnam_FRA
 	}
 }
-
-defined_text = { #
-	name = GetWehrmachtAngerLevel
-	text = {
-		trigger = {
-			original_tag = GER
-			check_variable = { var = wehrmacht_anger value = 0 compare = less_than }
-
-		}
-		localization_key = SS_loyal
-	}
-	text = {
-		trigger = {
-			original_tag = GER
-			check_variable = { var = wehrmacht_anger value = 0 compare = greater_than_or_equals }
-			check_variable = { var = wehrmacht_anger value = 10 compare = less_than }
-
-		}
-		localization_key = SS_calm
-	}
-	text = {
-		trigger = {
-			original_tag = GER
-			check_variable = { var = wehrmacht_anger value = 10 compare = greater_than_or_equals }
-			check_variable = { var = wehrmacht_anger value = 20 compare = less_than }
-
-		}
-		localization_key = SS_worried
-	}
-	text = {
-		trigger = {
-			original_tag = GER
-			check_variable = { var = wehrmacht_anger value = 20 compare = greater_than_or_equals }
-			check_variable = { var = wehrmacht_anger value = 30 compare = less_than }
-
-		}
-		localization_key = SS_angry
-	}
-	text = {
-		trigger = {
-			original_tag = GER
-			check_variable = { var = wehrmacht_anger value = 30 compare = greater_than_or_equals }
-			check_variable = { var = wehrmacht_anger value = 40 compare = less_than }
-
-		}
-		localization_key = SS_plotting
-	}
-	text = {
-		trigger = {
-			original_tag = GER
-			check_variable = { var = wehrmacht_anger value = 40 compare = greater_than_or_equals }
-		}
-		localization_key = SS_rebellious
-	}
-}
-
-defined_text = { #
-	name = GetSSAngerLevel
-	text = {
-		trigger = {
-			original_tag = GER
-			check_variable = { var = SS_anger value = 0 compare = less_than }
-
-		}
-		localization_key = SS_loyal
-	}
-	text = {
-		trigger = {
-			original_tag = GER
-			check_variable = { var = SS_anger value = 0 compare = greater_than_or_equals }
-			check_variable = { var = SS_anger value = 10 compare = less_than }
-
-		}
-		localization_key = SS_calm
-	}
-	text = {
-		trigger = {
-			original_tag = GER
-			check_variable = { var = SS_anger value = 10 compare = greater_than_or_equals }
-			check_variable = { var = SS_anger value = 20 compare = less_than }
-
-		}
-		localization_key = SS_worried
-	}
-	text = {
-		trigger = {
-			original_tag = GER
-			check_variable = { var = SS_anger value = 20 compare = greater_than_or_equals }
-			check_variable = { var = SS_anger value = 30 compare = less_than }
-
-		}
-		localization_key = SS_angry
-	}
-	text = {
-		trigger = {
-			original_tag = GER
-			check_variable = { var = SS_anger value = 30 compare = greater_than_or_equals }
-			check_variable = { var = SS_anger value = 40 compare = less_than }
-
-		}
-		localization_key = SS_plotting
-	}
-	text = {
-		trigger = {
-			original_tag = GER
-			check_variable = { var = SS_anger value = 40 compare = greater_than_or_equals }
-		}
-		localization_key = SS_rebellious
-	}
-}
 defined_text = {
 	name = GetSenateElectionOutcome
 	text = {
@@ -201,8 +91,7 @@ defined_text = {
 	name = GET_AUSTRALIA_NEW_ZEALAND_STATUS
 	text = {
 		trigger = {
-			AST = { is_in_faction_with = ENG }
-			NZL = { is_in_faction_with = ENG }
+			AST = { is_subject_of = ENG }
 		}
 		localization_key = AST_NZL_PUPPET
 	}
@@ -210,7 +99,6 @@ defined_text = {
 		trigger = {
 			AND = {
 				AST = { is_subject_of = ENG }
-				NZL = { not = { is_subject_of = ENG } }
 			}
 		}
 		localization_key = AST_democratic
@@ -218,7 +106,6 @@ defined_text = {
 	text = {
 		trigger = {
 			AND = {
-				NZL = { is_subject_of = ENG }
 				AST = { not = { is_subject_of = ENG } }
 			}
 		}
@@ -244,28 +131,7 @@ defined_text = {
 	}
 }
 
-defined_text = { # Country
-	name = GetRelevantNavalTreatyNation
-	text = {
-		trigger = {
-			ENG = {
-				has_naval_treaty_trigger = yes
-			}
-		}
-		localization_key = ENG_Naval_treaty_nation
-	}
-	text = {
-		trigger = {
-			ENG = {
-				not = { has_naval_treaty_trigger = yes }
-			}
-			USA = {
-				has_naval_treaty_trigger = yes
-			}
-		}
-		localization_key = USA_Naval_treaty_nation
-	}
-}
+
 
 defined_text = { # Country
 	name = GetStresaMembers
@@ -380,25 +246,5 @@ defined_text = {
 	}
 	text = { #ITA builder
 		localization_key = POR_ITA_Ship_builder
-	}
-}
-
-defined_text = {
-	name = GetWargoalBasedOnGovernment
-	text = { #United Kingdom of Portugal and Brazil
-		trigger = {
-			has_cosmetic_tag = KPB_kingdom_portugal_and_brazil
-		}
-		localization_key = POR_puppet_wargoal
-	}
-	text = { #Salazarist Portugal
-		trigger = {
-			NOT = { has_cosmetic_tag = KPB_kingdom_portugal_and_brazil }
-			has_government = neutrality
-		}
-		localization_key = POR_topple_government_wargoal
-	}
-	text = { #Fascist (else)
-		localization_key = POR_annex_wargoal
 	}
 }

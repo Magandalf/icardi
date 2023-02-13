@@ -16,6 +16,76 @@
 		military_police = { x = 0 y = 0 }
 	}
 }
+
+division_template = {
+	name = "Paratroopers"
+	division_names_group = GER_INF_01
+	regiments = {
+		paratrooper = { x = 0 y = 0 }
+		paratrooper = { x = 0 y = 1 }
+		paratrooper = { x = 0 y = 2 }
+		paratrooper = { x = 0 y = 3 }
+		paratrooper = { x = 0 y = 4 }
+		paratrooper = { x = 1 y = 0 }
+		paratrooper = { x = 1 y = 1 }
+		paratrooper = { x = 1 y = 2 }
+		paratrooper = { x = 1 y = 3 }
+		paratrooper = { x = 1 y = 4 }
+		paratrooper = { x = 2 y = 0 }
+		paratrooper = { x = 2 y = 1 }
+		paratrooper = { x = 2 y = 2 }
+		paratrooper = { x = 2 y = 3 }
+		paratrooper = { x = 2 y = 4 }
+		paratrooper = { x = 3 y = 0 }
+		paratrooper = { x = 3 y = 1 }
+		paratrooper = { x = 3 y = 2 }
+		paratrooper = { x = 3 y = 3 }
+		paratrooper = { x = 3 y = 4 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+		artillery = { x = 0 y = 2 }
+		anti_air = { x = 0 y = 3 }
+	}
+	priority = 0
+}
+
+division_template = {
+	name = "Brandenburgers"
+	division_names_group = GER_Inf_01
+	is_locked = yes
+	regiments = {
+		ss = { x = 0 y = 0 }
+		ss = { x = 0 y = 1 }
+		ss = { x = 0 y = 2 }
+		ss = { x = 0 y = 3 }
+		artillery_brigade = { x = 3 y = 0 }
+		ss = { x = 1 y = 0 }
+		ss = { x = 1 y = 1 }
+		ss = { x = 1 y = 2 }
+		ss = { x = 1 y = 3 }
+		artillery_brigade = { x = 3 y = 1 }
+		ss = { x = 2 y = 0 }
+		ss = { x = 2 y = 1 }
+		ss = { x = 2 y = 2 }
+		artillery_brigade = { x = 3 y = 2 }
+		ss = { x = 0 y = 4 }
+		ss = { x = 1 y = 4 }
+		anti_tank_brigade = { x = 2 y = 3 }
+		artillery_brigade = { x = 3 y = 4 }
+		anti_air_brigade = { x = 3 y = 3 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+		recon = { x = 0 y = 2 }
+		anti_air = { x = 0 y = 3  }
+		anti_tank = { x = 0 y = 4  }
+		signal_company = { x = 0 y = 5  }
+	}
+	priority = 2
+}
 division_template = {
 	name = "Infanterie-Division"
 	division_names_group = GER_Inf_01
@@ -38,14 +108,43 @@ division_template = {
 		infantry = { x = 3 y = 1 }
 		infantry = { x = 3 y = 2 }
 		artillery_brigade = { x = 3 y = 3 }
-		artillery_brigade = { x = 3 y = 4 }
-		artillery_brigade = { x = 2 y = 4 }
 	}
 	support = {
 		engineer = { x = 0 y = 0 }
-		artillery = { x = 0 y = 1 }
-		recon = { x = 0 y = 2 }
-		anti_air = { x = 0 y = 3  }
+		recon = { x = 0 y = 1 }
+		artillery = { x = 0 y = 2 }
+		anti_air = { x = 0 y = 3 }
+	}
+}
+division_template = {
+	name = "Garrison"
+	division_names_group = GER_Inf_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		artillery_brigade = { x = 0 y = 4 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+		artillery_brigade = { x = 1 y = 4 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		artillery_brigade = { x = 2 y = 3 }
+		anti_air_brigade = { x = 2 y = 4 }
+		infantry = { x = 3 y = 0 }
+		infantry = { x = 3 y = 1 }
+		infantry = { x = 3 y = 2 }
+		infantry = { x = 3 y = 3 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+		artillery = { x = 0 y = 2 }
+		anti_air = { x = 0 y = 3 }
 	}
 }
 division_template = {
@@ -75,123 +174,77 @@ division_template = {
 	}
 	support = {
 		engineer = { x = 0 y = 0 }
-		mot_recon = { x = 0 y = 1 }
-		artillery = { x = 0 y = 2 }
-		anti_air = { x = 0 y = 3  }
+		armored_car_recon = { x = 0 y = 1 }
+		anti_air = { x = 0 y = 2 }
+		artillery = { x = 0 y = 3 }
+		military_police = { x = 0 y = 4 }
 	}
 }
-division_template = {
-	name = "Brandenburgers"
-	division_names_group = GER_Inf_01
-	is_locked = yes
-	regiments = {
-		ss = { x = 0 y = 0 }
-		ss = { x = 0 y = 1 }
-		ss = { x = 0 y = 2 }
-		ss = { x = 0 y = 3 }
-		artillery_brigade = { x = 3 y = 0 }
-		ss = { x = 1 y = 0 }
-		ss = { x = 1 y = 1 }
-		ss = { x = 1 y = 2 }
-		ss = { x = 1 y = 3 }
-		artillery_brigade = { x = 3 y = 1 }
-		ss = { x = 2 y = 0 }
-		ss = { x = 2 y = 1 }
-		ss = { x = 2 y = 2 }
-		artillery_brigade = { x = 3 y = 2 }
-		ss = { x = 0 y = 4 }
-		ss = { x = 1 y = 4 }
-		ss = { x = 2 y = 3 }
-		anti_tank_brigade = { x = 2 y = 4 }
-		anti_tank_brigade = { x = 2 y = 5 }
-		anti_air_brigade = { x = 3 y = 4 }
-		anti_air_brigade = { x = 3 y = 3 }
-		artillery_brigade = { x = 3 y = 5 }
-	}
-	support = {
-		engineer = { x = 0 y = 0 }
-		artillery = { x = 0 y = 1 }
-		recon = { x = 0 y = 2 }
-		anti_air = { x = 0 y = 3  }
-		anti_tank = { x = 0 y = 4  }
-		signal_company = { x = 0 y = 5  }
-	}
-	priority = 2
-}
+
 units = {
 	division= {
 		name = "SS-Division Leibstandarte SS Adolf Hitler"
-		location =6026
+		location = 6521
 		division_template = "Brandenburgers"
 		start_experience_factor = 1
 	}
 	division= {
 		name = "SS-Division Totenkopf"
-		location =6026
+		location = 6521
 		division_template = "Brandenburgers"
 		start_experience_factor = 1
 	}
 	division= {
 		name = "SS-Division Das Reich"
-		location =6026
+		location = 6521
 		division_template = "Brandenburgers"
 		start_experience_factor = 1
 	}
 	division= {
 		name = "SS-Division Wiking"
-		location =6026
+		location = 6521
 		division_template = "Brandenburgers"
 		start_experience_factor = 1
 	}
 	division= {
 		name = "SS-Division Nibelungen"
-		location =6026
+		location = 6521
 		division_template = "Brandenburgers"
 		start_experience_factor = 1
 	}
 	division= {
 		name = "SS-Division Polizei"
-		location =6026
+		location = 6521
 		division_template = "Brandenburgers"
 		start_experience_factor = 1
 	}
 	division= {
 		name = "SS-Division Nord"
-		location =6026
-		division_template = "Brandenburgers"
-		start_experience_factor = 1
-	}
-	division= {
-		name = "SS-Division Nordland"
-		location =6026
+		location = 6521
 		division_template = "Brandenburgers"
 		start_experience_factor = 1
 	}
 	division= {
 		name = "SS-Division Prinz Eugen"
-		location =6026
+		location = 6521
 		division_template = "Panzer-Division"
 		start_experience_factor = 1
 	}
 	division= {
 		name = "SS-Division Florian Geyer"
-		location =6026
+		location = 6521
 		division_template = "Panzer-Division"
 		start_experience_factor = 1
 	}
 	division= {
 		name = "SS-Division Hitlerjugend"
-		location =6026
-		division_template = "Panzer-Division"
-		start_experience_factor = 1
-	}
-	division= {
-		name = "SS-Division Frundsberg"
-		location =6026
+		location = 6521
 		division_template = "Panzer-Division"
 		start_experience_factor = 1
 	}
 }
+
+
 instant_effect = {
 	add_equipment_production = {
 		equipment = {
@@ -232,13 +285,32 @@ instant_effect = {
 	add_equipment_production = {
 		equipment = {
 			type = light_tank_chassis_2
+			version_name = "Panzer 38(t)"
 			creator = "GER"
-			version_name = "Panzer II"
 		}
-		
-		requested_factories = 2
+		requested_factories = 5
+		progress = 0.6
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = light_tank_aa_chassis_2
+			version_name = "FlakPz Luchs"
+			creator = "GER"
+		}
+		requested_factories = 1
 		progress = 0.4
-		efficiency = 50
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = light_tank_destroyer_chassis_2
+			version_name = "Marder III"
+			creator = "GER"
+		}
+		requested_factories = 1
+		progress = 0.4
+		efficiency = 100
 	}
 	add_equipment_production = {
 		equipment = {
@@ -251,19 +323,28 @@ instant_effect = {
 	}
 	add_equipment_production = {
 		equipment = {
-			type = small_plane_airframe_1
-			version_name="Bf 109 D"
+			type = train_equipment_1
 			creator = "GER"
 		}
 		requested_factories = 1
-		progress = 0.15
+		progress = 0.4
 		efficiency = 50
 	}
 	add_equipment_production = {
 		equipment = {
-			type = small_plane_cas_airframe_1
+			type = fighter_equipment_1
+			version_name = "Bf 109 A"
 			creator = "GER"
-			version_name = "Ju 87"
+		}
+		requested_factories = 5
+		progress = 0.4
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = CAS_equipment_1
+			version_name = "Ju 87 A"
+			creator = "GER"
 		}
 		requested_factories = 1
 		progress = 0.2
@@ -271,9 +352,9 @@ instant_effect = {
 	}
 	add_equipment_production = {
 		equipment = {
-			type = medium_plane_airframe_1
+			type = tac_bomber_equipment_1
 			creator = "GER"
-			version_name = "He 111"
+			version_name = "He 111 A"
 		}
 		requested_factories = 1
 		progress = 0.1

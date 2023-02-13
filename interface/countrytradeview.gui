@@ -568,12 +568,12 @@ guiTypes = {
 		buttonType ={
 			name ="resources_icon"
 			spriteType = "GFX_resources_strip"
-			position = { x= 13 y = 5 }
+			position = { x= 14 y = 5 }
 		}		
 		
 		instantTextboxType = {
 			name = "balance"
-			position = { x=17 y=8 }
+			position = { x=13 y=8 }
 			font = "hoi_20bs"
 			maxWidth = 57
 			maxHeight = 18

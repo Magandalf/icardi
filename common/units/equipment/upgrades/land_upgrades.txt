@@ -2,7 +2,7 @@ upgrades = {
  
 	tank_nsb_engine_upgrade = {
 		abbreviation = "eng"
-		max_level = 8 #each level represents ~50HP
+		max_level = 10 #each level represents ~50HP
 		cost = land
 
 		linear_cost = {
@@ -11,32 +11,31 @@ upgrades = {
 		}
 
 		level_requirements = {
-			1 = {
+			2 = {
 				has_tech = engine_tech_1
 			}
-			2 = {
+			4 = {
 				has_tech = engine_tech_2
 			}
-			4 = {
+			6 = {
 				has_tech = engine_tech_3
 			}
-			6 = { 
+			8 = { 
 				has_tech = engine_tech_4
 			}
 		}
 
-		#resource_cost_thresholds = {
-			#10 = { #higher level engines do require more strategic resources
-			#	steel = 10
-			#}
-		#}
+		resource_cost_thresholds = {
+			10 = { #higher level engines do require more strategic resources
+				steel = 1
+			}
+		}
 
-		maximum_speed = 0.14
-		reliability = -0.04
+		maximum_speed = 0.11
+		reliability = -0.02
 		add_stats = {
-			supply_consumption = 0.02
-			fuel_consumption = 0.06
-			build_cost_ic = 0.15
+			fuel_consumption = 0.05
+			build_cost_ic = 0.2
 		}
 	}
 
@@ -66,46 +65,66 @@ upgrades = {
 		}
 
 		resource_cost_thresholds = { # resource values defined here are TOTAL added cost, not cumulative
+			3 = { #more armor requires more resources
 		
-			1 = {
-				steel = 1
-			}
-			2 = {
-				steel = 2
-			}
-			3 = {
-				steel = 3
-			}
-			4 = {
-				steel = 4
 			}
 			5 = {
-				steel = 5
-			}
-			6 = {
-				steel = 6
-			}
-			7 = {
-				steel = 7
-			}
-			8 = {
-				steel = 8
-			}
-			9 = {
-				steel = 9
-			}
-			10 = {
-				steel = 10
+				steel = 1
 			}
 		}
 
-		maximum_speed = -0.05
+		maximum_speed = -0.08
 		reliability = -0.02
-		hardness = 0.025
 		add_stats = {
-			build_cost_ic = 0.1
+			build_cost_ic = 0.2
 			armor_value = 2.5
+			hardness = 0.02
+		}
+	}
 
+	mech_nsb_armor_upgrade = {
+		abbreviation = "mrm"
+		max_level = 10 #each level represents ~10mm of armor 
+		cost = land
+
+		linear_cost = {
+			cost_by_level = 5
+			cost_by_level_for_licensed_equipment = 2
+		}
+
+		level_requirements = {
+			2 = {
+				has_tech = armor_tech_1
+			}
+			4 = {
+				has_tech = armor_tech_2
+			}
+			6 = {
+				has_tech = armor_tech_3
+			}
+			8 = {
+				has_tech = armor_tech_4
+			}
+		}
+
+		resource_cost_thresholds = { # resource values defined here are TOTAL added cost, not cumulative
+			3 = { #more armor requires more resources
+		
+			}
+			4 = {
+				steel = 1
+			}
+			8 = {
+				steel = 1
+			}
+		}
+
+		maximum_speed = -0.06
+		reliability = -0.02
+		add_stats = {
+			build_cost_ic = 0.2
+			armor_value = 1
+			hardness = 0.02
 		}
 	}
 

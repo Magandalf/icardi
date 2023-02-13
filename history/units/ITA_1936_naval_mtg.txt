@@ -2,26 +2,25 @@
 units= {
 	fleet = {
 		name = "Comando Navale Ionio e Basso Adriatico"
-		naval_base =10743
+		naval_base =11837
 		task_force = {
 			name = "I Squadra Navale"
-			location =10743
-			ship = { name = "RN Caio Duilio" pride_of_the_fleet = yes definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = ITA version_name = "Andrea Doria Class"  } } }
-			ship = { name = "RN Andrea Doria" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = ITA version_name = "Andrea Doria Class"  } } }
-			ship = { name = "RN Battleship Roma" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = ITA version_name = "Andrea Doria Class"  } } }
-			ship = { name = "RN Regina Margherita" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = ITA version_name = "Andrea Doria Class"  } } }
-			ship = { name = "RN Dante Alighieri" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = ITA version_name = "Andrea Doria Class"  } } }
-			ship = { name = "RN Conte di Cavour" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = ITA version_name = "Andrea Doria Class"  } } }
+			location =11837
+			ship = { name = "RN Caio Duilio" pride_of_the_fleet = yes definition = battleship equipment = { ship_hull_heavy_2 = { amount = 1 owner = ITA version_name = "Littorio Class"  } } }
+			ship = { name = "RN Littorio" definition = battleship equipment = { ship_hull_heavy_2 = { amount = 1 owner = ITA version_name = "Littorio Class"  } } }
+			ship = { name = "RN Battleship Roma" definition = battleship equipment = { ship_hull_heavy_2 = { amount = 1 owner = ITA version_name = "Littorio Class"  } } }
+			ship = { name = "RN Regina Margherita" definition = battleship equipment = { ship_hull_heavy_2 = { amount = 1 owner = ITA version_name = "Littorio Class"  } } }
+			ship = { name = "RN Dante Alighieri" definition = battleship equipment = { ship_hull_heavy_2 = { amount = 1 owner = ITA version_name = "Littorio Class"  } } }
+			ship = { name = "RN Conte di Cavour" definition = battleship equipment = { ship_hull_heavy_2 = { amount = 1 owner = ITA version_name = "Littorio Class"  } } }
 			ship = { name = "RI Zara" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ITA version_name = "Bolzano Class" } } }
 			ship = { name = "RI Gorizia" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ITA version_name = "Bolzano Class" } } }
 			ship = { name = "RI Fiume" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ITA version_name = "Bolzano Class" } } }
-			ship = { name = "RI Luigi Cadorna" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ITA version_name = "Giussano Class" } } }
-			ship = { name = "RI Armando Diaz" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ITA version_name = "Giussano Class" } } }
-			ship = { name = "RI Alberico da Barbiano" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ITA version_name = "Giussano Class" } } }
-			ship = { name = "RI Alberto da Giussano" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ITA version_name = "Giussano Class" } } }
-			ship = { name = "RI San Giorgio" definition = heavy_cruiser equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = ITA version_name = "San Giorgio Class" } } }
-			ship = { name = "RI Taranto" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ITA version_name = "Giussano Class" } } }
-			ship = { name = "RI Bari" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ITA version_name = "Giussano Class" } } }
+			ship = { name = "RI Luigi Cadorna" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = ITA version_name = "Montecuccoli Class" } } }
+			ship = { name = "RI Armando Diaz" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = ITA version_name = "Montecuccoli Class" } } }
+			ship = { name = "RI Alberico da Barbiano" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = ITA version_name = "Montecuccoli Class" } } }
+			ship = { name = "RI Alberto da Giussano" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = ITA version_name = "Montecuccoli Class" } } }
+			ship = { name = "RI Taranto" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = ITA version_name = "Montecuccoli Class" } } }
+			ship = { name = "RI Bari" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = ITA version_name = "Montecuccoli Class" } } }
 			ship = { name = "RCT Carlo Mirabello" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Navigatori Class" } } }
 			ship = { name = "RCT Augusto Riboty" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Navigatori Class" } } }
 			ship = { name = "RCT Espero" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Navigatori Class" } } }
@@ -34,29 +33,29 @@ units= {
 			ship = { name = "RCT Giuseppe Missori" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Navigatori Class" } } }
 			ship = { name = "RCT Francesco Stocco" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Navigatori Class" } } }
 			ship = { name = "RCT Giuseppe Sirtori" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Navigatori Class" } } }
-			ship = { name = "RCT Dardo" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Maestrale Class" } } }
-			ship = { name = "RCT Freccia" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Maestrale Class" } } }
-			ship = { name = "RCT Saetta" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Maestrale Class" } } }
-			ship = { name = "RCT Strale" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Maestrale Class" } } }
+			ship = { name = "RCT Dardo" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = ITA version_name = "Maestrale Class" } } }
+			ship = { name = "RCT Freccia" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = ITA version_name = "Maestrale Class" } } }
+			ship = { name = "RCT Saetta" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = ITA version_name = "Maestrale Class" } } }
+			ship = { name = "RCT Strale" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = ITA version_name = "Maestrale Class" } } }
 			ship = { name = "RCT Angelo Bassini" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Navigatori Class" } } }
 			ship = { name = "RCT Enrico Cosenz" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Navigatori Class" } } }
 			ship = { name = "RCT Giacomo Medici" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Navigatori Class" } } }
 			ship = { name = "RCT Nicola Fabrizi" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Navigatori Class" } } }
-			ship = { name = "RCT Baleno" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Maestrale Class" } } }
-			ship = { name = "RCT Folgore" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Maestrale Class" } } }
-			ship = { name = "RCT Fulmine" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Maestrale Class" } } }
-			ship = { name = "RCT Lampo" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Maestrale Class" } } }
+			ship = { name = "RCT Baleno" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = ITA version_name = "Maestrale Class" } } }
+			ship = { name = "RCT Folgore" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = ITA version_name = "Maestrale Class" } } }
+			ship = { name = "RCT Fulmine" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = ITA version_name = "Maestrale Class" } } }
+			ship = { name = "RCT Lampo" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = ITA version_name = "Maestrale Class" } } }
 			ship = { name = "RCT Nicoloso da Recco" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Navigatori Class" } } }
 			ship = { name = "RCT Emanuele Pessagno" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Navigatori Class" } } }
 			ship = { name = "RCT Luca Tarigo" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Navigatori Class" } } }
 			ship = { name = "RCT Antoniotto Usodimare" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Navigatori Class" } } }
-			ship = { name = "RSmg Balilla" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ITA version_name = "Mameli Class" } } }
-			ship = { name = "RSmg Antonio Sciesa" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ITA version_name = "Mameli Class" } } }
-			ship = { name = "RSmg Enrico Toti" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ITA version_name = "Mameli Class" } } }
-			ship = { name = "RSmg Domenico Millelire" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ITA version_name = "Mameli Class" } } }
+			ship = { name = "RSmg Balilla" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = ITA version_name = "Mameli Class" } } }
+			ship = { name = "RSmg Antonio Sciesa" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = ITA version_name = "Mameli Class" } } }
+			ship = { name = "RSmg Enrico Toti" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = ITA version_name = "Mameli Class" } } }
+			ship = { name = "RSmg Domenico Millelire" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = ITA version_name = "Mameli Class" } } }
 			ship = { name = "RI Pola" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ITA version_name = "Bolzano Class" } } }
-			ship = { name = "RI Giovanni dalle Bande Nere" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ITA version_name = "Giussano Class" } } }
-			ship = { name = "RI Bartolomeo Colleoni" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ITA version_name = "Giussano Class" } } }
+			ship = { name = "RI Giovanni dalle Bande Nere" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = ITA version_name = "Montecuccoli Class" } } }
+			ship = { name = "RI Bartolomeo Colleoni" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = ITA version_name = "Montecuccoli Class" } } }
 			ship = { name = "RI Bolzano" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ITA version_name = "Bolzano Class" } } }
 			ship = { name = "RI Spaghet" definition = heavy_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = ITA version_name = "Spaghet" } } }
 			ship = { name = "RI Spaghet 2" definition = heavy_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = ITA version_name = "Spaghet" } } }
@@ -77,10 +76,10 @@ units= {
 			ship = { name = "RI Raimondo Montecuccoli 8" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = ITA version_name = "Montecuccoli Class" } } }
 			ship = { name = "RI Raimondo Montecuccoli 9 " definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = ITA version_name = "Montecuccoli Class" } } }
 			ship = { name = "RI Raimondo Montecuccoli 10" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = ITA version_name = "Montecuccoli Class" } } }
-			ship = { name = "RCT Maestrale" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Maestrale Class" } } }
-			ship = { name = "RCT Grecale" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Maestrale Class" } } }
-			ship = { name = "RCT Libeccio" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Maestrale Class" } } }
-			ship = { name = "RCT Scirocco" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Maestrale Class" } } }
+			ship = { name = "RCT Maestrale" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = ITA version_name = "Maestrale Class" } } }
+			ship = { name = "RCT Grecale" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = ITA version_name = "Maestrale Class" } } }
+			ship = { name = "RCT Libeccio" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = ITA version_name = "Maestrale Class" } } }
+			ship = { name = "RCT Scirocco" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = ITA version_name = "Maestrale Class" } } }
 			ship = { name = "RCT Antonio da Noli" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Navigatori Class" } } }
 			ship = { name = "RCT Ugolino Vivaldi" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Navigatori Class" } } }
 			ship = { name = "RCT Lanzerotto Malocello" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Navigatori Class" } } }
@@ -91,16 +90,16 @@ units= {
 			ship = { name = "RCT Nicolò Zeno" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Navigatori Class" } } }
 			ship = { name = "RSmg Pietro Calvi" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = ITA version_name = "Calvi Class" } } }
 			ship = { name = "RSmg Giuseppe Finzi" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = ITA version_name = "Calvi Class" } } }
-			ship = { name = "RSmg Ettore Fieramosca" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ITA version_name = "Bandiera Class" } } }
+			ship = { name = "RSmg Ettore Fieramosca" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = ITA version_name = "Bandiera Class" } } }
 			ship = { name = "RSmg Glauco" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = ITA version_name = "Sirena Class" } } }
 			ship = { name = "RSmg Otaria" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = ITA version_name = "Sirena Class" } } }
 			ship = { name = "RSmg Rubino" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = ITA version_name = "Sirena Class" } } }
 			ship = { name = "RSmg Ondina" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = ITA version_name = "Sirena Class" } } }
-			ship = { name = "RSmg H 1" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ITA version_name = "Mameli Class" } } }
-			ship = { name = "RSmg H 2" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ITA version_name = "Mameli Class" } } }
-			ship = { name = "RSmg H 4" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ITA version_name = "Mameli Class" } } }
-			ship = { name = "RSmg H 6" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ITA version_name = "Mameli Class" } } }
-			ship = { name = "RSmg H 8" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ITA version_name = "Mameli Class" } } }
+			ship = { name = "RSmg H 1" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = ITA version_name = "Mameli Class" } } }
+			ship = { name = "RSmg H 2" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = ITA version_name = "Mameli Class" } } }
+			ship = { name = "RSmg H 4" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = ITA version_name = "Mameli Class" } } }
+			ship = { name = "RSmg H 6" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = ITA version_name = "Mameli Class" } } }
+			ship = { name = "RSmg H 8" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = ITA version_name = "Mameli Class" } } }
 			ship = { name = "RCT Generale Marcello Prestinari" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Navigatori Class" } } }
 			ship = { name = "RCT Generale Antonio Cantore" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Navigatori Class" } } }
 			ship = { name = "RCT Giuseppe La Masa" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Navigatori Class" } } }
@@ -134,22 +133,22 @@ units= {
 			ship = { name = "RCT Simone Schiaffino" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Navigatori Class" } } }
 			ship = { name = "RCT Giuseppe Dezza" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Navigatori Class" } } }
 			ship = { name = "RCT Giuseppe Cesare Abba" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Navigatori Class" } } }
-			ship = { name = "RSmg Vettor Pisani" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ITA version_name = "Mameli Class" } } }
-			ship = { name = "RSmg Giovanni Bausan" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ITA version_name = "Mameli Class" } } }
-			ship = { name = "RSmg Marcantonio Colonna" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ITA version_name = "Mameli Class" } } }
-			ship = { name = "RSmg Des Geneys" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ITA version_name = "Mameli Class" } } }
-			ship = { name = "RSmg Fratelli Bandiera" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ITA version_name = "Bandiera Class" } } }
-			ship = { name = "RSmg Luciano Manara" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ITA version_name = "Bandiera Class" } } }
-			ship = { name = "RSmg Ciro Menotti" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ITA version_name = "Bandiera Class" } } }
-			ship = { name = "RSmg Santorre Santarosa" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ITA version_name = "Bandiera Class" } } }
-			ship = { name = "RSmg Goffredo Mameli" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ITA version_name = "Mameli Class" } } }
-			ship = { name = "RSmg Pier Capponi" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ITA version_name = "Mameli Class" } } }
-			ship = { name = "RSmg Tito Speri" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ITA version_name = "Mameli Class" } } }
-			ship = { name = "RSmg Giovanni da Procida" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ITA version_name = "Mameli Class" } } }
+			ship = { name = "RSmg Vettor Pisani" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = ITA version_name = "Mameli Class" } } }
+			ship = { name = "RSmg Giovanni Bausan" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = ITA version_name = "Mameli Class" } } }
+			ship = { name = "RSmg Marcantonio Colonna" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = ITA version_name = "Mameli Class" } } }
+			ship = { name = "RSmg Des Geneys" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = ITA version_name = "Mameli Class" } } }
+			ship = { name = "RSmg Fratelli Bandiera" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = ITA version_name = "Bandiera Class" } } }
+			ship = { name = "RSmg Luciano Manara" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = ITA version_name = "Bandiera Class" } } }
+			ship = { name = "RSmg Ciro Menotti" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = ITA version_name = "Bandiera Class" } } }
+			ship = { name = "RSmg Santorre Santarosa" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = ITA version_name = "Bandiera Class" } } }
+			ship = { name = "RSmg Goffredo Mameli" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = ITA version_name = "Mameli Class" } } }
+			ship = { name = "RSmg Pier Capponi" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = ITA version_name = "Mameli Class" } } }
+			ship = { name = "RSmg Tito Speri" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = ITA version_name = "Mameli Class" } } }
+			ship = { name = "RSmg Giovanni da Procida" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = ITA version_name = "Mameli Class" } } }
 			ship = { name = "RCT Francesco Crispi" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Navigatori Class" } } }
 			ship = { name = "RCT Quintino Sella" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Navigatori Class" } } }
-			ship = { name = "RCT Astore" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Maestrale Class" } } }
-			ship = { name = "RCT Spica" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Maestrale Class" } } }
+			ship = { name = "RCT Astore" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = ITA version_name = "Maestrale Class" } } }
+			ship = { name = "RCT Spica" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = ITA version_name = "Maestrale Class" } } }
 			ship = { name = "RSmg Sirena" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = ITA version_name = "Sirena Class" } } }
 			ship = { name = "RSmg Argonauta" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = ITA version_name = "Sirena Class" } } }
 			ship = { name = "RSmg Fisalia" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = ITA version_name = "Sirena Class" } } }
@@ -159,10 +158,10 @@ units= {
 			ship = { name = "RCT Euro" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Navigatori Class" } } }
 			ship = { name = "RCT Nembo" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Navigatori Class" } } }
 			ship = { name = "RCT Turbine" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Navigatori Class" } } }
-			ship = { name = "RSmg Delfino" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ITA version_name = "Bandiera Class" } } }
-			ship = { name = "RSmg Narvalo" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ITA version_name = "Bandiera Class" } } }
-			ship = { name = "RSmg Squalo" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ITA version_name = "Bandiera Class" } } }
-			ship = { name = "RSmg Tricheco" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ITA version_name = "Bandiera Class" } } }
+			ship = { name = "RSmg Delfino" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = ITA version_name = "Bandiera Class" } } }
+			ship = { name = "RSmg Narvalo" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = ITA version_name = "Bandiera Class" } } }
+			ship = { name = "RSmg Squalo" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = ITA version_name = "Bandiera Class" } } }
+			ship = { name = "RSmg Tricheco" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = ITA version_name = "Bandiera Class" } } }
 			ship = { name = "RCT Francesco Nullo" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Navigatori Class" } } }
 			ship = { name = "RCT Nazario Sauro" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Navigatori Class" } } }
 			ship = { name = "RCT Cesare Battisti" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Navigatori Class" } } }
@@ -172,8 +171,8 @@ units= {
 			ship = { name = "RCT Tigre" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Navigatori Class" } } }
 			ship = { name = "RCT Giovanni Acerbi" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Navigatori Class" } } }
 			ship = { name = "RCT Vincenzo Giordano Orsini" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Navigatori Class" } } }
-			ship = { name = "RSmg Luigi Settembrini" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ITA version_name = "Bandiera Class" } } }
-			ship = { name = "RSmg Ruggiero Settimo" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ITA version_name = "Bandiera Class" } } }
+			ship = { name = "RSmg Luigi Settembrini" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = ITA version_name = "Bandiera Class" } } }
+			ship = { name = "RSmg Ruggiero Settimo" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = ITA version_name = "Bandiera Class" } } }
 			ship = { name = "RSmg Salpa" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = ITA version_name = "Sirena Class" } } }
 			ship = { name = "RSmg Serpente " definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = ITA version_name = "Sirena Class" } } }
 		}
@@ -232,37 +231,6 @@ instant_effect = {
 			}
 			requested_factories = 20
 			progress = 0.45
-			amount = 1
-		}
-		add_equipment_production = {
-			equipment = {
-				type = ship_hull_light_1
-				creator = "ITA"
-				version_name = "Maestrale Class"
-			}
-			requested_factories = 20
-			progress = 0.70
-			amount = 1
-		}
-		add_equipment_production = {
-			equipment = {
-				type = ship_hull_light_1
-				creator = "ITA"
-				version_name = "Maestrale Class"
-			}
-			requested_factories = 20
-			progress = 0.60
-			amount = 1
-		}
-		add_equipment_production = {
-			equipment = {
-				type = ship_hull_submarine_2
-				creator = "ITA"
-				version_name = "Calvi Class"
-			}
-			name = "RSmg Enrico Tazzoli"
-			requested_factories = 20
-			progress = 0.50
 			amount = 1
 		}
 	}

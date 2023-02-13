@@ -19,7 +19,7 @@ country_event = {
 					id =1434
 					picture = "Portrait_Spain_Francisco_Franco.dds"
 					traits = {  panzer_leader infantry_leader panzer_expert trickster expert_improviser trait_engineer organizer}
-					skill = 7
+					skill = 6
 					attack_skill = 6
 					defense_skill = 3
 					planning_skill = 3
@@ -28,12 +28,10 @@ country_event = {
 				add_threat = 3
 				GER = {
 					army_experience = 250
-					#air_experience = 250
-				}
+					air_experience = 250}
 				JAP = {
 					army_experience = 100
-					air_experience = 300
-					}
+					air_experience = 100}
 				SOV = {
 					army_experience = 250
 					air_experience = 250}
@@ -41,9 +39,6 @@ country_event = {
 					army_experience = 100
 				}
 				HUN = {
-					army_experience = 100
-				}
-				MAN = {
 					army_experience = 100
 				}
 				set_global_flag = spanish_civil_war
@@ -86,7 +81,7 @@ country_event = {
 	option = {
 		ai_chance = { factor = 1 }
 		name = spain.8.a
-		set_capital = { state = 41 }
+		set_capital = {state = 41 }
 	}
 }
 country_event = {

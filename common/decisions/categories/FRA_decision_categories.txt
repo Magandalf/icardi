@@ -56,4 +56,4 @@ FRA_move_capital = {
 	allowed = {
 		original_tag = FRA
 	}
-
+}

@@ -17,17 +17,16 @@ division_template = {
 		infantry = { x = 2 y = 1 }
 		infantry = { x = 2 y = 2 }
 		artillery_brigade = { x = 2 y = 3 }
+		artillery_brigade = { x = 2 y = 4 }
 		infantry = { x = 3 y = 0 }
 		infantry = { x = 3 y = 1 }
-		infantry = { x = 3 y = 2 }
-		artillery_brigade = { x = 3 y = 3 }
-		artillery_brigade = { x = 3 y = 4 }
-		artillery_brigade = { x = 2 y = 4 }
+		anti_air_brigade = { x = 3 y = 2 }
+		anti_tank_brigade = { x = 3 y = 3}
 	}
 	support = {
-		artillery = { x = 0 y = 0 }
-		engineer = { x = 0 y = 1 }
-		recon = { x = 0 y = 2 }
+		engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+		artillery = { x = 0 y = 2 }
 		anti_air = { x = 0 y = 3 }
 	}
 }
@@ -65,17 +64,17 @@ division_template = {
 		mountaineers = { x = 2 y = 1 }
 		mountaineers = { x = 2 y = 2 }
 		artillery_brigade = { x = 2 y = 3 }
+		artillery_brigade = { x = 2 y = 4 }
 		mountaineers = { x = 3 y = 0 }
 		mountaineers = { x = 3 y = 1 }
-		mountaineers = { x = 3 y = 2 }
-		artillery_brigade = { x = 3 y = 3 }
-		artillery_brigade = { x = 3 y = 4 }
-		artillery_brigade = { x = 2 y = 4 }
+		anti_air_brigade = { x = 3 y = 2 }
+		anti_tank_brigade = { x = 3 y = 3}
 	}
 	support = {
 		engineer = { x = 0 y = 0 }
-		artillery = { x = 0 y = 1 }
-		recon = { x = 0 y = 2 }
+		recon = { x = 0 y = 1 }
+		artillery = { x = 0 y = 2 }
+		anti_air = { x = 0 y = 3 }
 	}
 }
 division_template = {
@@ -109,13 +108,121 @@ division_template = {
 		artillery = { x = 0 y = 2 }
 	}
 }
+
+division_template = {
+	name = "Royal Desert Corps"
+	division_names_group = ENG_INF_01
+	regiments = {
+		desertinfantry = { x = 0 y = 0 }
+		desertinfantry = { x = 0 y = 1 }
+		desertinfantry = { x = 0 y = 2 }
+		desertinfantry = { x = 0 y = 3 }
+		artillery_brigade = { x = 0 y = 4 }
+		desertinfantry = { x = 1 y = 0 }
+		desertinfantry = { x = 1 y = 1 }
+		desertinfantry = { x = 1 y = 2 }
+		desertinfantry = { x = 1 y = 3 }
+		artillery_brigade = { x = 1 y = 4 }
+		desertinfantry = { x = 2 y = 0 }
+		desertinfantry = { x = 2 y = 1 }
+		desertinfantry = { x = 2 y = 2 }
+		artillery_brigade = { x = 2 y = 3 }
+		artillery_brigade = { x = 2 y = 4 }
+		desertinfantry = { x = 3 y = 0 }
+		desertinfantry = { x = 3 y = 1 }
+		anti_air_brigade = { x = 3 y = 2 }
+		anti_tank_brigade = { x = 3 y = 3 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+		armored_car_recon = { x = 0 y = 2 }
+		anti_air = { x = 0 y = 3 }
+	}
+}
+
+division_template = {
+	name = "Paratroopers"
+	division_names_group = FRA_INF_01
+	regiments = {
+		paratrooper = { x = 0 y = 0 }
+		paratrooper = { x = 0 y = 1 }
+		paratrooper = { x = 0 y = 2 }
+		paratrooper = { x = 0 y = 3 }
+		paratrooper = { x = 0 y = 4 }
+		paratrooper = { x = 1 y = 0 }
+		paratrooper = { x = 1 y = 1 }
+		paratrooper = { x = 1 y = 2 }
+		paratrooper = { x = 1 y = 3 }
+		paratrooper = { x = 1 y = 4 }
+		paratrooper = { x = 2 y = 0 }
+		paratrooper = { x = 2 y = 1 }
+		paratrooper = { x = 2 y = 2 }
+		paratrooper = { x = 2 y = 3 }
+		paratrooper = { x = 2 y = 4 }
+		paratrooper = { x = 3 y = 0 }
+		paratrooper = { x = 3 y = 1 }
+		paratrooper = { x = 3 y = 2 }
+		paratrooper = { x = 3 y = 3 }
+		paratrooper = { x = 3 y = 4 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+		artillery = { x = 0 y = 2 }
+		anti_air = { x = 0 y = 3 }
+	}
+	priority = 0
+}
+
+division_template = {
+	name = "Shocktroopers"
+	division_names_group = FRA_INF_01
+	regiments = {
+		shocktroop = { x = 0 y = 0 }
+		shocktroop = { x = 0 y = 1 }
+		shocktroop = { x = 0 y = 2 }
+		shocktroop = { x = 0 y = 3 }
+		artillery_brigade = { x = 0 y = 4 }
+		shocktroop = { x = 1 y = 0 }
+		shocktroop = { x = 1 y = 1 }
+		shocktroop = { x = 1 y = 2 }
+		artillery_brigade = { x = 1 y = 3 }
+		artillery_brigade = { x = 1 y = 4 }
+		shocktroop = { x = 2 y = 0 }
+		shocktroop = { x = 2 y = 1 }
+		shocktroop = { x = 2 y = 2 }
+		artillery_brigade = { x = 2 y = 3 }
+		anti_air_brigade = { x = 2 y = 4 }
+		shocktroop = { x = 3 y = 0 }
+		shocktroop = { x = 3 y = 1 }
+		shocktroop = { x = 3 y = 2 }
+		anti_tank_brigade = { x = 3 y = 3 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+		artillery = { x = 0 y = 2 }
+		anti_air = { x = 0 y = 3 }
+	}
+}
+
 units = {
 	division= {
-		name = "This is here so you can look at your generals"
-		location =10434
-		division_template = "Division d'Infanterie"
+		name = "Division Légère Mécanique 1"
+		location =11506
+		division_template = "Division Légère Mécanique"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.01
+		start_equipment_factor = 1
+	}
+}
+units = {
+	division= {
+		name = "Division Légère Mécanique 2"
+		location =11506
+		division_template = "Division Légère Mécanique"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
 	}
 }
 instant_effect = {
@@ -148,8 +255,37 @@ instant_effect = {
 	}
 	add_equipment_production = {
 		equipment = {
-			type = light_tank_chassis_2
-			version_name = "FCM 36"
+		type = light_tank_chassis_2
+		version_name = "FCM 36"
+		creator = "FRA"
+		}
+		requested_factories = 3
+		progress = 0.6
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+		type = light_tank_aa_chassis_2
+		version_name = "Light Tank SPAA"
+		creator = "FRA"
+		}
+		requested_factories = 1
+		progress = 0.4
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+		type = light_tank_destroyer_chassis_2
+		version_name = "Light Tank Destroyer"
+		creator = "FRA"
+		}
+		requested_factories = 1
+		progress = 0.4
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = train_equipment_1
 			creator = "FRA"
 		}
 		requested_factories = 1
@@ -174,4 +310,4 @@ instant_effect = {
 		progress = 0.3
 		efficiency = 50
 	}
-
+}

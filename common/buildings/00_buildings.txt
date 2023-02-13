@@ -6,21 +6,19 @@ buildings = {
 
 
 	infrastructure = {
-		base_cost = 4000
-		per_level_extra_cost = 100
+		base_cost = 3000
 		icon_frame = 3
 		infrastructure = yes
 		max_level = 10
 		value = 1
-		infrastructure_construction_effect = yes
+
 		show_modifier = yes
-		max_fuel_building = 0.3 #k
+		max_fuel_building = 1.5 #k
 	}
 
 	arms_factory = {
-		damage_factor = 1.5
 		show_on_map = 6
-		base_cost = 7200
+		base_cost = 7600
 		base_cost_conversion = 4400
 		military_production = 1
 		icon_frame = 2
@@ -31,7 +29,6 @@ buildings = {
 	}
 
 	industrial_complex = {
-		damage_factor = 1.5
 		show_on_map = 6
 		base_cost = 10800
 		base_cost_conversion = 9900
@@ -44,24 +41,21 @@ buildings = {
 	}
 
 	air_base = {
-		damage_factor = 0.05
 		show_on_map = 1
-		base_cost = 1000
+		base_cost = 700
 		icon_frame = 5
 		air_base = yes
 		max_level = 20
-		infrastructure_construction_effect = yes
 		value = 1
-		damage_factor = 0.3
+		damage_factor = 0.5
 		allied_build = yes
 	}
 
 	supply_node = {
 		show_on_map = 1
-		base_cost = 9000
+		base_cost = 7500
 		provincial = yes
 		disabled_in_dmz = yes
-		infrastructure_construction_effect = yes
 		icon_frame = 15
 		max_level = 1
 		centered = yes
@@ -73,26 +67,22 @@ buildings = {
 	}	
 	
 	rail_way = {
-		base_cost = 300 #higher cost to balance out cheaper supply nodes
-		per_level_extra_cost = -25
+		base_cost = 200 #higher cost to balance out cheaper supply nodes
 		provincial = yes
-		infrastructure_construction_effect = yes
 		disabled_in_dmz = yes
 		icon_frame = 16
 		max_level = 1
-		damage_factor = 0.1
+		damage_factor = 0.2
 		allied_build = yes
 	}
 	
 	naval_base = {
-		damage_factor = 0.05
 		show_on_map = 1
 		show_on_map_meshes = 3
 		always_shown = yes
-		base_cost = 10000
+		base_cost = 6000
 		provincial = yes
 		only_costal = yes
-		infrastructure_construction_effect = yes
 		is_port = yes
 		icon_frame = 6
 		max_level = 20
@@ -103,8 +93,8 @@ buildings = {
 	bunker = {
 		show_on_map = 1
 		has_destroyed_mesh = yes
-		base_cost = 1000
-		#per_level_extra_cost = 500
+		base_cost = 500
+		per_level_extra_cost = 500
 		provincial = yes
 		disabled_in_dmz = yes
 		icon_frame = 7
@@ -117,8 +107,8 @@ buildings = {
 	coastal_bunker = {
 		show_on_map = 1
 		has_destroyed_mesh = yes
-		base_cost = 1000
-		#per_level_extra_cost = 500
+		base_cost = 500
+		per_level_extra_cost = 500
 		provincial = yes
 		disabled_in_dmz = yes
 		only_costal = yes
@@ -147,11 +137,12 @@ buildings = {
 	anti_air_building = {
 		show_on_map = 3
 		base_cost = 750
+		per_level_extra_cost = 500
 		icon_frame = 9
 		anti_air = yes
 		disabled_in_dmz = yes
 		air_defence = 1
-		max_level = 10 # This is the max unlock level
+		max_level = 5 # This is the max unlock level
 		damage_factor = 0.1
 		value = 1
 		allied_build = yes
@@ -162,15 +153,15 @@ buildings = {
 		base_cost = 14000
 		icon_frame = 10
 		#local_resources_oil = 1 # May use local_resources_ + any resource name
-		local_resources_rubber = 10 # May use local_resources_ + any resource name
+		local_resources_rubber = 1 # May use local_resources_ + any resource name
 		refinery = yes
 		max_level = 3 # This is the max unlock level
 		shares_slots = no
 		value = 5
 		infrastructure_construction_effect = yes
-		damage_factor = 0.05
+		
 		show_modifier = yes
-		fuel_gain_from_states = 6.5 #per hour
+		fuel_gain_from_states = 2.0 #per hour
 	}
 
 	fuel_silo = {
@@ -185,13 +176,12 @@ buildings = {
 		allied_build = yes
 		
 		show_modifier = yes
-		max_fuel_building = 100.0 #k
+		max_fuel_building = 50.0 #k
 	}
 
 	radar_station = {
 		show_on_map = 1
 		base_cost = 1000
-		per_level_extra_cost = 500
 		icon_frame = 11
 		radar = yes
 		#max_level = 0 # max: 5
@@ -209,7 +199,7 @@ buildings = {
 		rocket_production = 5
 		rocket_launch_capacity = 1
 		max_level = 5
-		shares_slots = no
+		shares_slots = yes
 		value = 1
 		allied_build = yes
 		infrastructure_construction_effect = yes
@@ -219,10 +209,10 @@ buildings = {
 		show_on_map = 1
 		base_cost = 30000
 		icon_frame = 13
-		nuclear_reactor = no
+		nuclear_reactor = yes
 		nuclear_production_factor = 1
 		max_level = 1 # This is the max unlock level
-		shares_slots = no
+		shares_slots = yes
 		value = 10
 		infrastructure_construction_effect = yes
 	}

@@ -44,7 +44,7 @@ country_event = {
 			add_resource = {
 				type = rubber
 				amount = 30
-				state = 469
+				state = 543
 			}
 		}
 		if = {
@@ -81,9 +81,12 @@ country_event = {
 		ai_chance = {
 			factor = 80
 		}
-		FRA = { transfer_state = 478 }
-		FRA = { transfer_state = 599 }
-		FRA = { transfer_state = 596 }
+		FRA = { transfer_state = 799 }
+		FRA = { transfer_state = 677 }
+		FRA = { transfer_state = 680 }
+		FRA = { transfer_state = 554 }
+		FRA = { transfer_state = 553 }
+
 	}
 }
 country_event = {
@@ -110,15 +113,16 @@ country_event = {
 		ai_chance = {
 			factor = 80
 		}
-		FRA = { transfer_state = 690 }
-		FRA = { transfer_state = 691 }
-		FRA = { transfer_state = 695 }
-		FRA = { transfer_state = 692 }
-		FRA = { transfer_state = 480 }
-		FRA = { transfer_state = 693 }
-		FRA = { transfer_state = 694 }
-		FRA = { transfer_state = 264 }
-		FRA = { transfer_state = 481 }
+		FRA = { transfer_state = 781 }
+		FRA = { transfer_state = 776 }
+		FRA = { transfer_state = 777 }
+		FRA = { transfer_state = 778 }
+		FRA = { transfer_state = 556 }
+		FRA = { transfer_state = 779 }
+		FRA = { transfer_state = 298 }
+		FRA = { transfer_state = 780 }
+		FRA = { transfer_state = 272 }
+		FRA = { transfer_state = 557 }
 	}
 }
 country_event = {
@@ -145,7 +149,7 @@ country_event = {
 		ai_chance = {
 			factor = 80
 		}
-		FRA = { transfer_state = 469 }
+		FRA = { transfer_state = 543 }
 	}
 }
 

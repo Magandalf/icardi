@@ -23,7 +23,6 @@ weather_rain_heavy = { # on Region
 	naval_strike = -0.2
 	air_accidents = 0.3
 	air_bombing_targetting = -0.5
-	local_org_regain = -0.1
 	air_mission_efficiency = -0.3
 	naval_retreat_speed = 0.1
 	positioning = -0.2
@@ -35,7 +34,6 @@ weather_snow = { # on Region
 	naval_speed_factor = -0.05
 	naval_strike = -0.3
 	air_accidents = 0.1
-	local_org_regain = -0.1
 	air_mission_efficiency = -0.2
 	naval_retreat_speed = 0.05
 	positioning = -0.2
@@ -59,7 +57,7 @@ weather_sandstorm = { # on Region
 	air_accidents = 0.6
 	naval_strike = -0.9
 	air_bombing_targetting = -1
-	local_org_regain = -0.5
+	local_org_regain = -0.2
 	air_mission_efficiency = -0.5
 }
 
@@ -70,19 +68,18 @@ weather_arctic_water = { # on Region
 }
 
 weather_mud = { # on Province
-	attrition = 0.5
-	army_speed_factor = -0.5
-	army_attack_factor = -0.1
+	attrition = 0.20
+	army_speed_factor = -0.3
 }
 weather_extreme_cold = { # on Province
-	winter_attrition = 0.5
-	dig_in_speed_factor = -0.6
+	winter_attrition = 0.3
+	dig_in_speed_factor = -0.5
 	local_org_regain = -0.05
 
 }
 weather_very_cold = { # on Province
-	winter_attrition = 0.3
-	dig_in_speed_factor = -0.3
+	winter_attrition = 0.2
+	dig_in_speed_factor = -0.1
 
 }
 weather_very_hot = { # on Province
@@ -96,18 +93,18 @@ dont_take_gibraltar = { # on Province
 weather_extreme_hot = { # on Province
 	heat_attrition = 0.2
 	local_org_regain = -0.1
-	supply_consumption_factor = 0.5
-	army_attack_factor = -0.1
+	supply_consumption_factor = 0.1
+	army_attack_factor = -0.05
 }
 weather_ground_snow_medium = { # on Province
-	army_attack_factor = -0.35
-	army_speed_factor = -0.2
-	winter_attrition = 0.4
+	army_attack_factor = -0.2
+	army_speed_factor = -0.125
+	winter_attrition = 0.1
 }
 weather_ground_snow_high = { # on Province
-	army_speed_factor = -0.45
-	army_attack_factor = -0.5
-	winter_attrition = 0.6
+	army_speed_factor = -0.15
+	army_attack_factor = -0.3
+	winter_attrition = 0.2
 }
 
 flooded = { # on Province
@@ -124,12 +121,11 @@ unplanned_offensive = { # on Province
 
 soviet_hero_city = { # on Province
 	local_org_regain = 1
-	dig_in_speed_factor = 0.2
-	pocket_penalty = -0.30
+	dig_in_speed_factor = 0.25
 }
 paris_city = { # on Province
 	local_org_regain = -0.6
-	breakthrough_factor = 0.5
+	breakthrough_factor = 0.4
 }
 german_OWK_plan = { # on Province
 	army_attack_factor = 0.05
@@ -198,8 +194,6 @@ ROM_license_german_equipment = {
 
 	license_purchase_cost = 0 #base cost reduction
 	ai_license_acceptance = 20 #more to AI acceptance value.
-	license_production_speed = 0.25 #speed  increase for being a license
-	license_armor_purchase_cost = -0.75
 	license_tech_difference_speed = 0.25 #less cost increase for each tech level between the license and own tech level
 }
 
@@ -280,42 +274,6 @@ ROM_oil_agreement = {
 	}
 
 	trade_cost_for_target_factor=-0.8}
-DOM_trade_1 = {
-	valid_relation_trigger = {
-		FROM = {
-			NOT = { has_war_with = ROOT }
-		}
-	}
-	extra_trade_to_target_factor = 0.25}
-DOM_trade_2 = {
-	valid_relation_trigger = {
-		FROM = {
-			NOT = { has_war_with = ROOT }
-		}
-	}
-	trade_cost_for_target_factor=-0.2}
-Axis_trade = {
-	valid_relation_trigger = {
-		FROM = {
-			NOT = { has_war_with = ROOT }
-		}
-	}
-	extra_trade_to_target_factor = 1
-}
-COL_trade_1 = {
-	valid_relation_trigger = {
-		FROM = {
-			NOT = { has_war_with = ROOT }
-		}
-	}
-	extra_trade_to_target_factor = 0.5}
-COL_trade_2 = {
-	valid_relation_trigger = {
-		FROM = {
-			NOT = { has_war_with = ROOT }
-		}
-	}
-	trade_cost_for_target_factor=-0.5}
 Stahlpakt = {
 	valid_relation_trigger = {
 		FROM = {
@@ -387,9 +345,7 @@ attache_sent = {
 	experience_gain_army = 0.2
 
 }
-war_support_during_war = { #Applied during war, scaled from 0-100% with war support, not split.
-	stability_factor = -0.3
-}
+
 # Difficulty modifiers
 
 diff_very_easy_player = {
@@ -491,6 +447,9 @@ water_modifier_shark_infested = {
 screening_bonus = {
 	naval_retreat_speed = 0.2
 	naval_hit_chance = 0.4
+}
+JAP_burma = {
+	max_dig_in = 10
 }
 
 capital_screening_bonus = {

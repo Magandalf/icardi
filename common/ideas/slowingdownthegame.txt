@@ -9,33 +9,44 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
-			equipment_bonus = {
-				small_plane_airframe = {
+			equipment_bonus = {CAS_equipment = {
 					instant = yes
-					build_cost_ic = 0.4
+					air_ground_attack = -0.33
 				}
-				small_plane_cas_airframe = {
+				armor = {
 					instant = yes
-					build_cost_ic = 0.4
+					soft_attack = -0.33
+					hard_attack = -0.33
+					breakthrough = -0.33
+					defense = -0.33
+					maximum_speed = -0.38
 				}
-				small_plane_naval_bomber_airframe = {
+				mechanized = {
 					instant = yes
-					build_cost_ic = 0.4
+					soft_attack = -0.33
+					hard_attack = -0.33
+					breakthrough = -0.33
+					defense = -0.33
+					maximum_speed = -0.38
 				}
-				medium_plane_airframe = {
+				motorized = {
 					instant = yes
-					build_cost_ic = 0.3
+					soft_attack = -0.33
+					hard_attack = -0.33
+					breakthrough = -0.33
+					defense = -0.33
+					maximum_speed = -0.38
 				}
-				medium_plane_fighter_airframe = {
+				infantry = {
 					instant = yes
-					build_cost_ic = 0.3
-				}
-				large_plane_airframe = {
-					instant = yes
-					build_cost_ic = 0.4
+					soft_attack = -0.33
+					hard_attack = -0.33
+					breakthrough = -0.33
+					defense = -0.33
+					maximum_speed = -0.38
+					}
 				}
 			}
-		}
 	speed3_africa={
 			picture = generic_infantry_bonus
 			allowed = {
@@ -47,99 +58,54 @@ ideas = {
 			}
 			modifier = {
 				air_attack_factor =-0.5
-			
 			}
 			equipment_bonus = {
-				medium_plane_airframe = {
+				CAS_equipment = {
 					instant = yes
-					air_defence = -0.5
+					air_ground_attack = -0.33
 				}
-				large_plane_airframe = {
+				tac_bomber_equipment = {
 					instant = yes
-					air_defence = -0.5
+					air_defence = -0.4
+				}
+				strat_bomber_equipment = {
+					instant = yes
+					air_defence = -0.4
+				}
+				armor = {
+					instant = yes
+					soft_attack = -0.33
+					hard_attack = -0.33
+					breakthrough = -0.33
+					defense = -0.33
+					maximum_speed = -0.38
+				}
+				mechanized = {
+					instant = yes
+					soft_attack = -0.33
+					hard_attack = -0.33
+					breakthrough = -0.33
+					defense = -0.33
+					maximum_speed = -0.38
+				}
+				motorized = {
+					instant = yes
+					soft_attack = -0.33
+					hard_attack = -0.33
+					breakthrough = -0.33
+					defense = -0.33
+					maximum_speed = -0.38
+				}
+				infantry = {
+					instant = yes
+					soft_attack = -0.33
+					hard_attack = -0.33
+					breakthrough = -0.33
+					defense = -0.33
+					maximum_speed = -0.38
+					}
 				}
 			}
-		}
-	railwaygun_1 = {
-		removal_cost = -1
-			picture = generic_build_infrastructure
-			allowed = {
-				always = no
-			}
-			allowed_civil_war = {
-				always = yes
-			}
-			
-			equipment_bonus = {
-				railway_gun_equipment = {
-					build_cost_ic = 0.47  instant = yes
-				}
-			}
-		}
-	railwaygun_2 = {
-		removal_cost = -1
-			picture = generic_build_infrastructure
-			allowed = {
-				always = no
-			}
-			allowed_civil_war = {
-				always = yes
-			}
-			
-			equipment_bonus = {
-				railway_gun_equipment = {
-					build_cost_ic = 0.91  instant = yes
-				}
-			}
-		}
-	railwaygun_3 = {
-		removal_cost = -1
-			picture = generic_build_infrastructure
-			allowed = {
-				always = no
-			}
-			allowed_civil_war = {
-				always = yes
-			}
-			
-			equipment_bonus = {
-				railway_gun_equipment = {
-					build_cost_ic = 1.35  instant = yes
-				}
-			}
-		}
-	railwaygun_4 = {
-		removal_cost = -1
-			picture = generic_build_infrastructure
-			allowed = {
-				always = no
-			}
-			allowed_civil_war = {
-				always = yes
-			}
-			
-			equipment_bonus = {
-				railway_gun_equipment = {
-					build_cost_ic = 1.78  instant = yes
-				}
-			}
-		}
-	railwaygun_5 = {
-		removal_cost = -1
-			picture = generic_build_infrastructure
-			allowed = {
-				always = no
-			}
-			allowed_civil_war = {
-				always = yes
-			}
-			
-			equipment_bonus = {
-				railway_gun_equipment = {
-					build_cost_ic = 2.2  instant = yes
-				}
-			}
-		}	
 	}
-
 }
+

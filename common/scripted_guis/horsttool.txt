@@ -67,44 +67,16 @@ scripted_gui = {
 						if={limit={check_variable={Root.selected_cheat=1}} add_tech_bonus={name=armor_bonus bonus=1 uses=1 category=armor}}
 						if={limit={check_variable={Root.selected_cheat=2}}
 							#add_tech_bonus={name=armor_bonus bonus=200 uses=1 category=armor}
-							every_state={
-								limit={infrastructure>9}
-								set_building_level = {
-    									type = infrastructure
-   									level = 8
-    									instant_build = yes
+							if={
+								limit={ROOT={has_idea=speed3}
 								}
-								set_building_level = {
-    									type = infrastructure
-   									level = 8
-    									instant_build = yes
+								every_country={
+									remove_ideas=speed3
 								}
 							}
-							every_state={
-								limit={impassable=yes}
-								set_building_level = {
-    									type = radar_station
-   									level = 0
-    									instant_build = yes
-								}
-								set_building_level = {
-    									type = anti_air_building
-   									level = 0
-    									instant_build = yes
-								}
-								set_building_level = {
-    									type = air_base
-   									level = 0
-    									instant_build = yes
-								}
-		
-								set_building_level = {
-    									type = naval_base
-   									level = 0
-    									instant_build = yes
-									province = {
-      										all_provinces = yes
-									}
+							else={
+								every_country={
+									add_ideas=speed3
 								}
 							}
 						}
@@ -242,8 +214,9 @@ scripted_gui = {
 		triggers = {
 
 			observer_click_enabled = {
-				owner = {
-					is_ai=no}
+				always=yes
+				#owner = {
+					#is_ai=no}
 			}
 
 

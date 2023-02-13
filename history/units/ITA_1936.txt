@@ -1,118 +1,4 @@
 ﻿
-air_wings = { 
-	### ITALY ###
-	# 1a Squadra Aerea - SQA1 (Milan)
-	155 = { 
-		# 2a Divisione Aerea 'Borea'
-		small_plane_airframe_1 = { 
-			amount = 100
-			owner = "ITA"
-			version_name = "CR.42"
-			}
-		small_plane_airframe_1 = { 
-			amount = 100 
-			owner = "ITA" 
-			version_name = "CR.42"
-
-			}
-		small_plane_airframe_1 = { 
-			amount = 100 
-			owner = "ITA" 
-			version_name = "CR.42"
-			}
-		small_plane_airframe_1 = { 
-			amount = 100 
-			owner = "ITA" 
-			version_name = "CR.42"
-			}
-		small_plane_airframe_1 = { 
-			amount = 100 
-			owner = "ITA" 
-			version_name = "CR.42"
-			}
-		small_plane_airframe_1 = { 
-			amount = 100 
-			owner = "ITA" 
-			version_name = "CR.42"
-			}
-		}
-	154 = { 
-		# 2a Divisione Aerea 'Borea'
-		small_plane_airframe_1 = { 
-			amount = 100 
-			owner = "ITA" 
-			version_name = "CR.42"
-			}
-		small_plane_airframe_1 = { 
-			amount = 100 
-			owner = "ITA" 
-			version_name = "CR.42"
-			}
-		small_plane_airframe_1 = { 
-			amount = 100 
-			owner = "ITA" 
-			version_name = "CR.42"
-			}
-		small_plane_airframe_1 = { 
-			amount = 100 
-			owner = "ITA" 
-			version_name = "CR.42"
-			}
-		}
-	2 = {
-		small_plane_airframe_1 = { 
-			amount = 100 
-			owner = "ITA" 
-			version_name = "CR.42"
-		}
-		
-		small_plane_airframe_1 = { 
-			amount = 100 
-			owner = "ITA" 
-			version_name = "CR.42"
-		}
-		small_plane_cas_airframe_1 = { 
-			amount = 100 
-			owner = "ITA"
-			version_name = "Ba.65"			
-		}
-		small_plane_cas_airframe_1 = { 
-			amount = 100 
-			owner = "ITA" 
-			version_name = "Ba.65"
-		}
-		small_plane_cas_airframe_1 = { 
-			amount = 100 
-			owner = "ITA"
-			version_name = "Ba.65"			
-		}
-		small_plane_cas_airframe_1 = { 
-			amount = 100 
-			owner = "ITA" 
-			version_name = "Ba.65"
-		}
-		small_plane_airframe_1 = { 
-			amount = 100 
-			owner = "ITA" 
-			version_name = "CR.42"
-		}
-		small_plane_cas_airframe_1 = { 
-			amount = 100 
-			owner = "ITA" 
-			version_name = "Ba.65"
-		}
-		small_plane_airframe_1 = { 
-			amount = 100 
-			owner = "ITA" 
-			version_name = "CR.42"
-		}
-		small_plane_cas_airframe_1 = { 
-			amount = 100 
-			owner = "ITA" 
-			version_name = "Ba.65"
-		}
-	} 
-}
 division_template = {
 	name = "Divisione di Fanteria"
 	division_names_group = ITA_INF_01
@@ -131,17 +17,46 @@ division_template = {
 		infantry = { x = 2 y = 1 }
 		infantry = { x = 2 y = 2 }
 		artillery_brigade = { x = 2 y = 3 }
-		artillery_brigade = { x = 2 y = 4 }
+		anti_air_brigade = { x = 2 y = 4 }
 		infantry = { x = 3 y = 0 }
 		infantry = { x = 3 y = 1 }
 		infantry = { x = 3 y = 2 }
-		artillery_brigade = { x = 3 y = 3 }
-		artillery_brigade = { x = 3 y = 4 }
+		infantry = { x = 3 y = 3 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+		anti_air = { x = 0 y = 2 }
+	}
+}
+division_template = {
+	name = "Fanteria Del Deserto"
+	division_names_group = ITA_INF_01
+	regiments = {
+		desertinfantry = { x = 0 y = 0 }
+		desertinfantry = { x = 0 y = 1 }
+		desertinfantry = { x = 0 y = 2 }
+		desertinfantry = { x = 0 y = 3 }
+		artillery_brigade = { x = 0 y = 4 }
+		desertinfantry = { x = 1 y = 0 }
+		desertinfantry = { x = 1 y = 1 }
+		desertinfantry = { x = 1 y = 2 }
+		desertinfantry = { x = 1 y = 3 }
+		artillery_brigade = { x = 1 y = 4 }
+		desertinfantry = { x = 2 y = 0 }
+		desertinfantry = { x = 2 y = 1 }
+		desertinfantry = { x = 2 y = 2 }
+		artillery_brigade = { x = 2 y = 3 }
+		artillery_brigade = { x = 2 y = 4 }
+		desertinfantry = { x = 3 y = 0 }
+		desertinfantry = { x = 3 y = 1 }
+		anti_air_brigade = { x = 3 y = 2 }
+		anti_tank_brigade = { x = 3 y = 3 }
 	}
 	support = {
 		engineer = { x = 0 y = 0 }
 		artillery = { x = 0 y = 1 }
-		recon = { x = 0 y = 2 }
+		armored_car_recon =  { x = 0 y = 2 }
 		anti_air = { x = 0 y = 3 }
 	}
 }
@@ -163,16 +78,78 @@ division_template = {
 		mountaineers = { x = 2 y = 1 }
 		mountaineers = { x = 2 y = 2 }
 		artillery_brigade = { x = 2 y = 3 }
-		artillery_brigade = { x = 2 y = 4 }
 		mountaineers = { x = 3 y = 0 }
 		mountaineers = { x = 3 y = 1 }
 		mountaineers = { x = 3 y = 2 }
 		artillery_brigade = { x = 3 y = 3 }
-		artillery_brigade = { x = 3 y = 4 }
 	}
 	support = {
 		engineer = { x = 0 y = 0 }
 		artillery = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "Paratroopers"
+	division_names_group = ITA_INF_01
+	regiments = {
+		paratrooper = { x = 0 y = 0 }
+		paratrooper = { x = 0 y = 1 }
+		paratrooper = { x = 0 y = 2 }
+		paratrooper = { x = 0 y = 3 }
+		paratrooper = { x = 0 y = 4 }
+		paratrooper = { x = 1 y = 0 }
+		paratrooper = { x = 1 y = 1 }
+		paratrooper = { x = 1 y = 2 }
+		paratrooper = { x = 1 y = 3 }
+		paratrooper = { x = 1 y = 4 }
+		paratrooper = { x = 2 y = 0 }
+		paratrooper = { x = 2 y = 1 }
+		paratrooper = { x = 2 y = 2 }
+		paratrooper = { x = 2 y = 3 }
+		paratrooper = { x = 2 y = 4 }
+		paratrooper = { x = 3 y = 0 }
+		paratrooper = { x = 3 y = 1 }
+		paratrooper = { x = 3 y = 2 }
+		paratrooper = { x = 3 y = 3 }
+		paratrooper = { x = 3 y = 4 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+		artillery = { x = 0 y = 2 }
+		anti_air = { x = 0 y = 3 }
+	}
+	priority = 0
+}
+division_template = {
+	name = "Shocktroopers"
+	division_names_group = ITA_INF_01
+	regiments = {  
+		shocktroop = { x = 0 y = 0 }
+		shocktroop = { x = 0 y = 1 }
+		shocktroop = { x = 0 y = 2 }
+		shocktroop = { x = 0 y = 3 }
+		artillery_brigade = { x = 0 y = 4 }
+		shocktroop = { x = 1 y = 0 }
+		shocktroop = { x = 1 y = 1 }
+		shocktroop = { x = 1 y = 2 }
+		shocktroop = { x = 1 y = 3 }
+		artillery_brigade = { x = 1 y = 4 }
+		shocktroop = { x = 2 y = 0 }
+		shocktroop = { x = 2 y = 1 }
+		shocktroop = { x = 2 y = 2 }
+		artillery_brigade = { x = 2 y = 3 }
+		artillery_brigade = { x = 2 y = 4 }
+		shocktroop = { x = 3 y = 0 }
+		shocktroop = { x = 3 y = 1 }
+		anti_air_brigade = { x = 3 y = 2 }
+		anti_tank_brigade = { x = 3 y = 3 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+		recon = { x = 0 y = 2 }
+		anti_air = { x = 0 y = 3 }
 	}
 }
 division_template = {
@@ -217,15 +194,37 @@ division_template = {
 		motorized = { x = 4 y = 2 }
 		motorized = { x = 4 y = 3 }
 	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		armored_car_recon = { x = 0 y = 1 }
+		anti_air = { x = 0 y = 2 }
+		artillery = { x = 0 y = 3 }
+		military_police = { x = 0 y = 4 }
+	}
 	priority = 2
 }
 units = {
 	division= {
-		name = "This is here so you can look at your generals"
-		location =9095
-		division_template = "Divisione di Fanteria"
+		name = "Poggers 1"
+		location =9904
+		division_template = "Fanteria Del Deserto"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.01
+	}
+}
+units = {
+	division= {
+		name = "Poggers 2"
+		location =9904
+		division_template = "Fanteria Del Deserto"
+		start_experience_factor = 0.3
+	}
+}
+units = {
+	division= {
+		name = "Poggers 3"
+		location =9904
+		division_template = "Divisione Celere"
+		start_experience_factor = 0.3
 	}
 }
 instant_effect = {
@@ -251,10 +250,38 @@ instant_effect = {
 		}
 		add_equipment_production = {
 			equipment = {
-				type = light_tank_chassis_2
+			type = light_tank_chassis_2
+			version_name = "M11/39"
+			creator = "ITA"
+			}
+			requested_factories = 5
+			progress = 0.6
+			efficiency = 100
+		}
+		add_equipment_production = {
+			equipment = {
+			type = light_tank_aa_chassis_2
+			version_name = "Light Tank SPAA"
+			creator = "ITA"
+			}
+			requested_factories = 1
+			progress = 0.4
+			efficiency = 100
+		}
+		add_equipment_production = {
+			equipment = {
+			type = light_tank_destroyer_chassis_2
+			version_name = "Light Tank Destroyer"
+			creator = "ITA"
+			}
+			requested_factories = 1
+			progress = 0.4
+			efficiency = 100
+		}
+		add_equipment_production = {
+			equipment = {
+				type = train_equipment_1
 				creator = "ITA"
-				version_name = "M11/39"
-
 			}
 			requested_factories = 1
 			progress = 0.4
@@ -267,24 +294,6 @@ instant_effect = {
 			}
 			requested_factories = 2
 			progress = 0.4
-			efficiency = 50
-		}
-		add_equipment_production = {
-			equipment = {
-				type = small_plane_cas_airframe_1
-				creator = "ITA"
-			}
-			requested_factories = 1
-			progress = 0.2
-			efficiency = 50
-		}
-		add_equipment_production = {
-			equipment = {
-				type = small_plane_airframe_1
-				creator = "ITA"
-			}
-			requested_factories = 1
-			progress = 0.2
 			efficiency = 50
 		}
 		add_equipment_production = {
@@ -307,13 +316,21 @@ instant_effect = {
 		}
 		add_equipment_production = {
 			equipment = {
-				version_name = "SM.79"
-				type = small_plane_naval_bomber_airframe_1
+				type = amphibious_mechanized_equipment_1
 				creator = "ITA"
 			}
 			requested_factories = 1
-			progress = 0.2
-			efficiency = 50
+			progress = 0.15
+			efficiency = 100
+		}
+		add_equipment_production = {
+			equipment = {
+				type = gw_armored_car_equipment
+				creator = "ITA"
+			}
+			requested_factories = 1
+			progress = 0.29
+			efficiency = 100
 		}
 	}
 }

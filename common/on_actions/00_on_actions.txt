@@ -4,9 +4,6 @@ on_actions = {
 			100 = usa.6
 		}
 		random_events = {
-			100 = spain.9
-		}
-		random_events = {
 			100 = election.2
 			100 = election.3
 			100 = election.14
@@ -242,22 +239,6 @@ on_actions = {
 	on_capitulation = {
 		effect = {
 			if = {
-				limit = {
-					NOT = { original_tag = GER }
-					NOT = { has_government = fascism }
-					NOT = { has_civil_war = yes }
-					NOT = {
-						AND = {
-							FROM = {
-								original_tag = SPR
-							}
-							original_tag = SPR
-						}
-					}
-				}
-				news_event = { id = country_capitulated.0 days = 0 }
-			}
-			if = {
 				limit = { tag = FRA }
 				set_global_flag = FRA_already_surrendered
 				set_variable = { global.FRA_capitulation_days = global.num_days }
@@ -274,7 +255,6 @@ on_actions = {
 				limit = {
 					original_tag = YUG
 				}
-				remove_ideas = YUG_idea_economic_aid
 			}
 			if = {
 				limit = {
@@ -307,16 +287,19 @@ on_actions = {
 				limit = {
 					NOT = {FRA ={has_country_flag = lel}}
 					count_triggers = {
-						amount = 6
+						amount = 7
 						18 = { NOT={is_controlled_by = FRA}}
 						29 = { NOT={is_controlled_by = FRA}}
 						16 = { NOT={is_controlled_by = FRA}}
-						699 = { NOT={is_controlled_by = FRA}}
+						785 = { NOT={is_controlled_by = FRA}}
 						17 = { NOT={is_controlled_by = FRA}}
 						28 = { NOT={is_controlled_by = FRA}}
 						15 = { NOT={is_controlled_by = FRA}}
 						24 = { NOT={is_controlled_by = FRA}}
 						27 = { NOT={is_controlled_by = FRA}}
+						30 = { NOT={is_controlled_by = FRA}}
+						21 = { NOT={is_controlled_by = FRA}}
+						14 = { NOT={is_controlled_by = FRA}}
 					}
 				}
 				every_country={
@@ -342,6 +325,66 @@ on_actions = {
 				}
 				
 			}
+		    if = {
+				limit = {
+					NOT = {GER ={has_country_flag = sos}}
+					GER = {has_completed_focus = GER_atlantikwall}
+					count_triggers = {
+						amount = 3
+						14 = { NOT={is_controlled_by = GER}}
+						15 = { NOT={is_controlled_by = GER}}
+						30 = { NOT={is_controlled_by = GER}}
+						23 = { NOT={is_controlled_by = GER}}
+						16 = { NOT={is_controlled_by = GER}}
+						24 = { NOT={is_controlled_by = GER}}
+						699 = { NOT={is_controlled_by = GER}}
+						29 = { NOT={is_controlled_by = GER}}
+					}
+				}
+				GER = {division_template = {
+					name = "SS-Grenadier"
+					regiments = {
+						medium_armor = { x = 0 y = 0 }
+						medium_armor = { x = 0 y = 1 }
+						medium_armor = { x = 0 y = 2 }
+						medium_armor = { x = 0 y = 3 }
+						medium_armor = { x = 1 y = 0 }
+						medium_armor = { x = 1 y = 1 }
+						medium_armor = { x = 1 y = 2 }
+						medium_armor = { x = 1 y = 3 }
+						medium_armor = { x = 2 y = 0 }
+						medium_armor = { x = 2 y = 1 }
+						medium_tank_destroyer_brigade = { x = 2 y = 2 }
+						medium_sp_anti_air_brigade = { x = 2 y = 3 }
+						medium_sp_anti_air_brigade = { x = 2 y = 4 }
+						motorized = { x = 3 y = 0 }
+						motorized = { x = 3 y = 1 }
+						motorized = { x = 3 y = 2 }
+						motorized = { x = 3 y = 3 }
+						motorized = { x = 4 y = 0 }
+						motorized = { x = 4 y = 1 }
+						motorized = { x = 4 y = 2 }
+						motorized = { x = 4 y = 3 }
+					}
+					support = {
+						light_tank_recon = { x = 0 y = 0 }
+						engineer = { x = 0 y = 1 }
+						artillery = { x = 0 y = 2 }
+						logistics_company = { x = 0 y = 3 }
+						signal_company = { x = 0 y = 4 }
+					}
+				}
+				5 = {
+					for_loop_effect = {
+						end = 4
+						create_unit = {
+							division = "name = \"SS-Grenadier\" division_template = \"SS-Grenadier\" start_experience_factor = 0.5"
+							owner = GER
+						}
+					}
+				}
+				set_country_flag =sos
+			}}
 			if = {
 				limit = {
 					FROM.FROM = { state = 16 }
@@ -351,7 +394,6 @@ on_actions = {
 						TAG = AST
 						TAG = FRA
 						TAG = CAN
-						TAG = NZL
 						TAG = SAF
 					}
 					FROM = { original_tag = GER }

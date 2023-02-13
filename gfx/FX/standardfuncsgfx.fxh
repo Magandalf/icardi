@@ -168,43 +168,6 @@ PixelShader =
 		return lerp( vColor, res, vOverlayPercent );
 	}
 
-	// Borrowed from below - Numerous other variants had artifacts
-	// https://www.shadertoy.com/view/4dKcWK
-		static const float EPSILON = 1e-7; // DX11 is -7, DX9 can do -10. If error higher then sign will flip, negative saturation etc.
-		float3 RGBtoHCV(in float3 rgb)
-		{
-			// RGB [0..1] to Hue-Chroma-Value [0..1]
-			// Based on work by Sam Hocevar and Emil Persson
-			float4 p = (rgb.g < rgb.b) ? float4(rgb.bg, -1., 2. / 3.) : float4(rgb.gb, 0., -1. / 3.);
-			float4 q = (rgb.r < p.x) ? float4(p.xyw, rgb.r) : float4(rgb.r, p.yzx);
-			float c = q.x - min(q.w, q.y);
-			float h = abs((q.w - q.y) / (6. * c + EPSILON) + q.z);
-			return float3(h, c, q.x);
-		}
-		float3 RGBtoHSL(in float3 rgb)
-		{
-			// RGB [0..1] to Hue-Saturation-Lightness [0..1]
-			float3 hcv = RGBtoHCV(rgb);
-			float z = hcv.z - hcv.y * 0.5;
-			float s = hcv.y / (1. - abs(z * 2. - 1.) + EPSILON);
-			return float3(hcv.x, s, z);
-		}
-		float3 HUEtoRGB(in float hue)
-		{
-			// Hue [0..1] to RGB [0..1]
-			// See http://www.chilliant.com/rgb2hsv.html
-			float3 rgb = abs(hue * 6. - float3(3, 2, 4)) * float3(1, -1, -1) + float3(-1, 2, 2);
-			return clamp(rgb, 0., 1.);
-		}
-		float3 HSLtoRGB(in float3 hsl)
-		{
-			// Hue-Saturation-Lightness [0..1] to RGB [0..1]
-			float3 rgb = HUEtoRGB(hsl.x);
-			float c = (1. - abs(2. * hsl.z - 1.)) * hsl.y;
-			return (rgb - 0.5) * c + hsl.z;
-		}
-	//~~~~
-	
 	float3 Levels( float3 vInColor, float vMinInput, float vMaxInput )
 	{
 		float3 vRet = saturate( vInColor - vMinInput );
@@ -256,8 +219,7 @@ PixelShader =
 
 	float3 ApplyDistanceFog( float3 vColor, float vFogFactor )
 	{
-		// IMO this looks bad.
-		return vColor;//lerp( vColor, FOG_COLOR, vFogFactor );
+		return lerp( vColor, FOG_COLOR, vFogFactor );
 	}
 
 	float3 ApplyDistanceFog( float3 vColor, float3 vPos )
@@ -285,13 +247,6 @@ PixelShader =
 		vNormal = normalize( lerp( vNormal, vMudNormal, vMudCurrent ) );
 		vGlossiness = lerp( vGlossiness, vMudDiffuseGloss.a, vMudCurrent );
 		vSpec = lerp( vSpec, vMudNormalSpec.a, vMudCurrent );
-		
-		// Adjust luminosity of mud based on luminosity of underlying terrain
-		// Weighted for clarity - Essential for clean mud blending. Difficult to discern underlying terrain otherwise.
-		float3 hsl = RGBtoHSL(vMudDiffuseGloss.rgb);
-		float lum = dot(vResult, float3(0.2126, 0.7152, 0.0722));
-		float weight = 0.32;
-		vMudDiffuseGloss.rgb = HSLtoRGB(float3(hsl.rg, hsl.b*weight + lum*(1-weight)));
 		
 		return lerp( vResult, vMudDiffuseGloss.rgb, vMudCurrent );
 	}
@@ -358,7 +313,7 @@ PixelShader =
 	}
 
 
-	#define NO_NIGHT
+	//#define NO_NIGHT
 
 	static const float GMT_OFFSET = 2793.0f; // X position on map, of Greenwitch GMT+0
 	static const float FEATHER_MIN = -0.01f;
@@ -638,8 +593,8 @@ PixelShader =
 	float3 CalculateSunDirection( float3 vWorldPos, float3 SunPos, float3 SecondSunPos, float3 MoonPos, float3 SecondMoonPos )
 	{
 		float vSelected = DayNightFactor( CalcGlobeNormal( vWorldPos.xz ), 0.0f, 0.0001f  );
-		float3 vSourcePos = lerp( float3(2800, SunPos.y, 1000), MoonPos, vSelected );
-		float3 vSecondSourcePos = lerp( float3(0, SecondSunPos.y, 1000), SecondMoonPos, vSelected );
+		float3 vSourcePos = lerp( SunPos, MoonPos, vSelected );
+		float3 vSecondSourcePos = lerp( SecondSunPos, SecondMoonPos, vSelected );
 
 		if ( vWorldPos.x - vSourcePos.x > MAP_SIZE_X * 0.5 )
 		{
@@ -698,79 +653,11 @@ PixelShader =
 		aSpecularLightOut = CalculatePBRSpecularPower(aProperties._WorldSpacePos, aProperties._Normal, aProperties._SpecularColor, aProperties._Glossiness, sunIntensity, vLightSourceDirection);
 	#endif
 	}
-	#ifndef PDX_OPENGL
-	static const int numPoints = 4;
-	static const float spacingX = MAP_SIZE_X/numPoints;
-	static const float height  = 270;
-	static const float offsetY = 400;
-	static float3 Points[numPoints] = {
-		float3(MAP_SIZE_X-100, height, 1100+offsetY-200),
-		float3(spacingX, height, 1100-offsetY+100),
-		float3(spacingX*2-100, height, 1100+offsetY-100),
-		float3(spacingX*3+100, height, 1100-offsetY-100)
-	};
-	#endif
+
 	void CalculateSunLight(LightingProperties aProperties, float aShadowTerm, out float3 aDiffuseLightOut, out float3 aSpecularLightOut )
 	{
-		#ifdef PDX_OPENGL
 		float3 vLightSourceDirection = CalculateSunDirection( aProperties._WorldSpacePos );
 		CalculateSunLight(aProperties, aShadowTerm, vLightSourceDirection, aDiffuseLightOut, aSpecularLightOut );
-		#else
-		float3 vWorldPos = aProperties._WorldSpacePos;
-		
-		//// For DEV on sun positions.
-		// X is from left of map. Z is up/down. Y is sun height.
-		// Internal - Latitude - Height vars respectively
-		// Latitude: ~1000 is equator
-		// X: 0 is in middle ocean between Japan and USA (where Sun2 normally is)
-		//    Max is ~5700 or so.
-		// vVirtualSunPos.xyz ~= float3(2800, 300, 1000)
-		/*
-		const float height = vVirtualSunPos.y;
-		const float spacingX = MAP_SIZE_X/numPoints;
-		float offsetY = vVirtualSunPos.z;
-		float3 Points[numPoints];
-		for(int i=0; i<numPoints; i++){
-			Points[i] = float3(i*spacingX, height, 1100+offsetY);
-			offsetY = -offsetY;
-		}
-		*/
-		
-		// MORE DBG
-		//Points[0] = vVirtualSunPos.xyz; Points[1] = vSecondVirtualSunPos.xyz;
-		
-		// Handles wrapped map
-		for(int k=0; k<numPoints; k++){
-			if ( vWorldPos.x - Points[k].x > MAP_SIZE_X * 0.5 ){
-				Points[k].x += MAP_SIZE_X;
-			} else if ( vWorldPos.x - Points[k].x < -MAP_SIZE_X * 0.5 ){
-				Points[k].x -= MAP_SIZE_X;
-			}
-		}
-
-		float fSun = floor(vWorldPos.x/MAP_SIZE_X * numPoints); 
-		float fSun2 = (fSun + 1) % numPoints; // Will wrap around
-		float3 vSourcePos;
-		
-		if(fSun < fSun2){
-			float lerpFactor = length( vWorldPos.x - Points[fSun].x ) / length(Points[fSun].x - Points[fSun2].x);
-			lerpFactor = smoothstep(0, 1, lerpFactor);
-			vSourcePos = lerp( Points[fSun], Points[fSun2], lerpFactor );
-		}else{
-			float lerpFactor = length( vWorldPos.x - Points[fSun2].x ) / length(Points[fSun].x - Points[fSun2].x);
-			lerpFactor = smoothstep(0, 1, lerpFactor);
-			vSourcePos = lerp( Points[fSun2], Points[fSun], lerpFactor );	 			
-		}
-		vSourcePos.x -= 400;
-		//vSourcePos.y += 100;
-
-		CalculateSunLight(aProperties, aShadowTerm, normalize(vWorldPos - vSourcePos), aDiffuseLightOut, aSpecularLightOut );
-		
-		aDiffuseLightOut = aDiffuseLightOut*0.8 + 0.18;
-		
-		// NOTE: vSecondVirtualSunPos is overriden for view in Devision Designer
-		aDiffuseLightOut *= 1.3;// vSecondVirtualSunPos.z;
-		#endif
 	}
 
 	void CalculatePointLight(PointLight aPointlight, LightingProperties aProperties, inout float3 aDiffuseLightOut, inout float3 aSpecularLightOut)
@@ -979,7 +866,8 @@ PixelShader =
 		
 		vThick *= floor(vOldOutline);
 
-		float vMaxGradient = max(vColorOpacity, vOutline );  // max(vOutline, max(0.2f, vColorOpacity));
+		float vMaxGradient = max( vColorOpacity, vOutline );
+
 		vCh = lerp( vCh, vGBDist.rgb, max( vMaxGradient, vThick )* vStrength);
 
 		// Compensate the brightness since the 2nd layer is now black (not white) although it's alpha is 0

@@ -213,14 +213,15 @@ update_pacific_war = {
 		if={
 			limit={is_controlled_by_ENG_or_ally=yes }
 			if={
-				limit={NOT={OR={state=591 state = 712 state = 713 state=300 state=302 state=303 state=450 state=388 state= 550 state=588 state=273 state=272 state=405}}}
+				limit={NOT={OR={state=672 state = 835 state = 836 state=333 state=334 state=336 state=335 state= 422 state=285 state=284 state=439}}}
 				add_to_variable={GLOBAL.pacific_status=1}
 				else_if={
-					limit={NOT={OR={state=273 state=272 state=405}}}
+					limit={NOT={OR={state=285 state=284 state=439 state=523 state=669}}}
 					add_to_variable={GLOBAL.pacific_status=5}
 				}
 				else={
-					add_to_variable={GLOBAL.pacific_status=10}}
+					add_to_variable={GLOBAL.pacific_status=10}
+				}
 			}
 		}
 	}
@@ -243,60 +244,28 @@ update_pacific_war = {
 		limit = {date <1944.1.1}
 		set_variable={Global.pacific_days=GLOBAL.num_days}
 		subtract_from_variable={Global.pacific_days=709560}
-		set_variable={Global.pacific_days2=Global.pacific_days}
 		divide_variable={Global.pacific_days=3650}
 		subtract_from_variable={GER.pacific_status=Global.pacific_days}
 	}
 	if= { 
-		limit = {413= {is_controlled_by_GER_or_ally=no}}
+		limit = {448= {is_controlled_by_GER_or_ally=no}}
 		add_to_variable={GER.pacific_status=-0.05}
 	}
 	if= { 
-		limit = {412= {is_controlled_by_GER_or_ally=no}}
+		limit = {446= {is_controlled_by_GER_or_ally=no}}
 		add_to_variable={GER.pacific_status=-0.05}
 	}
 	if= { 
-		limit = {113= {is_controlled_by_GER_or_ally=no}}
+		limit = {115= {is_controlled_by_GER_or_ally=no}}
 		add_to_variable={GER.pacific_status=-0.05}
 	}
 	if= { 
 		limit = {2= {is_controlled_by_GER_or_ally=no}}
 		add_to_variable={GER.pacific_status=-0.1}
 	}
-	set_variable={ITA.imperium_romanum=0.60}
-		subtract_from_variable={ITA.imperium_romanum=Global.pacific_days}
-	
 	if= { 
-		limit = {415= {is_controlled_by_GER_or_ally=no}}
-		add_to_variable={ITA.imperium_romanum=-0.1}
-	}
-	if= { 
-		limit = {413= {is_controlled_by_GER_or_ally=no}}
-		add_to_variable={ITA.imperium_romanum=-0.1}
-	}
-	if= { 
-		limit = {422= {is_controlled_by_GER_or_ally=no}}
-		add_to_variable={ITA.imperium_romanum=-0.1}
-	}
-	if= { 
-		limit = {412= {is_controlled_by_GER_or_ally=no}}
-		add_to_variable={ITA.imperium_romanum=-0.10}
-	}
-	if= { 
-		limit = {422= {is_controlled_by_GER_or_ally=no}}
-		add_to_variable={ITA.imperium_romanum=-0.05}
-	}
-	if= { 
-		limit = {582= {is_controlled_by_GER_or_ally=no}}
-		add_to_variable={ITA.imperium_romanum=-0.05}
-	}
-	if= { 
-		limit = {112= {is_controlled_by_GER_or_ally=no}}
-		add_to_variable={ITA.imperium_romanum=-0.05}
-	}
-	if= { 
-		limit = {478= {is_controlled_by_GER_or_ally=no}}
-		add_to_variable={ITA.imperium_romanum=-0.05}
+		limit = {47= {is_controlled_by_GER_or_ally=no}}
+		add_to_variable={GER.pacific_status=-0.05}
 	}
 }
 anti_cross_faction_trade_axis = {
@@ -358,10 +327,6 @@ anti_cross_faction_trade_allies = {
 		target = AST
 		modifier = anti_cross_faction_trade
 	}
-	add_opinion_modifier = {
-		target = NZL
-		modifier = anti_cross_faction_trade
-	}
 }
 anti_cross_faction_trade_all = {
 	ENG = {
@@ -377,9 +342,6 @@ anti_cross_faction_trade_all = {
 		anti_cross_faction_trade_axis = yes
 	}
 	AST = {
-		anti_cross_faction_trade_axis = yes
-	}
-	NZL = {
 		anti_cross_faction_trade_axis = yes
 	}
 	SAF = {
@@ -422,7 +384,7 @@ ROOT_call_all_allies_against_THIS = {
 	for_each_scope_loop = {
 		array = ROOT.faction_members
 		if = {
-			limit = { NOT = {  original_tag = ROOT}  }
+			limit = { NOT = { OR={AND={original_tag = ITA has_war=no} original_tag = ROOT}  }}
 			add_to_war = {
 				targeted_alliance = ROOT
 				enemy = PREV

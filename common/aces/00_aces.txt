@@ -6,8 +6,8 @@ modifiers = {
 		type = { fighter interceptor }
 		chance = 0.9
 		effect = {
-			air_attack_factor = 0.05
-			air_maximum_speed_factor = 0.05
+			air_attack_factor = 0.03
+			air_maximum_speed_factor = 0.03
 			air_agility_factor = 0.05
 		}
 	}
@@ -15,17 +15,17 @@ modifiers = {
 		type = { fighter interceptor }
 		chance = 0.4
 		effect = {
-			air_attack_factor = 0.075
-			air_maximum_speed_factor = 0.07
-			air_agility_factor = 0.10
+			air_attack_factor = 0.06
+			air_maximum_speed_factor = 0.05
+			air_agility_factor = 0.1
 		}
 	}
 	fighter_genius = {
 		type = { fighter interceptor }
 		chance = 0.05
 		effect = {
-			air_attack_factor = 0.125
-			air_maximum_speed_factor = 0.1
+			air_attack_factor = 0.1
+			air_maximum_speed_factor = 0.08
 			air_agility_factor = 0.15
 		}
 	}

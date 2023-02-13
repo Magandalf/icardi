@@ -1,6 +1,25 @@
 ﻿division_template = {
-	name = "District Force"
-	division_names_group = SPA_INF_01
+	name = "Suppression"
+	division_names_group = SPR_CAV_01
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 0 y = 3 }
+		cavalry = { x = 0 y = 4 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+		cavalry = { x = 1 y = 3 }
+		cavalry = { x = 1 y = 4 }
+	}
+	support = {
+		military_police = { x = 0 y = 0 }
+	}
+}
+division_template = {
+	name = "Brigada Internacionales"
+	division_names_group = SPR_MNT_01
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -13,43 +32,9 @@
 		infantry = { x = 1 y = 3 }
 		infantry = { x = 1 y = 4 }
 	}
-	support = {
-		engineer = { x = 0 y = 0 }
-	}
 }
 division_template = {
-	name = "Infantry Division"
-	division_names_group = SPA_INF_01
-	regiments = {
-		infantry = { x = 0 y = 0 }
-		infantry = { x = 0 y = 1 }
-		infantry = { x = 0 y = 2 }
-		infantry = { x = 0 y = 3 }
-		infantry = { x = 0 y = 4 }
-		infantry = { x = 1 y = 0 }
-		infantry = { x = 1 y = 1 }
-		infantry = { x = 1 y = 2 }
-		infantry = { x = 1 y = 3 }
-		infantry = { x = 1 y = 4 }
-		infantry = { x = 2 y = 0 }
-		infantry = { x = 2 y = 1 }
-		infantry = { x = 2 y = 2 }
-		infantry = { x = 2 y = 3 }
-		artillery_brigade = { x = 3 y = 0 }
-		artillery_brigade = { x = 3 y = 1 }
-		artillery_brigade = { x = 3 y = 2 }
-		artillery_brigade = { x = 3 y = 3 }
-		artillery_brigade = { x = 2 y = 4 }
-		artillery_brigade = { x = 3 y = 4 }
-	}
-	support = {
-		engineer = { x = 0 y = 0 }
-		artillery = { x = 0 y = 1 }
-		recon = { x = 0 y = 2 }
-	}
-}
-division_template = {
-	name = "Armoured Division"
+	name = "Light Tank Division"
 	division_names_group = SPR_ARM_01
 	regiments = {
 		light_armor = { x = 0 y = 0 }
@@ -75,27 +60,181 @@ division_template = {
 	}
 	support = {
 		engineer = { x = 0 y = 0 }
-		artillery = { x = 0 y = 1 }
-		recon = { x = 0 y = 2 }
+		mot_recon = { x = 0 y = 1 }
+		artillery = { x = 0 y = 2 }
+		anti_air = { x = 0 y = 3  }
 	}
 }
-units = {
-	division= {
-		name = "This is here so you can look at your generals"
-		location =3685
-		division_template = "District Force"
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.01
+division_template = {
+	name = "Mountain Division"
+	division_names_group = SPR_MNT_01
+	regiments = {
+		mountaineers = { x = 0 y = 0 }
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }
+		mountaineers = { x = 0 y = 3 }
+		mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+		mountaineers = { x = 1 y = 2 }
+		artillery_brigade = { x = 1 y = 3 }
+		artillery_brigade = { x = 1 y = 4}
+		mountaineers =  { x = 2 y = 0 }
+		mountaineers =  { x = 2 y = 1 }
+		mountaineers =  { x = 2 y = 2 }
+		artillery_brigade  =  { x = 2 y = 3 }
+		artillery_brigade = { x = 2 y = 4 }
+		mountaineers = { x = 3 y = 0 }
+		mountaineers = { x = 3 y = 1 }
+		mountaineers = { x = 3 y = 2 }
+		anti_air_brigade = { x = 3 y = 3 }
+		anti_tank_brigade = { x = 3 y = 4 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+		artillery = { x = 0 y = 2 }
+	}
+}
+division_template = {
+	name = "Shock Troopers"
+	division_names_group = SPR_SHOCK_01
+	regiments = {
+		shocktroop = { x = 0 y = 0 }
+		shocktroop = { x = 0 y = 1 }
+		shocktroop = { x = 0 y = 2 }
+		shocktroop = { x = 0 y = 3 }
+		shocktroop = { x = 1 y = 0 }
+		shocktroop = { x = 1 y = 1 }
+		shocktroop = { x = 1 y = 2 }
+		artillery_brigade = { x = 1 y = 3 }
+		artillery_brigade = { x = 1 y = 4}
+		shocktroop =  { x = 2 y = 0 }
+		shocktroop =  { x = 2 y = 1 }
+		shocktroop =  { x = 2 y = 2 }
+		artillery_brigade  =  { x = 2 y = 3 }
+		artillery_brigade = { x = 2 y = 4 }
+		shocktroop = { x = 3 y = 0 }
+		shocktroop = { x = 3 y = 1 }
+		shocktroop = { x = 3 y = 2 }
+		anti_air_brigade = { x = 3 y = 3 }
+		anti_tank_brigade = { x = 3 y = 4 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+		artillery = { x = 0 y = 2 }
+	}
+}
+division_template = {
+	name = "Paratroopers"
+	division_names_group = SPR_MAR_01
+	regiments = {
+		paratrooper = { x = 0 y = 0 }
+		paratrooper = { x = 0 y = 1 }
+		paratrooper = { x = 0 y = 2 }
+		paratrooper = { x = 0 y = 3 }
+		paratrooper = { x = 0 y = 4 }
+		paratrooper = { x = 1 y = 0 }
+		paratrooper = { x = 1 y = 1 }
+		paratrooper = { x = 1 y = 2 }
+		paratrooper = { x = 1 y = 3 }
+		paratrooper = { x = 1 y = 4 }
+		paratrooper = { x = 2 y = 0 }
+		paratrooper = { x = 2 y = 1 }
+		paratrooper = { x = 2 y = 2 }
+		paratrooper = { x = 2 y = 3 }
+		paratrooper = { x = 2 y = 4 }
+		paratrooper = { x = 3 y = 0 }
+		paratrooper = { x = 3 y = 1 }
+		paratrooper = { x = 3 y = 2 }
+		paratrooper = { x = 3 y = 3 }
+		paratrooper = { x = 3 y = 4 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+		artillery = { x = 0 y = 2 }
+		anti_air = { x = 0 y = 3 }
+	}
+	priority = 0
+}
+division_template = {
+	name = "Marine Division"
+	division_names_group = SPR_MAR_01
+	regiments = {
+		marine = { x = 0 y = 0 }
+		marine = { x = 0 y = 1 }
+		marine = { x = 0 y = 2 }
+		marine = { x = 0 y = 3 }
+		marine = { x = 1 y = 0 }
+		marine = { x = 1 y = 1 }
+		marine = { x = 1 y = 2 }
+		artillery_brigade = { x = 1 y = 3 }
+		artillery_brigade = { x = 1 y = 4}
+		marine =  { x = 2 y = 0 }
+		marine =  { x = 2 y = 1 }
+		marine =  { x = 2 y = 2 }
+		artillery_brigade  =  { x = 2 y = 3 }
+		artillery_brigade = { x = 2 y = 4 }
+		marine = { x = 3 y = 0 }
+		marine = { x = 3 y = 1 }
+		marine = { x = 3 y = 2 }
+		anti_air_brigade = { x = 3 y = 3 }
+		anti_tank_brigade = { x = 3 y = 4 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+		artillery = { x = 0 y = 2 }
+	}
+}
+division_template = {
+	name = "Desert Troopers"
+	division_names_group = SPR_DEZERT_01
+	regiments = {
+		desertinfantry = { x = 0 y = 0 }
+		desertinfantry = { x = 0 y = 1 }
+		desertinfantry = { x = 0 y = 2 }
+		desertinfantry = { x = 0 y = 3 }
+		desertinfantry = { x = 1 y = 0 }
+		desertinfantry = { x = 1 y = 1 }
+		desertinfantry = { x = 1 y = 2 }
+		artillery_brigade = { x = 1 y = 3 }
+		artillery_brigade = { x = 1 y = 4}
+		desertinfantry =  { x = 2 y = 0 }
+		desertinfantry =  { x = 2 y = 1 }
+		desertinfantry =  { x = 2 y = 2 }
+		artillery_brigade  =  { x = 2 y = 3 }
+		artillery_brigade = { x = 2 y = 4 }
+		desertinfantry = { x = 3 y = 0 }
+		desertinfantry = { x = 3 y = 1 }
+		desertinfantry = { x = 3 y = 2 }
+		anti_air_brigade = { x = 3 y = 3 }
+		anti_tank_brigade = { x = 3 y = 4 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+		artillery = { x = 0 y = 2 }
 	}
 }
 instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = train_equipment_1
+			creator = "SPR"
+		}
+		requested_factories = 1
+		progress = 0.4
+		efficiency = 50
+	}
 	add_equipment_production = {
 		equipment = {
 			type = infantry_equipment_1
 			creator = "SPR"
 		}
 		requested_factories = 1
-		progress = 0.42
+		progress = 0.49
 		efficiency = 100
 	}
 	add_equipment_production = {
@@ -104,7 +243,16 @@ instant_effect = {
 			creator = "SPR"
 		}
 		requested_factories = 1
-		progress = 0.24
+		progress = 0.73
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = motorized_equipment_1
+			creator = "SPR"
+		}
+		requested_factories = 1
+		progress = 0.4
 		efficiency = 100
 	}
 	add_equipment_production = {
@@ -113,7 +261,7 @@ instant_effect = {
 			creator = "SPR"
 		}
 		requested_factories = 1
-		progress = 0.24
+		progress = 0.4
 		efficiency = 100
 	}
 	add_equipment_production = {
@@ -122,8 +270,25 @@ instant_effect = {
 			creator = "SPR"
 		}
 		requested_factories = 1
-		progress = 0.3
-		efficiency = 50
+		progress = 0.4
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = amphibious_mechanized_equipment_1
+			creator = "SPR"
+		}
+		requested_factories = 1
+		progress = 0.4
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = gw_armored_car_equipment
+			creator = "SPR"
+		}
+		requested_factories = 1
+		progress = 0.4
+		efficiency = 100
 	}
 }
-

@@ -7,10 +7,10 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = italy.187.a
-		#set_technology = {
-		#	basic_medium_tank = 1
-		#	improved_medium_tank = 1
-		#}
+		set_technology = {
+			basic_medium_tank = 1
+			improved_medium_tank = 1
+		}
 		division_template = {
 			name = "Afrikakorps"
 			regiments = {
@@ -25,14 +25,14 @@ country_event = {
 				medium_armor = { x = 2 y = 0 }
 				medium_armor = { x = 2 y = 1 }
 				medium_armor = { x = 2 y = 2 }
-				mechanized = { x = 3 y = 0 }
-				mechanized = { x = 3 y = 1 }
-				mechanized = { x = 3 y = 2 }
-				mechanized = { x = 3 y = 3 }
-				mechanized = { x = 4 y = 0 }
-				mechanized = { x = 4 y = 1 }
-				mechanized = { x = 4 y = 2 }
-				mechanized = { x = 4 y = 3 }
+				motorized = { x = 3 y = 0 }
+				motorized = { x = 3 y = 1 }
+				motorized = { x = 3 y = 2 }
+				motorized = { x = 3 y = 3 }
+				motorized = { x = 4 y = 0 }
+				motorized = { x = 4 y = 1 }
+				motorized = { x = 4 y = 2 }
+				motorized = { x = 4 y = 3 }
 				mot_anti_air_brigade= { x = 3 y = 4 }
 				mot_anti_air_brigade = { x = 4 y = 4 }
 			}
@@ -46,7 +46,7 @@ country_event = {
 		}
 		413 = {
 			for_loop_effect = {
-				end = 2
+				end = 4
 				create_unit = {
 					division = "name = \"SS-Panzergrenadier\" division_template = \"Afrikakorps\" start_experience_factor = 2.0"
 					owner = ITA
@@ -90,7 +90,7 @@ country_event = {
 				}}
 		413 = {
 			for_loop_effect = {
-				end = 2
+				end = 4
 				create_unit = {
 					division = "name = \"SS-Panzergrenadier\" division_template = \"Afrikakorps\" start_experience_factor = 2.0"
 					owner = GER
@@ -113,6 +113,9 @@ country_event = {
 		}
 		hidden_effect = {
 			country_event = { days = 1 id = news.22 }
+		}
+		44 = {
+		add_compliance = 100
 		}
 	}
 }
@@ -161,9 +164,19 @@ country_event = {
 	picture = GFX_report_event_merchant_ship_01
 	is_triggered_only = yes
 	immediate = {
-		173 = {
+		177 = {
 			set_building_level= {
 				type = anti_air_building
+				level = 5
+				instant_build = yes
+			}
+			set_building_level= {
+				type = air_base
+				level = 5
+				instant_build = yes
+			}
+			set_building_level= {
+				type = naval_base
 				level = 5
 				instant_build = yes
 			}
@@ -173,7 +186,7 @@ country_event = {
 		name = italy.9.a
 		country_event = { id = italy.10 }
 		effect_tooltip = {
-			ITA = { transfer_state = 173 }
+			ITA = { transfer_state = 177 }
 
 
 			remove_opinion_modifier = { target = ITA modifier = ita_supported_spain_civil_war }
@@ -272,7 +285,6 @@ country_event = {
 				}
 			}
 			GER =  { set_autonomy = { target = ITA autonomy_state = autonomy_satellite } }
-			
 		}
 		hidden_effect = {
 			ITA = { country_event = { id = italy.150 days = 21 } }

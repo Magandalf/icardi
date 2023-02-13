@@ -32,7 +32,7 @@
 #                                      the current game version.
 SPR_INF_01 =
 {
-	name = "Republican Infantry"
+	name = "División de Infantería"
 
 	for_countries = { SPR }
 
@@ -202,38 +202,6 @@ SPR_ARM_01 =
 	}
 }
 
-SPR_PAR_01 =
-{
-	name = "Airborne Division"
-
-	for_countries = { SPR }
-
-	can_use = { always = yes }
-
-	division_types = { "paratrooper" }
-
-	# Number reservation system will tie to another group.
-	#link_numbering_with = { SPR_INF_01 }
-
-	fallback_name = "%da División Aerotransportada"
-
-	# Names with numbers (only one number per entry).
-	# It's okay to have gaps in numbering.
-	ordered =
-	{
-		1 = { "%da División Aerotransportada" }
-		2 = { "%da División Aerotransportada" }
-		3 = { "%da División Aerotransportada" }
-		4 = { "%da División Aerotransportada" }
-		5 = { "%da División Aerotransportada" }
-		6 = { "%da División Aerotransportada" }
-		7 = { "%da División Aerotransportada" }
-		8 = { "%da División Aerotransportada" }
-		9 = { "%da División Aerotransportada" }
-		10 = { "%da División Aerotransportada" }
-	}
-}
-
 SPR_MAR_01 =
 {
 	name = "Marine Division"
@@ -295,6 +263,70 @@ SPR_MNT_01 =
 		8 = { "%da División de Montaña" }
 		9 = { "%da División de Montaña" }
 		10 = { "%da División de Montaña" }
+	}
+}
+
+SPR_SHOCK_01 =
+{
+	name = "Shock Troopers"
+
+	for_countries = { SPR }
+
+	can_use = { always = yes }
+
+	division_types = { "mountaineers" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { SPR_INF_01 }
+
+	fallback_name = "%da División de Montaña"
+
+	# Names with numbers (only one number per entry).
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%da División Urbana" }
+		2 = { "%da División Urbana" }
+		3 = { "%da División Urbana" }
+		4 = { "%da División Urbana" }
+		5 = { "%da División Urbana" }
+		6 = { "%da División Urbana" }
+		7 = { "%da División Urbana" }
+		8 = { "%da División Urbana" }
+		9 = { "%da División Urbana" }
+		10 = { "%da División Urbana" }
+	}
+}
+
+SPR_DEZERT_01 =
+{
+	name = "Dezert Troopers"
+
+	for_countries = { SPR }
+
+	can_use = { always = yes }
+
+	division_types = { "mountaineers" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { SPR_INF_01 }
+
+	fallback_name = "%da División de Montaña"
+
+	# Names with numbers (only one number per entry).
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%da Soldados de Dezert" }
+		2 = { "%da Soldados de Dezert" }
+		3 = { "%da Soldados de Dezert" }
+		4 = { "%da Soldados de Dezert" }
+		5 = { "%da Soldados de Dezert" }
+		6 = { "%da Soldados de Dezert" }
+		7 = { "%da Soldados de Dezert" }
+		8 = { "%da Soldados de Dezert" }
+		9 = { "%da Soldados de Dezert" }
+		10 = { "%da Soldados de Dezert" }
 	}
 }
 

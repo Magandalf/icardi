@@ -215,7 +215,6 @@ branch_operation = {
 
 		level = {
 			modifier = {
-				operation_steal_tech_outcome = 0.25
 			}
 			complete_effect = {
 				hidden_effect = {activate_mission = spy_agency_upgrade}
@@ -270,7 +269,7 @@ branch_operation = {
 		level = {
 			modifier = {
 				intel_from_operatives_factor = 0.2
-				operation_steal_tech_risk = -0.25
+				
 			}
 			complete_effect = {
 				hidden_effect = {activate_mission = spy_agency_upgrade}

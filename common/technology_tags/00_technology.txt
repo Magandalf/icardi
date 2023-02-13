@@ -19,12 +19,10 @@ technology_categories = {
 	cat_medium_armor
 	cat_heavy_armor
 	artillery
-	jaeger_tech
-	para_tech
-    	shocktroop
-    	shock_tech
-    	desert_tech
-	cat_artillery
+    shocktroop
+    shock_tech
+    desert_tech
+	armored_car
 	cat_anti_tank
 	cat_anti_air
 	naval_air
@@ -87,10 +85,10 @@ technology_categories = {
 	base_strike_main
 	mot_rockets
 	support_tech
-	para_tech
 	engineers_tech
 	recon_tech
 	mountaineers_tech
+	para_tech
 	military_police_tech
 	hospital_tech
 	logistics_tech
@@ -108,18 +106,7 @@ technology_categories = {
 	cat_synth_rubber
 	tank_land_doctrine
 	assault_guns
-	cat_synth_oil
-	cat_armored_cars
-	cat_special_forces_generic
-	cat_torpedoes
-	cat_ship_light_battery
-	cat_ship_medium_battery
-	cat_ship_heavy_battery
-	air_equipment
-	plane_modules_tech
-	cat_air_guns
-	cat_air_engine
-	cat_air_bombs
+	armored_upgrades
 	year_1918
 	year_1936
 	year_1937
@@ -156,13 +143,6 @@ technology_folders = {
 		ledger = army
 	}
 	air_techs_folder = {
-		ledger = air
-		available = { NOT = { has_dlc = "By Blood Alone" } }
-	}
-	bba_air_techs_folder = {
-		available = {
-			has_dlc = "By Blood Alone"
-		}
 		ledger = air
 	}
 	naval_folder = {

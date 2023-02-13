@@ -19,12 +19,12 @@ continuous_focus_palette = {
 		available = {
 		}
 
-		idea = continuous_naval_production
+		#idea = continuous_naval_production
 
 		ai_will_do = {
 			factor = 1
 		}
-
+		modifier = { industrial_capacity_dockyard = 0.1 }
 		supports_ai_strategy = ai_focus_naval
 
 		daily_cost = 1
@@ -43,8 +43,6 @@ continuous_focus_palette = {
 
 		modifier = {
 			production_speed_infrastructure_factor = 0.1
-			production_speed_supply_node_factor = 0.1
-			production_speed_rail_way_factor = 0.1
 			production_speed_air_base_factor = 0.1
 			production_speed_naval_base_factor = 0.1
 			#production_speed_synthetic_refinery_factor = 0.1
@@ -161,7 +159,7 @@ continuous_focus_palette = {
 
 		modifier = {
 			mobilization_speed = 1.0
-			weekly_manpower = 5000
+			MONTHLY_POPULATION =1.0
 		}
 
 

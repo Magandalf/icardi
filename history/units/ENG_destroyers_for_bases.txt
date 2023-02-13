@@ -2,10 +2,10 @@
 units = {
 	fleet = {
 		name = "American Destroyer Squadron"
-		naval_base =3278
+		naval_base =540
 		task_force = {
 			name = "American Destroyer Flotilla 1"
-			location =3278
+			location =540
 			ship = { name = "HMS Leamington" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA creator = USA } } }
 			ship = { name = "HMS Campbeltown" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA creator = USA } } }
 			ship = { name = "HMS Castleton" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA creator = USA } } }
@@ -27,7 +27,7 @@ units = {
 		}
 		task_force = {
 			name = "American Destroyer Flotilla 2"
-			location =3278
+			location =540
 			ship = { name = "HMS Ripley" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA creator = USA } } }
 			ship = { name = "HMS Reading" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA creator = USA } } }
 			ship = { name = "HMS Rockingham" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA creator = USA } } }
@@ -39,7 +39,7 @@ units = {
 		}
 		task_force = {
 			name = "American Destroyer Flotilla 3"
-			location =3278
+			location =540
 			ship = { name = "HMS Charlestown" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA creator = USA } } }
 			ship = { name = "HMS St. Marys" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA creator = USA } } }
 			ship = { name = "HMS Beverley" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA creator = USA } } }
@@ -50,7 +50,7 @@ units = {
 		}
 		task_force = {
 			name = "American Destroyer Flotilla 4"
-			location =3278
+			location =540
 			ship = { name = "HMS Lewes" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA creator = USA } } }
 			ship = { name = "HMS Leeds" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA creator = USA } } }
 			ship = { name = "HMS Ludlow" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA creator = USA } } }

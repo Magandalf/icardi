@@ -1,40 +1,4 @@
-recruit_character = CAN_mackenzie_king
-recruit_character = CAN_adrien_arcand
-recruit_character = CAN_tim_buck
-recruit_character = CAN_j._s._woodsworth
-recruit_character = CAN_thomas_victor_anderson
-recruit_character = CAN_charles_foulkes
-recruit_character = CAN_percival_john_montague
-recruit_character = CAN_bert_hoffmeister
-recruit_character = CAN_leonard_w._murray
-recruit_character = CAN_h.t._bailliegrohman
-recruit_character = CAN_james_d._prentice
-recruit_character = CAN_harry_dewolf
-recruit_character = CAN_lloyd_samuel_breadner
-recruit_character = CAN_robert_manion
-recruit_character = CAN_george_pearkes
-recruit_character = CAN_john_murchie
-recruit_character = CAN_ian_a_mackenzie
-recruit_character = CAN_c_d_howe
-recruit_character = CAN_newton_wesley_rowell
-recruit_character = CAN_harold_edwards
-recruit_character = CAN_frederick_m_w_harvey
-recruit_character = CAN_harry_crerar
-recruit_character = CAN_robert_leckie
-recruit_character = CAN_james_ilsley
-recruit_character = CAN_kenneth_stuart
-recruit_character = CAN_leo_richer_lafleche
-recruit_character = CAN_andrew_mcnaughton
-recruit_character = CAN_george_jones
-recruit_character = CAN_raymond_collishaw
-recruit_character = CAN_guy_simonds
-recruit_character = CAN_gino_verchiella
-recruit_character = CAN_r_b_bennett
-recruit_character = CAN_alasdair_murray
-recruit_character = CAN_george_volkoff
-recruit_character = CAN_george_croil
-recruit_character = CAN_percy_nelles
-capital = 268
+capital = 276
 oob = "CAN_1936"
 if = {
 	limit = { has_dlc = "Man the Guns" }
@@ -52,23 +16,20 @@ set_research_slots = 4
 set_country_flag = monroe_doctrine
 set_stability = 0.55
 set_war_support = 0.15
-add_relation_modifier = { target = ENG modifier = DOM_trade_1 }
-add_relation_modifier = { target = ENG modifier = DOM_trade_2 }
 add_ideas = reliance_on_natural_rubber
 add_ideas = peace_training
 # Starting tech
 set_technology = {
+	assault_guns_1 = 1
 	airfield_allowed = 1
 	naval_base_allowed = 1
-	#desertinfantry_at = 1
-	#shocktroops = 1
-	#jungletroops = 1
-	basic_train = 1
-	armor_tech_1 = 1
-	engine_tech_1 = 1
-	jaegers = 1
+	desertinfantry_at = 1
+	shocktroops = 1
+	paratroopers = 1
 	tech_mountaineers = 1
 	marines = 1
+	fuel_silos = 1
+	basic_train = 1
 	infantry_weapons = 1
 	infantry_weapons1 = 1
 	tech_support = 1
@@ -77,14 +38,20 @@ set_technology = {
 	gw_artillery = 1
 	gwtank_chassis = 1
 	basic_light_tank_chassis = 1
-	#early_fighter = 1
-	#naval_bomber1 = 1
-	#early_bomber = 1
+	improved_light_tank_chassis = 1
+	engine_tech_1 = 1
+	early_fighter = 1
+	naval_bomber1 = 1
+	early_bomber = 1
 	trench_warfare = 1
 	fleet_in_being = 1
 	motorised_infantry = 1
-	fuel_silos = 1
 	interwar_antiair = 1
+	armored_car1 = 1
+	tech_signal_company = 1
+	tech_maintenance_company = 1
+	tech_field_hospital = 1
+	tech_logistics_company = 1
 }
 if = {
 	limit = {
@@ -143,14 +110,6 @@ if = {
 	set_cosmetic_tag = CAN_UK
 	add_to_tech_sharing_group = commonwealth_research
 }
-if = {
-	limit = {
-		has_dlc = "La Resistance"
-	}
-	set_technology = {
-		armored_car1 = 1
-	}
-}
 set_politics = {
 	ruling_party = democratic
 	last_election = "1935.10.14"
@@ -162,16 +121,39 @@ set_popularities = {
 }
 set_convoys = 100
 add_equipment_to_stockpile = {
-	type = train_equipment
-	amount = 50
+	type = infantry_equipment_1
+	amount = 6000
 	producer = CAN
 }
 add_equipment_to_stockpile = {
-	type = infantry_equipment_1
-	amount = 2700
+	type = support_equipment
+	amount = 200
+	producer = CAN
+}
+add_equipment_to_stockpile = {
+	type = train_equipment
+	amount = 30
 	producer = CAN
 }
 set_stability = 0.75
+
+recruit_character = CAN_mackenzie_king
+recruit_character = CAN_thomas_victor_anderson
+recruit_character = CAN_charles_foulkes
+recruit_character = CAN_percival_john_montague
+recruit_character = CAN_bert_hoffmeister
+recruit_character = CAN_ht_bailliegrohman
+recruit_character = CAN_kenneth_stuart
+recruit_character = CAN_harry_crerar
+recruit_character = CAN_andrew_mcnaughton
+recruit_character = CAN_george_pearkes
+recruit_character = CAN_percy_nelles
+recruit_character = CAN_lloyd_samuel_breadner
+recruit_character = CAN_guy_simonds
+recruit_character = CAN_john_murchie
+recruit_character = CAN_frederick_m_w_harvey
+recruit_character = CAN_r_b_bennett
+recruit_character = CAN_leo_richer_lafleche
 
 ### VARIANTS ###
 # 1936 Start #
@@ -227,3 +209,4 @@ if = {
 		}
 	}
 }
+

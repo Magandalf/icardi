@@ -103,20 +103,11 @@ country_event = {
 		date > 1936.1.1
 		date < 1937.1.1
 	}
-	immediate = {
-		hidden_effect = {
-			country_event = { id = usa.35 days = 730 }
-			add_political_power = 150
-		}
-	}
 	option = {
 		name = usa.6.a
 		set_variable = { election_factor = random }
 		add_to_variable = { election_factor = -0.5 }
-		USA_election_senate = yes
-		USA_election_house = yes
 		custom_effect_tooltip = usa_congress_elections_tt_bad
-		country_event = usa.30
 	}
 }
 country_event = {
@@ -145,35 +136,6 @@ country_event = {
 		clear_variable = ror_loc
 		clear_variable = senators_for_reelection
 		clear_variable = representatives_for_reelection
-	}
-}
-country_event = {
-	id = usa.35
-	title = usa.35.t
-	desc = usa.35.desc
-	picture = GFX_report_event_election_vote
-	hidden = yes
-	is_triggered_only = yes
-	immediate = {
-		random_list = {
-			50 = {
-				set_variable = { election_factor = random }
-				add_to_variable = { election_factor = -0.6 }
-				USA_election_senate = yes
-				USA_election_house = yes
-				country_event = usa.30
-			}
-			50 = {
-				set_variable = { election_factor = random }
-				add_to_variable = { election_factor = -0.3 }
-				USA_election_senate = yes
-				USA_election_house = yes
-				country_event = usa.30
-			}
-		}
-	}
-	option = {
-		name = usa.35.a
 	}
 }
 country_event = {
@@ -255,7 +217,7 @@ country_event = {
 	}
 	option = {
 		name = usa.44.a
-		USA_senate_medium_support = yes
+		USA_senate_small_support = yes
 		hidden_effect = {
 			country_event = { id = usa.50 days = 70 random_days = 20 }
 		}
@@ -272,7 +234,7 @@ country_event = {
 	}
 	option = {
 		name = usa.45.a
-		USA_house_medium_support = yes
+		USA_house_small_support = yes
 		hidden_effect = {
 			country_event = { id = usa.51 days = 70 random_days = 10 }
 		}
@@ -289,7 +251,7 @@ country_event = {
 	}
 	option = {
 		name = usa.46.a
-		USA_senate_medium_opposition = yes
+		USA_senate_small_opposition = yes
 		hidden_effect = {
 			country_event = { id = usa.50 days = 70 random_days = 20 }
 		}
@@ -433,266 +395,6 @@ country_event = {
 				country_event = { id = usa.47 days = 30 random_days = 15 }
 			}
 		}
-	}
-}
-country_event = {
-	id = usa.60
-	hidden = yes
-	is_triggered_only = yes
-	trigger = {
-		tag = USA
-	}
-	immediate = {
-		set_country_flag = USA_congress_investment
-		if = {
-			limit = { has_event_target = USA_congress_investment_state }
-			clear_global_event_target = USA_congress_investment_state
-		}
-		random_list = {
-			5 = {
-				modifier = {
-					NOT = {
-						any_owned_state = {
-							is_core_of = ROOT
-							is_controlled_by = ROOT
-							free_building_slots = {
-								building = industrial_complex
-								size > 0
-								include_locked = no
-							}
-						}
-					}
-					factor = 0
-				}
-				random_owned_state = {
-					limit = {
-						is_core_of = ROOT
-						is_controlled_by = ROOT
-						free_building_slots = {
-							building = industrial_complex
-							size > 0
-							include_locked = no
-						}
-					}
-					save_global_event_target_as = USA_congress_investment_state
-					state_event = { id = usa.61 trigger_for = controller }
-				}
-			}
-			100 = {
-				modifier = {
-					NOT = {
-						any_owned_state = {
-							is_core_of = ROOT
-							is_controlled_by = ROOT
-							free_building_slots = {
-								building = arms_factory
-								size > 0
-								include_locked = no
-							}
-						}
-					}
-					factor = 0
-				}
-				modifier = {
-					has_completed_focus = USA_military_construction
-					factor = 2
-				}
-				modifier = {
-					NOT = { has_completed_focus = USA_the_giant_wakes }
-					factor = 0
-				}
-				random_owned_state = {
-					limit = {
-						is_core_of = ROOT
-						is_controlled_by = ROOT
-						free_building_slots = {
-							building = arms_factory
-							size > 0
-							include_locked = no
-						}
-					}
-					save_global_event_target_as = USA_congress_investment_state
-					state_event = { id = usa.62 trigger_for = controller }
-				}
-			}
-			100 = {
-				modifier = {
-					NOT = {
-						any_owned_state = {
-							is_core_of = ROOT
-							is_controlled_by = ROOT
-							is_coastal = yes
-							free_building_slots = {
-								building = dockyard
-								size > 0
-								include_locked = no
-							}
-						}
-					}
-					factor = 0
-				}
-				modifier = {
-					has_idea = USA_wasteful_navy
-					factor = 0
-				}
-				random_owned_state = {
-					limit = {
-						is_core_of = ROOT
-						is_controlled_by = ROOT
-						free_building_slots = {
-							building = dockyard
-							size > 0
-							include_locked = no
-						}
-					}
-					save_global_event_target_as = USA_congress_investment_state
-					state_event = { id = usa.64 trigger_for = controller }
-				}
-			}
-			25 = {
-				modifier = {
-					NOT = {
-						any_owned_state = {
-							is_core_of = ROOT
-							free_building_slots = {
-								building = infrastructure
-								size > 0
-								include_locked = no
-							}
-						}
-					}
-					factor = 0
-				}
-				modifier = {
-					has_completed_focus = USA_USACE_projects
-					factor = 2
-				}
-				random_owned_state = {
-					limit = {
-						is_core_of = ROOT
-						is_controlled_by = ROOT
-						free_building_slots = {
-							building = infrastructure
-							size > 0
-							include_locked = no
-						}
-					}
-					save_global_event_target_as = USA_congress_investment_state
-					state_event = { id = usa.63 trigger_for = controller }
-				}
-			}
-		}
-		hidden_effect = {
-			country_event = { id = usa.50 days = 70 random_days = 10 }
-		}
-	}
-}
-country_event = {
-	id = usa.61
-	title = usa.61.t
-	desc = usa.61.desc
-	picture = GFX_report_event_generic_sign_treaty3
-	is_triggered_only = yes
-	option = {
-		name = usa.61.a
-		ai_chance = {
-			factor = 0
-		}
-		unlock_decision_tooltip = { decision = USA_invest_in_state_factory show_effect_tooltip = yes }
-		event_target:USA_congress_investment_state = {
-			set_state_flag = USA_congress_build_factory
-			set_variable = { factory_goal = industrial_complex_level }
-			add_to_variable = { factory_goal = 1 }
-		}
-	}
-	option = {
-		name = usa.61.b
-		ai_chance = {
-			factor = 100
-		}
-		ROOT = { clr_country_flag = USA_congress_investment }
-		clear_global_event_target = USA_congress_investment_state
-	}
-}
-country_event = {
-	id = usa.62
-	title = usa.61.t
-	desc = usa.62.desc
-	picture = GFX_report_event_tank_factory
-	is_triggered_only = yes
-	option = {
-		name = usa.62.a
-		ai_chance = {
-			factor = 0
-		}
-		unlock_decision_tooltip = { decision = USA_invest_in_state_arms_factory show_effect_tooltip = yes }
-		event_target:USA_congress_investment_state = {
-			set_state_flag = USA_congress_build_arms_factory
-			set_variable = { arms_factory_goal = arms_factory_level }
-			add_to_variable = { arms_factory_goal = 1 }
-		}
-	}
-	option = {
-		name = usa.62.b
-		ai_chance = {
-			factor = 100
-		}
-		ROOT = { clr_country_flag = USA_congress_investment }
-		clear_global_event_target = USA_congress_investment_state
-	}
-}
-country_event = {
-	id = usa.63
-	title = usa.63.t
-	desc = usa.63.desc
-	picture = GFX_report_event_generic_train
-	is_triggered_only = yes
-	option = {
-		name = usa.63.a
-		ai_chance = {
-			factor = 0
-		}
-		unlock_decision_tooltip = { decision = USA_invest_in_state_infrastructure show_effect_tooltip = yes }
-		event_target:USA_congress_investment_state = {
-			set_state_flag = USA_congress_build_infrastructure
-			set_variable = { infrastructure_goal = infrastructure_level }
-			add_to_variable = { infrastructure_goal = 1 }
-		}
-	}
-	option = {
-		name = usa.63.b
-		ai_chance = {
-			factor = 100
-		}
-		ROOT = { clr_country_flag = USA_congress_investment }
-		clear_global_event_target = USA_congress_investment_state
-	}
-}
-country_event = {
-	id = usa.64
-	title = usa.64.t
-	desc = usa.64.desc
-	picture = GFX_report_event_ast_navy
-	is_triggered_only = yes
-	option = {
-		name = usa.64.a
-		ai_chance = {
-			factor = 0
-		}
-		unlock_decision_tooltip = { decision = USA_invest_in_state_dockyard show_effect_tooltip = yes }
-		event_target:USA_congress_investment_state = {
-			set_state_flag = USA_congress_build_dockyard
-			set_variable = { dockyard_goal = building_level@dockyard }
-			add_to_variable = { dockyard_goal = 1 }
-		}
-	}
-	option = {
-		name = usa.64.b
-		ai_chance = {
-			factor = 100
-		}
-		ROOT = { clr_country_flag = USA_congress_investment }
-		clear_global_event_target = USA_congress_investment_state
 	}
 }
 country_event = {

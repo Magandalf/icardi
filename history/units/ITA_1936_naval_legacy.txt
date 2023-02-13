@@ -2,10 +2,10 @@
 units = {
 	fleet = {
 		name = "Comando Navale Ionio e Basso Adriatico"
-		naval_base =10743
+		naval_base =11837
 		task_force = {
 			name = "I Squadra Navale"
-			location =10743
+			location =11837
 			ship = { name = "RN Caio Duilio" pride_of_the_fleet = yes definition = battleship equipment = { battleship_1 = { amount = 1 owner = ITA } } }
 			ship = { name = "RN Andrea Doria" definition = battleship equipment = { battleship_1 = { amount = 1 owner = ITA } } }
 			ship = { name = "RI Zara" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = ITA version_name = "Zara Class" } } }
@@ -49,7 +49,7 @@ units = {
 		}
 		task_force = {
 			name = "IV Gruppo Sommergibili"
-			location =10743
+			location =11837
 			ship = { name = "RSmg Balilla" definition = submarine equipment = { submarine_1 = { amount = 1 owner = ITA } } }
 			ship = { name = "RSmg Antonio Sciesa" definition = submarine equipment = { submarine_1 = { amount = 1 owner = ITA } } }
 			ship = { name = "RSmg Enrico Toti" definition = submarine equipment = { submarine_1 = { amount = 1 owner = ITA } } }
@@ -58,10 +58,10 @@ units = {
 	}
 	fleet = {
 		name = "Comando Navale Alto Tirreno"
-		naval_base =6449
+		naval_base =11837
 		task_force = {
 			name = "II Squadra Navale"
-			location =6449
+			location =11837
 			ship = { name = "RI Pola" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = ITA version_name = "Zara Class" } } }
 			ship = { name = "RI Giovanni dalle Bande Nere" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = ITA version_name = "Giussano Class" } } }
 			ship = { name = "RI Bartolomeo Colleoni" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = ITA version_name = "Giussano Class" } } }
@@ -86,7 +86,7 @@ units = {
 		}
 		task_force = {
 			name = "I Gruppo Sommergibili"
-			location =6449
+			location =11837
 			ship = { name = "RSmg Pietro Calvi" definition = submarine equipment = { submarine_1 = { amount = 1 owner = ITA version_name = "Sirena Class" } } }
 			ship = { name = "RSmg Giuseppe Finzi" definition = submarine equipment = { submarine_1 = { amount = 1 owner = ITA version_name = "Sirena Class" } } }
 			ship = { name = "RSmg Ettore Fieramosca" definition = submarine equipment = { submarine_1 = { amount = 1 owner = ITA version_name = "Bandiera Class" } } }
@@ -103,10 +103,10 @@ units = {
 	}
 	fleet = {
 		name = "Comando Navale Basso Tirreno"
-		naval_base =782
+		naval_base =11837
 		task_force = {
 			name = "Squadra di Napoli"
-			location =782
+			location =11837
 			ship = { name = "RCT Generale Marcello Prestinari" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ITA } } }
 			ship = { name = "RCT Generale Antonio Cantore" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ITA } } }
 			ship = { name = "RCT Giuseppe La Masa" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ITA } } }
@@ -118,7 +118,7 @@ units = {
 		}
 		task_force = {
 			name = "II Gruppo Sommergibili"
-			location =782
+			location =11837
 			ship = { name = "RSmg Jalea" definition = submarine equipment = { submarine_1 = { amount = 1 owner = ITA version_name = "Sirena Class" } } }
 			ship = { name = "RSmg Jantina" definition = submarine equipment = { submarine_1 = { amount = 1 owner = ITA version_name = "Sirena Class" } } }
 			ship = { name = "RSmg Ametista" definition = submarine equipment = { submarine_1 = { amount = 1 owner = ITA version_name = "Sirena Class" } } }
@@ -131,10 +131,10 @@ units = {
 	}
 	fleet = {
 		name = "Comando Navale Sardegna"
-		naval_base =6383
+		naval_base =11837
 		task_force = {
 			name = "Squadra di Sardegna"
-			location =6383
+			location =11837
 			ship = { name = "RCT Generale Achille Papa" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ITA } } }
 			ship = { name = "RCT Generale Carlo Montanari" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ITA } } }
 			ship = { name = "RCT Generale Antonino Cascino" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ITA } } }
@@ -145,17 +145,17 @@ units = {
 		}
 		task_force = {
 			name = "VII Gruppo Sommergibili"
-			location =6383
+			location =11837
 			ship = { name = "RSmg Medusa" definition = submarine equipment = { submarine_1 = { amount = 1 owner = ITA version_name = "Sirena Class" } } }
 			ship = { name = "RSmg Anfitrite" definition = submarine equipment = { submarine_1 = { amount = 1 owner = ITA version_name = "Sirena Class" } } }
 		}
 	}
 	fleet = {
 		name = "Comando Navale Sicilia"
-		naval_base =3891
+		naval_base =11837
 		task_force = {
 			name = "Squadra di Sicilia"
-			location =3891
+			location =11837
 			ship = { name = "RCT Palestro" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ITA } } }
 			ship = { name = "RCT Confienza" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ITA } } }
 			ship = { name = "RCT San Martino" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ITA } } }
@@ -167,7 +167,7 @@ units = {
 		}
 		task_force = {
 			name = "III Gruppo Sommergibili"
-			location =3891
+			location =11837
 			ship = { name = "RSmg Vettor Pisani" definition = submarine equipment = { submarine_1 = { amount = 1 owner = ITA } } }
 			ship = { name = "RSmg Giovanni Bausan" definition = submarine equipment = { submarine_1 = { amount = 1 owner = ITA } } }
 			ship = { name = "RSmg Marcantonio Colonna" definition = submarine equipment = { submarine_1 = { amount = 1 owner = ITA } } }
@@ -184,10 +184,10 @@ units = {
 	}
 	fleet = {
 		name = "Comando Navale Mar Egeo"
-		naval_base =9190
+		naval_base =11837
 		task_force = {
 			name = "Squadra del Mar Egeo"
-			location =9190
+			location =11837
 			ship = { name = "RCT Francesco Crispi" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ITA } } }
 			ship = { name = "RCT Quintino Sella" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ITA } } }
 			ship = { name = "RCT Astore" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ITA version_name = "Maestrale Class" } } }
@@ -195,7 +195,7 @@ units = {
 		}
 		task_force = {
 			name = "VI Gruppo Sommergibili"
-			location =9190
+			location =11837
 			ship = { name = "RSmg Sirena" definition = submarine equipment = { submarine_1 = { amount = 1 owner = ITA version_name = "Sirena Class" } } }
 			ship = { name = "RSmg Argonauta" definition = submarine equipment = { submarine_1 = { amount = 1 owner = ITA version_name = "Sirena Class" } } }
 			ship = { name = "RSmg Fisalia" definition = submarine equipment = { submarine_1 = { amount = 1 owner = ITA version_name = "Sirena Class" } } }
@@ -205,10 +205,10 @@ units = {
 	}
 	fleet = {
 		name = "Comando Navale Libia"
-		naval_base =1075
+		naval_base =11837
 		task_force = {
 			name = "Squadra di Libia"
-			location =1075
+			location =11837
 			ship = { name = "RCT Aquilone" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ITA version_name = "Navigatori Class" } } }
 			ship = { name = "RCT Euro" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ITA version_name = "Navigatori Class" } } }
 			ship = { name = "RCT Nembo" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ITA version_name = "Navigatori Class" } } }
@@ -216,7 +216,7 @@ units = {
 		}
 		task_force = {
 			name = "V Gruppo Sommergibili"
-			location =1075
+			location =11837
 			ship = { name = "RSmg Delfino" definition = submarine equipment = { submarine_1 = { amount = 1 owner = ITA version_name = "Bandiera Class" } } }
 			ship = { name = "RSmg Narvalo" definition = submarine equipment = { submarine_1 = { amount = 1 owner = ITA version_name = "Bandiera Class" } } }
 			ship = { name = "RSmg Squalo" definition = submarine equipment = { submarine_1 = { amount = 1 owner = ITA version_name = "Bandiera Class" } } }
@@ -225,10 +225,10 @@ units = {
 	}
 	fleet = {
 		name = "Comando Navale Mar Rosso"
-		naval_base =11553
+		naval_base =11837
 		task_force = {
 			name = "Squadra del Mar Rosso"
-			location =11553
+			location =11837
 			ship = { name = "RCT Francesco Nullo" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ITA } } }
 			ship = { name = "RCT Nazario Sauro" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ITA } } }
 			ship = { name = "RCT Cesare Battisti" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ITA } } }
@@ -241,7 +241,7 @@ units = {
 		}
 		task_force = {
 			name = "VIII Gruppo Sommergibili"
-			location =11553
+			location =11837
 			ship = { name = "RSmg Luigi Settembrini" definition = submarine equipment = { submarine_1 = { amount = 1 owner = ITA version_name = "Bandiera Class" } } }
 			ship = { name = "RSmg Ruggiero Settimo" definition = submarine equipment = { submarine_1 = { amount = 1 owner = ITA version_name = "Bandiera Class" } } }
 			ship = { name = "RSmg Salpa" definition = submarine equipment = { submarine_1 = { amount = 1 owner = ITA version_name = "Sirena Class" } } }

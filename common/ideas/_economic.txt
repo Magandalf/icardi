@@ -8,6 +8,20 @@ ideas = {
 			removal_cost=-1
 			modifier={production_lack_of_resource_penalty_factor = -1}
 		}
+		neutrality_idea1 = {
+			allowed = {
+				always = no
+			}
+			picture = neutrality_idea
+			removal_cost=-1
+			modifier={
+				consumer_goods_factor = 1000
+				production_speed_buildings_factor = -1000
+				research_speed_factor = -1000
+                political_power_gain = -1000
+				industrial_capacity_factory = -1000
+			}
+		}
 		wartime_economy_man = {
 			removal_cost = -1
 			allowed = {
@@ -57,7 +71,9 @@ ideas = {
 				tag = HUN
 				extra_trade_to_target_factor = 0.8
 			}
-			}}
+			picture = war_economy
+    }
+}
 	economy = {
 		law = yes
 		use_list_view = yes
@@ -67,11 +83,11 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				consumer_goods_factor = 0.55
+				consumer_goods_factor = 0.4
 				conversion_cost_civ_to_mil_factor = 0.5
 				conversion_cost_mil_to_civ_factor = 0.5
-				production_speed_dockyard_factor = -1
-				production_speed_arms_factory_factor = -1
+				production_speed_dockyard_factor = -0.4
+				production_speed_arms_factory_factor = -0.4
 			}
 			allowed_to_remove = {
 				always = no
@@ -84,18 +100,68 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				consumer_goods_factor = 0.38
-				production_speed_industrial_complex_factor = -0.3
-				production_speed_arms_factory_factor = -0.4
-				production_speed_dockyard_factor = -0.2
-				conversion_cost_civ_to_mil_factor= 0.3
+				consumer_goods_factor = 0.35
+				conversion_cost_civ_to_mil_factor = 0.3
 				conversion_cost_mil_to_civ_factor = 0.3
-				max_fuel_factor = -0.25
-				fuel_gain_factor = -0.15
+				production_speed_dockyard_factor = -0.2
+				production_speed_arms_factory_factor = -0.2
+				production_speed_industrial_complex_factor = 0.1
 			}
 			allowed_to_remove = {
 				OR = {
-					has_war_support > 0.75
+					has_war = yes
+				}
+			}
+			cancel_if_invalid = no
+		}
+		war_preparation = {
+			allowed = {
+				always = no
+			}
+			picture = low_economic_mobilisation
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.3
+				production_speed_dockyard_factor = 0.10
+			}
+			allowed_to_remove = {
+				OR = {
+					has_war = yes
+				}
+			}
+			cancel_if_invalid = no
+		}
+		USA_war_economy = {
+			allowed = {
+				always = no
+				tag = USA
+			}
+			picture = war_economy
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.26
+				production_speed_dockyard_factor = 0.20
+				production_speed_arms_factory_factor = 0.1
+			}
+			allowed_to_remove = {
+				OR = {
+					has_war = yes
+				}
+			}
+			cancel_if_invalid = no
+		}
+		JAP_economy_law = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.25
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_infrastructure_factor = 0.2
+			}
+			allowed_to_remove = {
+				OR = {
 					has_war = yes
 				}
 			}
@@ -120,13 +186,6 @@ ideas = {
 			available = {
 				NOT = {	tag = USA }
 				has_war_support > 0.15
-				if = {
-					limit = {
-						original_tag = HUN
-						has_dlc = "Death or Dishonor"
-					}
-					NOT = { has_idea = HUN_treaty_of_triannon }
-				}
 			}
 			cost = 150
 			removal_cost = -1
@@ -159,13 +218,6 @@ ideas = {
 			available = {
 				has_war_support > 0.25
 				NOT = {	tag = USA }
-				if = {
-					limit = {
-						original_tag = HUN
-						has_dlc = "Death or Dishonor"
-					}
-					NOT = { has_idea = HUN_treaty_of_triannon }
-				}
 			}
 			cost = 150
 			removal_cost = -1
@@ -196,6 +248,7 @@ ideas = {
 					has_government = communism
 					has_war = yes
 				}
+				NOT = { has_idea = HUN_treaty_of_triannon }
 			}
 			cost = 150
 			removal_cost = -1
@@ -247,7 +300,7 @@ ideas = {
 			cost = 150
 			removal_cost = -1
 			modifier = {
-				consumer_goods_factor = 0.13
+				consumer_goods_factor = 0.16
 				production_speed_arms_factory_factor = 0.2
 				conversion_cost_civ_to_mil_factor= -0.2
 				conversion_cost_mil_to_civ_factor = -0.2
@@ -281,14 +334,8 @@ ideas = {
 					factor = 300
 					OR = {
 						tag = PER
-						tag = IRQ
 					}
 					is_in_faction = no
-				}
-				modifier = {
-					factor = 300
-					tag = BRA
-					date > 1943.1.1 # at this point we can probably cash in on rubber lack in the world
 				}
 				# Oil for hitlers oil throne!
 				modifier = {
@@ -300,13 +347,6 @@ ideas = {
 		}
 		export_focus = {
 			available = {
-				if = {
-					limit = {
-						original_tag = CHI
-						has_dlc = "Waking the Tiger"
-					}
-					NOT = { has_idea = CHI_nine_power_treaty }
-				}
 			}
 			cost = 150
 			removal_cost = -1
@@ -330,11 +370,9 @@ ideas = {
 					is_in_faction = no
 					OR = {
 						# portugal and sweden are special tungsten snowflakes
-						tag = POR
 						tag = SWE
 						# Iraq & Iran are special oil snowflakes
 						tag = PER
-						tag = IRQ
 					}
 				}
 			}
@@ -360,13 +398,6 @@ ideas = {
 							has_idea = tot_economic_mobilisation
 						}
 					}
-				}
-				if = {
-					limit = {
-						original_tag = CHI
-						has_dlc = "Waking the Tiger"
-					}
-					NOT = { has_idea = CHI_nine_power_treaty }
 				}
 			}
 			visible = {
@@ -417,13 +448,6 @@ ideas = {
 						}
 					}
 				}
-				if = {
-					limit = {
-						original_tag = CHI
-						has_dlc = "Waking the Tiger"
-					}
-					NOT = { has_idea = CHI_nine_power_treaty }
-				}
 			}
 			cost = 150
 			removal_cost = -1
@@ -467,13 +491,6 @@ ideas = {
 				OR = {
 					NOT = {	tag = SOV }
 					NOT = { has_opinion_modifier = MR_pact }
-				}
-				if = {
-					limit = {
-						original_tag = CHI
-						has_dlc = "Waking the Tiger"
-					}
-					NOT = { has_idea = CHI_nine_power_treaty }
 				}
 			}
 			cost = 150

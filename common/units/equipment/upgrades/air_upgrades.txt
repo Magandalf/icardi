@@ -1,57 +1,5 @@
 upgrades = {
-	plane_armor_upgrade = {			#bba#
-		max_level = 5
 
-		cost = air
-
-		air_defence = 0.05
-		air_range = -0.03
-		weight = 0.05
-		air_agility = -0.02
-		
-		linear_cost = {
-			cost_by_level = 5
-			cost_by_level_for_licensed_equipment = 5
-		}
-		level_requirements = {
-			1 = {
-				has_tech = aircraft_construction
-			}
-			3 = {
-				has_tech = survivability_studies
-			}
-		}
-		resource_cost_thresholds = { # resource values defined here are TOTAL added cost, not cumulative
-		
-			1 = {
-				steel = 2
-			}
-			2 = {
-				steel = 4
-			}
-			3 = {
-				steel = 6
-			}
-			4 = {
-				steel = 8
-			}
-			5 = {
-				steel = 10
-			}
-		}
-	}
-	plane_engine_upgrade = {		#bba#
-		max_level = 5
-		level_requirements = {
-			4 = {
-				has_tech = range_improvements
-			}
-		}
-		cost = air
-		weight = 0.05
-		fuel_consumption = 0.05
-		air_range = 0.1
-	}
 	plane_gun_upgrade = {
 		max_level = 5
 
@@ -74,7 +22,6 @@ upgrades = {
 	}
 	plane_range_upgrade = {
 		max_level = 5
-
 		cost = air
 
 		air_range = 0.1
@@ -88,7 +35,14 @@ upgrades = {
 		air_range = 0.15
 		reliability = -0.1
 	}
-	
+	plane_engine_upgrade = {
+		max_level = 5
+
+		cost = air
+
+		maximum_speed = 0.02
+		air_agility = 0.05
+	}
 	plane_reliability_upgrade = {
 		max_level = 5
 
@@ -143,5 +97,12 @@ upgrades = {
 		reliability = -0.1
 		air_agility = -0.05
 	}
-	
+	plane_armor_upgrade = {
+		max_level = 5
+
+		cost = air
+
+		air_defence = 0.05
+		air_range = -0.05
+	}
 }

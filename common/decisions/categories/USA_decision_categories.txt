@@ -38,4 +38,9 @@ USA_puppet_minor = {
 		original_tag = USA
 	}
 }
+USA_macro = {
+	allowed = {
+		original_tag = USA
+	}
+}
 

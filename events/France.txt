@@ -44,7 +44,7 @@ country_event = {
 	is_triggered_only = yes
 	fire_only_once = no
 	option = {
-		name = france.11.a	
+		name = france.11.a
 	}
 }
 country_event = {
@@ -78,12 +78,7 @@ country_event = {
 		set_global_flag = achievement_france_surrender
 		set_global_flag = fall_of_france
 		add_political_power = 100
-		add_timed_idea={idea=GER_triumph_in_france days=730}
-		GER={
-			#set_variable={collabo=has_collaboration@FRA}
-			#multiply_variable={collabo=100}
-			#add_to_variable= {pow_other_sources = 100}
-		}
+		add_timed_idea={ idea = GER_triumph_in_france days=730}
 		FRA={
 			#pow_before_annex=yes
 			#clear_variable = getting_annexed
@@ -114,41 +109,40 @@ country_event = {
 			diplomatic_relation = { country = CAN relation = non_aggression_pact }
 			diplomatic_relation = { country = RAJ relation = non_aggression_pact }
 			diplomatic_relation = { country = AST relation = non_aggression_pact }
-			diplomatic_relation = { country = NZL relation = non_aggression_pact }
 			diplomatic_relation = { country = GER relation = non_aggression_pact }
 		}
 		if = {
 			limit = {has_global_flag=Fall_of_france_oct}
 			ITA = {
-				transfer_state = 653
+				transfer_state = 735
 				transfer_state = 32
 				transfer_state = 21
 				transfer_state = 1
-				transfer_state = 422
-				transfer_state = 584
+				transfer_state = 458
+				transfer_state = 665
 			}
 		}
 		else = {
 			ITA = {
-				transfer_state = 653
-				transfer_state = 422
-				transfer_state = 584
+				transfer_state = 735
+				transfer_state = 458
+				transfer_state = 665
 			}
 		}
 		JAP = {
 			EFR = { country_event = { id = france.1 } }
-			transfer_state = 274
-			transfer_state = 589
-			transfer_state = 590
-			transfer_state = 659
-			transfer_state = 646
+			transfer_state = 671
+			transfer_state = 728
+			transfer_state = 670
+			transfer_state = 741
+			transfer_state = 286
 		}
 		GER = {
 			transfer_state = 28
 			transfer_state = 17
 			transfer_state = 18
 			transfer_state = 29
-			transfer_state = 699
+			transfer_state = 785
 			transfer_state = 16
 			transfer_state = 15
 			transfer_state = 14
@@ -164,26 +158,26 @@ country_event = {
 		FRA = {
 			add_ideas = FRA_no_training_queue
 			add_ideas = FRA_defeatism
-			transfer_state = 466
-			transfer_state = 686
-			transfer_state = 687
-			transfer_state = 688
-			transfer_state = 580
-			transfer_state = 288
-			transfer_state = 556
-			transfer_state = 652
-			transfer_state = 562
-			transfer_state = 290
-			transfer_state = 612
-			transfer_state = 624
-			transfer_state = 631
-			transfer_state = 626
-			transfer_state = 282
-			transfer_state = 465
-			transfer_state = 636
-			transfer_state = 682
-			transfer_state = 683
-			transfer_state = 648
+			transfer_state = 774
+			transfer_state = 773
+			transfer_state = 539
+			transfer_state = 297
+			transfer_state = 694
+			transfer_state = 692
+			transfer_state = 772
+			transfer_state = 538
+			transfer_state = 295
+			transfer_state = 718
+			transfer_state = 540
+			transfer_state = 708
+			transfer_state = 706
+			transfer_state = 713
+			transfer_state = 734
+			transfer_state = 635
+			transfer_state = 268
+			transfer_state = 660
+			transfer_state = 320
+			transfer_state = 321
 			set_cosmetic_tag = FRA_FREE
 			set_technology = {
 				naval_base_allowed = 1
@@ -191,7 +185,7 @@ country_event = {
 			}
 			remove_ideas = FRA_protected_by_the_maginot_line
 			set_country_flag = free_france
-			set_capital = { state = 466 }
+			set_capital = { state = 539 }
 			country_event = france.20
 		}
 		ENG = { add_to_faction = FRA }
@@ -206,13 +200,13 @@ country_event = {
 				}
 				add_compliance = GER.collabo
 			}
+			country_event = {id=france.15 days=10}
 		}
 		VEN={transfer_navy = {
 				target = FRA
 				}}
 		FRA = {set_equipment_fraction = 0}
-		FRA = { country_event = {id=france.187 days=7} }
-		GER = { country_event = {id=france.15 days=7} }
+		FRA = { country_event = {id=france.187 days=10} }
 	}
 }
 country_event = {
@@ -236,54 +230,32 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = france.15.a
-		16 = {
-		remove_province_modifier = {
-			static_modifiers = { paris_city }
-			province = {
-				id =10434
-				id =8747
-			}
-		}
-		}
 		GER = {
 			add_equipment_to_stockpile = {
 				type = infantry_equipment
-				amount = 80000
+				amount = 50000
 				producer = GER
 			}
 			add_equipment_to_stockpile = {
 				type = artillery_equipment
-				amount = 8000
+				amount = 1500
 				producer = GER
 			}
 			add_equipment_to_stockpile = {
 				type = anti_air_equipment
-				amount = 2000
+				amount = 1200
 				producer = GER
 			}
 			add_equipment_to_stockpile = {
 				type = anti_tank_equipment
-				amount = 2000
+				amount = 1200
 				producer = GER
 			}
-		}
-	}
-}
-country_event = {
-	id = france.16
-	title = france.16.t
-	desc = france.16.d
-	picture = GFX_report_event_french_resistance_02
-	is_triggered_only = yes
-	option = {
-		name = france.16.a
-		remove_ideas = FRA_victors_of_wwi
-		remove_ideas = FRA_disjointed_government
-		set_country_flag = casablanca_capital
-		if = {
-			limit = { 425 = { is_owned_by = FRA }
+			add_equipment_to_stockpile = {
+				type = support_equipment_1
+				amount = 1200
+				producer = GER
 			}
-			set_capital = { state = 425 }
 		}
 	}
 }
@@ -458,4 +430,3 @@ country_event = {
 		}
 	}
 }
-

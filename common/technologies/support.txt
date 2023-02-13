@@ -226,6 +226,9 @@ technologies = {
 				defence = 0.1
 			}
 		}
+		enable_equipment_modules = {
+			auto_loader
+		}
 		light_flame_tank = {
 			urban = {
 				attack = 0.1
@@ -381,9 +384,6 @@ technologies = {
 			name = support_folder
 			position = { x = 2 y = @1942 }
 		}
-		#enable_subunits ={
-		#	sniper_recon
-		#}
 		categories = {
 			support_tech
 			recon_tech
@@ -494,7 +494,7 @@ technologies = {
 	}
 	tech_military_police2 = {
 		military_police = {
-			max_organisation=20
+			max_organisation = 15
 		}
 		path = {
 			leads_to_tech = tech_military_police3
@@ -523,7 +523,7 @@ technologies = {
 	}
 	tech_military_police3 = {
 		military_police = {
-			max_organisation=20
+			max_organisation = 15
 		}
 		path = {
 			leads_to_tech = tech_military_police4
@@ -552,7 +552,8 @@ technologies = {
 	}
 	tech_military_police4 = {
 		military_police = {
-			max_organisation=20
+			suppression_factor = 0.1
+			max_organisation = 15
 		}
 		research_cost = 1
 		start_year = 1943
@@ -615,12 +616,9 @@ technologies = {
 	tech_maintenance_company2 = {
 		maintenance_company = {
 			reliability_factor = 0.05
-			#equipment_capture_factor = 0.05
-			default_morale =0.2
 		}
 		enable_equipment_modules = {
 			easy_maintenance
-			plane_easy_maintenance
 		}
 		path = {
 			leads_to_tech = tech_maintenance_company3
@@ -658,7 +656,6 @@ technologies = {
 	tech_maintenance_company3 = {
 		maintenance_company = {
 			reliability_factor = 0.05
-			default_morale =0.2
 		}
 		path = {
 			leads_to_tech = tech_maintenance_company4
@@ -695,8 +692,7 @@ technologies = {
 	}
 	tech_maintenance_company4 = {
 		maintenance_company = {
-			reliability_factor = 0.05
-			default_morale =0.2
+			reliability_factor = 0.1
 		}
 		research_cost = 1
 		start_year = 1943
@@ -772,6 +768,7 @@ technologies = {
 		field_hospital = {
 			casualty_trickleback = 0.10
 			experience_loss_factor = -0.10
+			max_strength = 5
 		}
 		path = {
 			leads_to_tech = tech_field_hospital3
@@ -811,6 +808,7 @@ technologies = {
 		field_hospital = {
 			casualty_trickleback = 0.1
 			experience_loss_factor = -0.10
+			max_strength = 5
 		}
 		path = {
 			leads_to_tech = tech_field_hospital4
@@ -850,6 +848,7 @@ technologies = {
 		field_hospital = {
 			casualty_trickleback = 0.1
 			experience_loss_factor = -0.10
+			max_strength = 10
 		}
 		research_cost = 1
 		start_year = 1943
@@ -1199,11 +1198,11 @@ technologies = {
 			position = { x = 0 y = @1918 }
 		}
 		path = {
-			leads_to_tech = railway_gun
+			leads_to_tech = wartime_train
 			research_cost_coeff = 1
 		}
 		path = {
-			leads_to_tech = wartime_train
+			leads_to_tech = armored_train
 			research_cost_coeff = 1
 		}
 		categories = {
@@ -1234,13 +1233,13 @@ technologies = {
 			railway_gun_equipment_1
 		}
 		research_cost = 1.5
-		start_year = 1937
+		start_year = 1940
 		categories = {
-			year_1936
+			year_1940
 		}
 		folder = {
 			name = support_folder
-			position = { x = 2 y = @1918 }
+			position = { x = 0 y = @1940 }
 		}
 		categories = {
 			train_tech
@@ -1266,7 +1265,7 @@ technologies = {
 			train_equipment_2
 		}
 		path = {
-			leads_to_tech = armored_train
+			leads_to_tech = railway_gun
 			research_cost_coeff = 1
 		}
 		research_cost = 1.5
@@ -1319,7 +1318,7 @@ technologies = {
 		}
 		folder = {
 			name = support_folder
-			position = { x = 0 y = @1940 }
+			position = { x = 0 y = @1942 }
 		}
 		categories = {
 			train_tech

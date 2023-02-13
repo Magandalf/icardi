@@ -116,7 +116,6 @@ update_operation_ai = {
 					multiply_temp_variable = { score = 15 }
 					add_to_temp_variable = { score = 50 }
 					clamp_temp_variable = { var = score max = 200 }
-					add_to_temp_array = { operation_types = token:operation_make_resistance_contacts }
 					add_to_temp_array = { operation_types_scores = score }
 				}
 			}
@@ -127,7 +126,6 @@ update_operation_ai = {
 						token = token_resistance_contacts
 					}
 				}
-				add_to_temp_array = { operation_types = token:operation_boost_resistance }
 				add_to_temp_array = { operation_types_scores = 1000 }
 			}
 			for_each_loop = {

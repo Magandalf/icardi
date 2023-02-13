@@ -1,186 +1,102 @@
 operations = {
- 	ITA_join_war = {
- 		icon = ger_reichskommissariats
- 		fire_only_once = yes
- 		allowed = { tag = ITA }
- 		available = { has_completed_focus = ITA_greece_war_goal}
- 		cost = 0
- 		days_remove = 20
- 		complete_effect = {
- 			effect_tooltip = {
- 				declare_war_on = {
- 					target = YUG
- 					type = annex_everything
- 				}
- 			}
- 			hidden_effect = {
- 				every_country = {limit = {check_variable= { speeches_enabled > 0}  }
- 					scoped_sound_effect = "sp_ita_musso"
- 				}
- 				set_variable={Global.super_event=3}
- 				show_super_event=yes
- 				ENG = { add_to_faction = YUG }
- 				YUG = { add_to_war = { targeted_alliance = ENG enemy = GER } }
- 				YUG={declare_war_on_enemy_faction = yes}
- 				
- 				
- 			}
- 		}
- 		remove_effect = {
- 			ENG = { add_to_faction = GRE }
- 			GRE = { add_to_war = { targeted_alliance = ENG enemy = GER } }
- 			hidden_effect = {GRE={declare_war_on_enemy_faction =yes}}
- 			
- 		}
- 	}
- 	ITA_give_germany_marsa_matruh = {
- 		icon = ger_reichskommissariats
- 		fire_only_once = no
- 		allowed = { tag = ITA }
- 		available = { controls_state=416}
- 		visible={has_war=yes}
- 		cost = 0
- 		complete_effect = {
- 			GER={set_state_owner=416}
- 			416= {
- 				set_state_province_controller = {
- 					controller = GER
- 					limit = {
- 						is_in_faction_with=GER
- 					}
- 				}
- 			}
- 		}
- 	}
-
- 	ITA_desert_supply = {
- 		icon = ger_reichskommissariats
- 		fire_only_once = yes
- 		allowed = { OR={tag = ITA tag=GER}}
- 		available = { ITA={controls_state=413} NOT={has_global_flag=desert_supply_flag}}
- 		visible={has_war=yes}
- 		cost = 0
- 		complete_effect = {
-		set_global_flag=desert_supply_flag
- 			413={add_building_construction = {
-		type = supply_node
-		level = 1
-		instant_build = yes
-		province = 1064
-		}}
-		581={add_building_construction = {
-		type = supply_node
-		level = 1
-		instant_build = yes
-		province = 4618
-		}}
-		414={add_building_construction = {
-		type = supply_node
-		level = 1
-		instant_build = yes
-		province = 7370
-		}}
- 			build_railway = {
-  			level = 1
-  			#build_only_on_allied = yes
-  			
-  fallback = yes
-  path = { 1064 9164 6674 3926 1094 }
-  start_province = 1064
-  target_province = 1094
+	ITA_give_germany_marsa_matruh = {
+		icon = ger_reichskommissariats
+		fire_only_once = no
+		allowed = { tag = ITA }
+		available = { controls_state=416}
+		visible={has_war=yes}
+		cost = 0
+		complete_effect = {
+			GER={set_state_owner=416}
+			416= {
+				set_state_province_controller = {
+					controller = GER
+					limit = {
+						is_in_faction_with=GER
+					}
+				}
+			}
+		}
+	}
 }
-build_railway = {
-  			level = 1
-  			#build_only_on_allied = yes
-  			
-  fallback = yes
-  path = { 3793 10975 9296 9226 3783 987 1064  }
-  start_province = 3793
-  target_province = 1064
+foreign_politics = {
+	ITA_support_luftwaffe = {
+		icon = generic_operation
+		available = {
+			#GER={has_war_with=SOV}
+			has_equipment = {
+				fighter_equipment_alt > 599
+			}
+			has_deployed_air_force_size = {
+				size> 1999
+				type=fighter
+			}
+		}
+		allowed = {
+			tag = ITA
+		}
+		days_remove = 60
+		cost = 0
+		visible = {
+			always=yes
+		}
+		fire_only_once = no
+		complete_effect = {
+			GER={add_equipment_to_stockpile={type = fighter_equipment amount = 550 }}
+			add_equipment_to_stockpile={type = fighter_equipment_alt amount = -600 }
+		}
+	}
+	ITA_annex_bul = {
+		icon = generic_operation
+		available = {
+			BUL = { is_ai = yes }
+			date>1939.1.1
+		}
+		allowed = {
+			tag = ITA
+		}
+		cost = 0
+		visible = {
+			BUL = { is_ai = yes }
+		}
+		fire_only_once = yes
+		complete_effect = {
+			BUL = {
+				every_owned_state={
+					limit={is_core_of=PREV}
+					add_core_of = ITA
+				}
+			}
+			ITA = {
+				annex_country = {
+					target = BUL
+					transfer_troops = yes
+				}
+			}
+		}
+	}
+	GER_annex_bul = {
+		icon = generic_operation
+		available = {
+			BUL = { is_ai = yes }
+			date>1939.1.1
+		}
+		allowed = {
+			tag = GER
+		}
+		cost = 0
+		visible = {
+			BUL = { is_ai = yes }
+		}
+		fire_only_once = yes
+		complete_effect = {
+			BUL={pow_before_annex=yes}
+			GER = {
+				annex_country = {
+					target = BUL
+					transfer_troops = yes
+				}
+			}
+		}
+	}
 }
- 		}
- 	}
- }
- foreign_politics = {
- 	ITA_support_luftwaffe = {
- 		icon = generic_operation
- 		available = {
- 			#GER={has_war_with=SOV}
- 			has_equipment = {
- 				small_plane_airframe > 599
- 			}
- 			has_deployed_air_force_size = {
- 				size> 1999
- 				type=fighter
- 			}
- 		}
- 		allowed = {
- 			tag = ITA
- 		}
- 		days_remove = 60
- 		cost = 0
- 		visible = {
- 			always=yes
- 		}
- 		fire_only_once = no
- 		complete_effect = {
- 			GER={add_equipment_to_stockpile={type = small_plane_airframe amount = 550 }}
- 			add_equipment_to_stockpile={type = small_plane_airframe amount = -600 }
- 		}
- 	}
- 	ROM_annex_bul = {
- 		icon = generic_operation
- 		available = {
- 			BUL = { is_ai = yes }
- 			date>1939.1.1
- 		}
- 		allowed = {
- 			tag = GER
- 		}
- 		cost = 0
- 		visible = {
- 			BUL = { is_ai = yes }
- 		}
- 		fire_only_once = yes
- 		complete_effect = {
- 			BUL = {
- 				pow_before_annex=yes
- 				every_owned_state={
- 					limit={is_core_of=PREV}
- 					add_core_of = ROM
- 				}
- 			}
- 			ROM = {
- 				annex_country = {
- 					target = BUL
- 					transfer_troops = yes
- 				}
- 			}
- 		}
- 	}
- 	GER_annex_bul = {
- 		icon = generic_operation
- 		available = {
- 			BUL = { is_ai = yes }
- 			date>1939.1.1
- 		}
- 		allowed = {
- 			tag = GER
- 		}
- 		cost = 0
- 		visible = {
- 			BUL = { is_ai = yes }
- 		}
- 		fire_only_once = yes
- 		complete_effect = {
- 			BUL={pow_before_annex=yes}
- 			GER = {
- 				annex_country = {
- 					target = BUL
- 					transfer_troops = yes
- 				}
- 			}
- 		}
- 	}
- }
-

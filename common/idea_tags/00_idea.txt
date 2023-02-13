@@ -38,15 +38,28 @@ idea_categories = {
 	}
 	
 	research_production = {
+		slot = tank_research
+		slot = naval_research
+		slot = aircraft_research
+		slot = materiel_research
+		slot = industrial_research
+		character_slot = theorist
+
+		ledger = civilian
+		
+		cost = 100
+		removal_cost = 0
+	}
+
+	design_production = {
 		slot = tank_manufacturer
 		slot = naval_manufacturer
 		slot = aircraft_manufacturer
 		slot = materiel_manufacturer
 		slot = industrial_concern
-		character_slot = theorist
+		slot = theorist_production
 
 		ledger = civilian
-		
 		cost = 150
 		removal_cost = 0
 	}
@@ -68,7 +81,7 @@ idea_categories = {
 	academy_spirit = {
 		type = army_spirit
 
-		cost = 20
+		cost = 25
 		removal_cost = -1
 		
 		politics_tab = no
@@ -81,7 +94,7 @@ idea_categories = {
 	army_spirit = {
 		type = army_spirit
 
-		cost = 35
+		cost = 50
 		removal_cost = -1
 		
 		politics_tab = no
@@ -93,7 +106,7 @@ idea_categories = {
 	division_command_spirit = {
 		type = army_spirit
 		
-		cost = 50
+		cost = 75
 		removal_cost = -1
 		
 		politics_tab = no
@@ -105,7 +118,7 @@ idea_categories = {
 	naval_academy_spirit = {
 		type = navy_spirit
 
-		cost = 20
+		cost = 25
 		removal_cost = -1
 		
 		politics_tab = no
@@ -117,7 +130,7 @@ idea_categories = {
 	navy_spirit = {
 		type = navy_spirit
 
-		cost = 35
+		cost = 50
 		removal_cost = -1
 		
 		politics_tab = no
@@ -129,7 +142,7 @@ idea_categories = {
 	naval_command_spirit = {
 		type = navy_spirit
 		
-		cost = 50
+		cost = 75
 		removal_cost = -1
 		
 		politics_tab = no
@@ -141,7 +154,7 @@ idea_categories = {
 	air_force_academy_spirit = {
 		type = air_spirit
 
-		cost = 50
+		cost = 25
 		removal_cost = -1
 		
 		politics_tab = no
@@ -153,7 +166,7 @@ idea_categories = {
 	air_force_spirit = {
 		type = air_spirit
 
-		cost = 50
+		cost = 75
 		removal_cost = -1
 		
 		politics_tab = no
@@ -167,7 +180,7 @@ idea_categories = {
 		
 		politics_tab = no
 		
-		cost = 50
+		cost = 75
 		removal_cost = -1
 		
 		ledger = hidden
@@ -180,7 +193,7 @@ slot_ledgers = {
 	army_chief = army
 	navy_chief = navy
 	air_chief = air
-	political_advisor = civilian
+	
 	tank_manufacturer = army
 	naval_manufacturer = navy
 	aircraft_manufacturer = air

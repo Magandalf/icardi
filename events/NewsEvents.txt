@@ -1874,7 +1874,6 @@ news_event = {
 		FRA = { add_timed_idea = { idea=ENG_lose_in_africa days=180 } }
 		CAN = { add_timed_idea = { idea=ENG_lose_in_africa days=180 } }
 		SAF = { add_timed_idea = { idea=ENG_lose_in_africa days=180 } }
-		NZL = { add_timed_idea = { idea=ENG_lose_in_africa days=180 } }
 		AST = { add_timed_idea = { idea=ENG_lose_in_africa days=180 } }
 		RAJ = { add_timed_idea = { idea=ENG_lose_in_africa days=180 } }
 	}
@@ -1978,8 +1977,8 @@ news_event = {
 	picture = GFX_news_event_052
 	major = yes
 	trigger = {
-		116 = { is_controlled_by = GER }
-		116 = { is_owned_by = ENG }
+		118 = { is_controlled_by = GER }
+		118 = { is_owned_by = ENG }
 		GER = { has_war_with = ENG }
 		NOT = { has_global_flag = fall_of_gibraltar_ger }
 	}
@@ -2029,7 +2028,6 @@ news_event = {
 		FRA={add_ideas={ENG_lose_in_africa}}
 		CAN={add_ideas={ENG_lose_in_africa}}
 		SAF={add_ideas={ENG_lose_in_africa}}
-		NZL={add_ideas={ENG_lose_in_africa}}
 		AST={add_ideas={ENG_lose_in_africa}}
 		RAJ={add_ideas={ENG_lose_in_africa}}
 	}
@@ -2097,8 +2095,8 @@ news_event = {
 	picture = GFX_news_event_052
 	major = yes
 	trigger = {
-		116 = { is_controlled_by = ITA }
-		116 = { is_owned_by = ENG }
+		118 = { is_controlled_by = ITA }
+		118 = { is_owned_by = ENG }
 		ITA = { has_war_with = ENG }
 		NOT = { has_global_flag = fall_of_gibraltar_ita }
 	}
@@ -2390,7 +2388,6 @@ news_event = {
 			2 = { is_controlled_by = USA }
 			2 = { is_controlled_by = AST }
 			2 = { is_controlled_by = CAN }
-			2 = { is_controlled_by = NZL }
 			2 = { is_controlled_by = SAF }
 		}
 		OR = {
@@ -2413,7 +2410,6 @@ news_event = {
 				TAG = USA
 				TAG = AST
 				TAG = CAN
-				TAG = NZL
 				TAG = SAF
 				TAG = ITA
 				TAG = GER
@@ -2428,7 +2424,6 @@ news_event = {
 				TAG = USA
 				TAG = AST
 				TAG = CAN
-				TAG = NZL
 				TAG = SAF
 			}
 		}
@@ -2505,7 +2500,6 @@ news_event = {
 				TAG = AST
 				TAG = FRA
 				TAG = CAN
-				TAG = NZL
 				TAG = SAF
 				TAG = GER
 			}
@@ -2520,7 +2514,6 @@ news_event = {
 				TAG = AST
 				TAG = FRA
 				TAG = CAN
-				TAG = NZL
 				TAG = SAF
 			}
 		}
@@ -4570,40 +4563,6 @@ news_event = {
 	}
 }
 news_event = {
-	id = news.221
-	title = news.221.t
-	desc = news.221.d
-	picture = GFX_news_event_journalists_speech
-	major = yes
-	is_triggered_only = yes
-	fire_for_sender = no
-	option = {
-		name = news.221.a
-		trigger = {
-			OR = {
-				has_government = communism
-			}
-		}
-	}
-	option = {
-		name = news.221.b
-		trigger = {
-			NOT = {
-				has_government = communism
-			}
-			NOT = {
-				tag = MEX
-			}
-		}
-	}
-	option = {
-		name = news.221.c
-		trigger = {
-			tag = MEX
-		}
-	}
-}
-news_event = {
 	id = news.225
 	title = news.225.t
 	desc = news.225.d
@@ -4719,53 +4678,6 @@ news_event = {
 					is_in_faction_with = GER
 					has_war_with = GRE
 				}
-			}
-		}
-	}
-}
-news_event = {
-	id = news.230
-	title = news.230.t
-	desc = news.230.d
-	picture = GFX_news_event_generic_sign_treaty1
-	major = yes
-	is_triggered_only = yes
-	option = {
-		name = news.230.a
-		trigger = {
-			OR = {
-				tag = MEX
-				tag = ARG
-			}
-		}
-	}
-	option = {
-		name = news.230.b
-		trigger = {
-			tag = USA
-		}
-	}
-	option = {
-		name = news.230.c
-		trigger = {
-			has_government = democratic
-			NOT = {
-				OR = {
-					tag = USA
-					tag = MEX
-					tag = ARG
-				}
-			}
-		}
-	}
-	option = {
-		name = news.230.e
-		trigger = {
-			NOT = {
-				has_government = democratic
-				tag = USA
-				tag = MEX
-				tag = ARG
 			}
 		}
 	}
@@ -5085,56 +4997,6 @@ news_event = {
 	}
 }
 news_event = {
-	id = news.270
-	title = news.270.t
-	desc = news.270.desc
-	picture = GFX_news_event_glorious_vehicle
-	major = yes
-	fire_only_once = yes
-	trigger = {
-		NZL = { has_tech = basic_light_tank }
-	}
-	option = {
-		name = news.270.a
-		trigger = {
-			TAG = NZL
-		}
-	}
-	option = {
-		name = news.270.b
-		trigger = {
-			NOT = {
-				TAG = NZL
-			}
-		}
-	}
-}
-news_event = {
-	id = news.271
-	title = news.271.t
-	desc = news.271.desc
-	picture = GFX_news_event_glorious_vehicle
-	major = yes
-	fire_only_once = yes
-	trigger = {
-		NZL = { has_tech = super_heavy_tank }
-	}
-	option = {
-		name = news.271.a
-		trigger = {
-			TAG = NZL
-		}
-	}
-	option = {
-		name = news.271.b
-		trigger = {
-			NOT = {
-				TAG = NZL
-			}
-		}
-	}
-}
-news_event = {
 	id = news.272
 	title = news.272.t
 	desc = news.272.desc
@@ -5243,15 +5105,12 @@ news_event = {
 	option = {
 		name = news.285.b
 		trigger = {
-			TAG = PAK
 		}
 	}
 	option = {
 		name = news.285.c
 		trigger = {
 			NOT = {
-				TAG = RAJ
-				TAG = PAK
 			}
 		}
 	}
@@ -6197,7 +6056,6 @@ news_event = {
 	option = {
 		name = news.326.b
 		trigger = {
-			TAG = CRO
 		}
 	}
 	option = {
@@ -6205,7 +6063,6 @@ news_event = {
 		trigger = {
 			NOT = {
 				TAG = YUG
-				TAG = CRO
 			}
 		}
 	}
@@ -6481,40 +6338,5 @@ news_event = {
 			NOT = { tag = JAP }
 		}
 	}
-}
-
-news_event = {
-	id = news.502
-	title = news.502.t
-	desc = news.502.d
-	picture = GFX_german_stalingrad_siege
-	major = yes
-	trigger = {
-			NOT = {has_global_flag = "Stalingrad_Siege"}
-			GER = {
-				OR = {
-					controls_province = 463
-					controls_province = 11895
-					controls_province = 11896
-					controls_province = 3306
-					controls_province = 10402
-					controls_province = 11898
-					controls_province = 11897
-				}	
-			}
-	}	
-	immediate = {
-		hidden_effect = {
-			 	every_country = {limit = {check_variable= { speeches_enabled > 0} is_in_faction_with=GER }
- 					scoped_sound_effect="sp_stalingrad"
- 				}
-		}
-		set_global_flag = "Stalingrad_Siege"
-	}
-	
-	option = {
-		name = news.502.a
-	}
-
 }
 

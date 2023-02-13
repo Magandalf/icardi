@@ -1,57 +1,71 @@
 state=
- {
- 	id=69
- 	name="STATE_69"
- 	manpower = 2830000
- 	state_category = city
- 	resources={
- 		steel = 40
- 	}
- 	history={
- 		victory_points = {
- 			3362 3
- 		}
- 		victory_points = {
- 			10360 1
- 		}
- 		victory_points = {
- 			10329 3
- 		}
- 		owner = CZE
- 		buildings = {
- 			infrastructure = 8
- 			arms_factory = 3
- 			industrial_complex = 4
- 			anti_air_building = 1
- 			389 = {
- 				bunker = 1
- 			}
- 			434 = {
- 				bunker = 1
- 			}
- 			3362 = {
- 				bunker = 1
- 			}
- 			4842 = {
- 				bunker = 1
- 			}
- 			5975 = {
- 				bunker = 1
- 			}
- 			8779 = {
- 				bunker = 1
- 			}
- 			10360 = {
- 				bunker = 1
- 			}
- 		}
- 		add_core_of = CZE
- 		1938.9.30 = {
- 			owner = GER
- 			controller = GER
- 		}
- 	}
- 	provinces= {
- 		389 434 508 522 3195 3362 4842 5975 7264 8779 10329 10342 10360 10453}
- }
+{
+	id=69
+	name="STATE_69"
+	manpower = 2830000
+	
+	state_category = city
+	
+	resources={
+		steel=4 # was: 8
+	}
+	
+	history={
+		victory_points = {
+			3585 3
+		}
+		#victory_points = {
+		#	11432 1
+		#}
+		victory_points = {
+			11401 3
+		}
+		owner = CZE
+		buildings = {
+			infrastructure = 8
+			industrial_complex = 5
+			arms_factory = 5
+			anti_air_building = 1
+			424 =
+			{
+				bunker = 1
+			}
+			469 =
+			{
+				bunker = 1
+			}
+			3585 =
+			{
+				bunker = 1
+			}
+			5283 =
+			{
+				bunker = 1
+			}
+			6470 =
+			{
+				bunker = 1
+			}
+			9555 =
+			{
+				bunker = 1
+			}
+			11432 =
+			{
+				bunker = 1
+			}
 
+		}
+		add_core_of = CZE
+
+		1938.9.30 = {
+			owner = GER
+			controller = GER
+		}
+	}
+	provinces=
+	{
+424 469 543 557 3418 3585 5283 6470 7857 9555 11401 11414 11432 11525 	}
+
+	local_supplies=0.0 
+}

@@ -3,7 +3,6 @@ category = {
  name = "Speeches"
  soundeffects = {
 	sp_ger_goebbels
-	sp_ger_stuka
 	sp_ger_anschluss
 	sp_jap_banzai
 	sp_usa_roosevelt
@@ -16,13 +15,7 @@ category = {
 	sp_ger_doctor_2
 	marschlied_panzergrenadiere
 	eisenhower
-	unser_rommel
-	peace_europe
 	sp_ger_war
-	untergang
-	sp_stalingrad
-	sp_ger_wien
-	appel_de_gaulle
-	untergang2
  }
+ 
 }

@@ -6,20 +6,19 @@ bookmarks = {
 		picture = "GFX_select_date_1936"
 		default_country = "GER"
 		default = yes
-
 		"FRA"={
 			history = "FRA_GATHERING_STORM_DESC"
-			ideology = democratic
+			ideology = democratic			
 			ideas = {
 				FRA_victors_of_wwi
 				FRA_disjointed_government
-				FRA_protected_by_the_maginot_line
+		
 			}
 			focuses = {
-				#FRA_initiate_government_reform
-				#FRA_support_status_quo
-				#FRA_evacuation_to_morocco
-			}
+				FRA_devalue_the_franc
+				FRA_defensive_focus
+				FRA_firepower_kills			
+				}
 		}
 		"USA"={
 			history = "USA_GATHERING_STORM_DESC"
@@ -30,36 +29,24 @@ bookmarks = {
 				undisturbed_isolation
 			}
 			focuses = {
-				USA_war_plan_black
-				USA_the_giant_wakes
+				USA_factorio
+				USA_national_security
+				USA_american_dream
 			}
 		}
 		"ENG"={
 			history = "ENG_GATHERING_STORM_DESC"
 			ideology = democratic
-			available = { has_dlc = "Man the Guns" }
+			available = { always = yes }
 			ideas = {
 				stiff_upper_lip
 				ENG_the_war_to_end_all_wars
 				george_v
 			}
 			focuses = {
-				tizard_mission_focus
+				limited_rearmament_focus
 				ENG_imperial_conference
-				general_rearmament_focus
-			}
-		}
-		"ENG"={
-			history = "ENG_GATHERING_STORM_DESC"
-			ideology = democratic
-			available = { NOT = { has_dlc = "Man the Guns" } }
-			ideas = {
-				stiff_upper_lip
-				ENG_the_war_to_end_all_wars
-				george_v
-			}
-			focuses = {
-
+				air_defense_focus
 			}
 		}
 		"GER"={
@@ -77,44 +64,29 @@ bookmarks = {
 				GER_ussr_war_goal
 			}
 		}
-		"GER"={
-			history = "GER_GATHERING_STORM_DESC"
-			ideology = fascism
-			available = { NOT = { has_dlc = "Waking the Tiger" } }
-			ideas = {
-				sour_loser
-				general_staff
-				GER_mefo_bills_1
-			}
-			focuses = {
-				GER_anschluss
-				GER_danzig_or_war
-				GER_ussr_war_goal
-			}
-		}
 		"ITA"={
-			history = "ITA_GATHERING_STORM_DESC"
-			ideology = fascism
-			ideas = {
-				vittoria_mutilata
-				victor_emmanuel
-			}
-			focuses = {
-				ITA_pact_of_steel
-				ITA_greece_war_goal
-			}
-		}
+            history = "ITA_GATHERING_STORM_DESC"
+            ideology = fascism
+            ideas = {
+                vittoria_mutilata
+                victor_emmanuel
+            }
+            focuses = {
+                ITA_pact_of_steel
+                ITA_triumph_in_africa
+            }
+        }
 		"JAP"={
 			history = "JAP_GATHERING_STORM_DESC"
 			ideology = fascism
 			ideas = {
 				state_shintoism
 				JAP_zaibatsus
-				JAP_militarism
+				JAP_the_kwantung_army
 			}
 			focuses = {
-				JAP_the_zero
-				JAP_warrior_spirit
+				JAP_develop_chinese_resources
+				JAP_Autarky_Achieved
 				JAP_strike_on_the_southern_resource_area
 			}
 		}
@@ -124,12 +96,12 @@ bookmarks = {
 			ideas = {
 				trotskyite_plot
 				home_of_revolution
+				SOV_the_great_terror
 			}
 			focuses = {
 				SOV_great_purge
 				SOV_collectivist_propaganda
 				SOV_positive_heroism
-
 			}
 		}
 
@@ -152,8 +124,6 @@ bookmarks = {
 				CAN_if_day
 				CAN_national_steel_car
 				CAN_canada_wheat_board
-
-
 			}
 		}
 		"AST"={
@@ -164,24 +134,8 @@ bookmarks = {
 				AST_great_depression_1
 			}
 			focuses = {
-				AST_cac_boomerang
 				AST_squash_the_squanderbugs
 				AST_rats_of_tobruk
-
-
-			}
-		}
-		"NZL"={
-			minor = yes
-			history = "NZL_GATHERING_STORM_DESC"
-			ideology = democratic
-			ideas = {
-
-			}
-			focuses = {
-				NZL_form_the_rnzn
-				NZL_expand_devonport_naval_base
-				NZL_coastal_defense
 			}
 		}
 		"SAF"={
@@ -193,7 +147,6 @@ bookmarks = {
 				SAF_history_of_segregation
 			}
 			focuses = {
-				SAF_secure_interests_in_africa
 				SAF_armor_effort
 				SAF_desert_equipment
 
@@ -214,16 +167,17 @@ bookmarks = {
 				RAJ_the_smiling_buddha
 			}
 		}
-
 		"HUN"={
 			minor = yes
 			history = "HUN_GATHERING_STORM_DESC"
 			ideology = neutrality
 			ideas = {
 				HUN_treaty_of_triannon
+				HUN_economic_disaster
+				HUN_indecisive
 			}
 			focuses = {
-				HUN_strengthen_fascists
+				HUN_right_wing_policy
 				HUN_demand_southern_slovakia
 				HUN_renounce_the_treaty_of_trianon
 			}
@@ -238,45 +192,11 @@ bookmarks = {
 				neutrality_idea
 			}
 			focuses = {
-				ROM_ig_farben_romania
+				ROM_trade_treaty_with_germany
 				ROM_institute_royal_dictatorship
 				ROM_preserve_greater_romania
 			}
 		}
-
-		"CHI"={
-			minor = yes
-			history = "CHI_GATHERING_STORM_DESC"
-			ideology = neutrality
-			ideas = {
-				CHI_army_corruption_1
-				CHI_hyper_inflation_1
-				CHI_nine_power_treaty
-			}
-			focuses = {
-				CHI_foreign_threats
-				CHI_army_reform
-				CHI_war_of_resistance
-
-			}
-		}
-		"MAN"={
-			minor = yes
-			history = "MAN_GATHERING_STORM_DESC"
-			ideology = fascism
-			ideas = {
-				MAN_banditry
-				MAN_kwantung_veto
-				MAN_low_legitimacy_5
-			}
-			focuses = {
-				MAN_obedience
-				MAN_develop_aluminum_sources
-			}
-		}
-
-
-
 
 		effect = {
 			randomize_weather = 22345 # <- Obligatory in every bookmark !

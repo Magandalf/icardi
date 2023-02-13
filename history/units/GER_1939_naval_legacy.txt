@@ -2,10 +2,10 @@
 units = {
 	fleet = {
 		name = "Kriegsmarine"
-		naval_base =214
+		naval_base =6325
 		task_force = {
 			name = "Hochseeflotte"
-			location =214
+			location =6325
 			ship = { name = "Scharnhorst" definition = battleship equipment = { battleship_2 = { amount = 1 owner = GER } } }
 			ship = { name = "Gneisenau" pride_of_the_fleet = yes definition = battleship equipment = { battleship_2 = { amount = 1 owner = GER } } }
 			ship = { name = "Admiral Hipper" definition = heavy_cruiser equipment = { heavy_cruiser_2 = { amount = 1 owner = GER } } }
@@ -24,7 +24,7 @@ units = {
 		}
 		task_force = {
 			name = "Aufklärungsflotte"
-			location =214
+			location =6325
 			ship = { name = "Admiral Scheer" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = GER version_name = "Deutschland Class" } } }
 			ship = { name = "Königsberg" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = GER version_name = "Königsberg Class" } } }
 			ship = { name = "Karlsruhe" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = GER version_name = "Königsberg Class" } } }
@@ -39,7 +39,7 @@ units = {
 		}
 		task_force = {
 			name = "Zerstörerflotte"
-			location =5898
+			location =6325
 			ship = { name = "Z-3" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = GER } } }
 			ship = { name = "Z-10" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = GER } } }
 			ship = { name = "Z-12" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = GER } } }
@@ -52,7 +52,7 @@ units = {
 		}
 		task_force = {
 			name = "Ostseeflotte"
-			location =5842
+			location =6325
 			ship = { name = "Schleswig-Holstein" definition = battleship equipment = { battleship_1 = { amount = 1 owner = GER } } }
 			ship = { name = "Schlesien" definition = battleship equipment = { battleship_1 = { amount = 1 owner = GER } } }
 			ship = { name = "Z-2" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = GER } } }
@@ -68,10 +68,10 @@ units = {
 	}
 	fleet = {
 		name = "Unterseeboots Flotte"
-		naval_base =5898
+		naval_base =6325
 		task_force = {
 			name = "I. U-Boots-Flot. Weddigen"
-			location =5898
+			location =6325
 			ship = { name = "U-9" definition = submarine equipment = { submarine_2 = { amount = 1 owner = GER } } }
 			ship = { name = "U-13" definition = submarine equipment = { submarine_2 = { amount = 1 owner = GER } } }
 			ship = { name = "U-15" definition = submarine equipment = { submarine_2 = { amount = 1 owner = GER } } }
@@ -82,7 +82,7 @@ units = {
 		}
 		task_force = {
 			name = "II. U-Boots-Flot. Saltzwedel"
-			location =214
+			location =6325
 			ship = { name = "U-25" definition = submarine equipment = { submarine_2 = { amount = 1 owner = GER } } }
 			ship = { name = "U-26" definition = submarine equipment = { submarine_2 = { amount = 1 owner = GER } } }
 			ship = { name = "U-27" definition = submarine equipment = { submarine_2 = { amount = 1 owner = GER version_name = "Type VIIA" } } }
@@ -98,7 +98,7 @@ units = {
 		}
 		task_force = {
 			name = "III. U-Boots-Flot. Lohs"
-			location =5898
+			location =6325
 			ship = { name = "U-12" definition = submarine equipment = { submarine_2 = { amount = 1 owner = GER } } }
 			ship = { name = "U-14" definition = submarine equipment = { submarine_2 = { amount = 1 owner = GER } } }
 			ship = { name = "U-16" definition = submarine equipment = { submarine_2 = { amount = 1 owner = GER } } }
@@ -109,7 +109,7 @@ units = {
 		}
 		task_force = {
 			name = "V. U-Boots-Flot. Emsmann"
-			location =5898
+			location =6325
 			ship = { name = "U-56" definition = submarine equipment = { submarine_2 = { amount = 1 owner = GER version_name = "Type VIIA" } } }
 			ship = { name = "U-57" definition = submarine equipment = { submarine_2 = { amount = 1 owner = GER version_name = "Type VIIA" } } }
 			ship = { name = "U-58" definition = submarine equipment = { submarine_2 = { amount = 1 owner = GER version_name = "Type VIIA" } } }
@@ -119,7 +119,7 @@ units = {
 		}
 		task_force = {
 			name = "VI. U-Boots-Flot. Hundius"
-			location =5898
+			location =6325
 			ship = { name = "U-37" definition = submarine equipment = { submarine_2 = { amount = 1 owner = GER version_name = "Type VIIA" } } }
 			ship = { name = "U-38" definition = submarine equipment = { submarine_2 = { amount = 1 owner = GER version_name = "Type VIIA" } } }
 			ship = { name = "U-39" definition = submarine equipment = { submarine_2 = { amount = 1 owner = GER version_name = "Type VIIA" } } }
@@ -131,7 +131,7 @@ units = {
 		}
 		task_force = {
 			name = "VII. U-Boots-Flot. Wegener"
-			location =5898
+			location =6325
 			ship = { name = "U-45" definition = submarine equipment = { submarine_2 = { amount = 1 owner = GER version_name = "Type VIIA" } } }
 			ship = { name = "U-46" definition = submarine equipment = { submarine_2 = { amount = 1 owner = GER version_name = "Type VIIA" } } }
 			ship = { name = "U-47" definition = submarine equipment = { submarine_2 = { amount = 1 owner = GER version_name = "Type VIIA" } } }
@@ -143,7 +143,7 @@ units = {
 		}
 		task_force = {
 			name = "Ausbildungs-Flottille"
-			location =5898
+			location =6325
 			ship = { name = "U-1" definition = submarine equipment = { submarine_2 = { amount = 1 owner = GER } } }
 			ship = { name = "U-2" definition = submarine equipment = { submarine_2 = { amount = 1 owner = GER } } }
 			ship = { name = "U-3" definition = submarine equipment = { submarine_2 = { amount = 1 owner = GER } } }

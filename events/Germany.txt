@@ -5,72 +5,53 @@ country_event = {
 	desc = germany.vienna.d
 	fire_only_once = yes
 	trigger = {
-		YUG = { has_capitulated = yes}
 		GRE = { has_capitulated = yes}
+		YUG = { has_capitulated = yes}
 	}
 	immediate = {
-		76={remove_core_of=ROM}
-		HUN = {transfer_state = 76
+	    HUN = {
 			transfer_state = 45
-			transfer_state = 678
+			transfer_state = 764
 		}
-		ROM = { remove_state_core = 76 }
 		if = {
 			limit = {country_exists = BUL }
 			77 = {remove_core_of = ROM}
 			BUL = {
-				transfer_state = 106
-				transfer_state = 649
-				transfer_state = 177
-				transfer_state = 77
+			transfer_state = 106
+			transfer_state = 731
+			transfer_state = 184
+			transfer_state = 803
 			}
 		}
 		else = {
 			ITA = {
 				transfer_state = 106
-				transfer_state = 649
-				transfer_state = 177
+				transfer_state = 731
+				transfer_state = 184
+				transfer_state = 803
 			}
 		}
 		# if = {
 				# limit= {CRO={OR={exists = no is_ai=yes}}}
 		ITA = {
-			#add_ideas = alpine_forts
 			transfer_state = 103
 			transfer_state = 109
 			transfer_state = 104
+			transfer_state = 804
+			transfer_state = 802
 			transfer_state = 105
+			transfer_state = 47
+			transfer_state = 185
+			transfer_state = 186
+			transfer_state = 187
+		}
+		GER = {
+		    transfer_state = 102
 			transfer_state = 108
 			transfer_state = 107
-			transfer_state = 178
-			transfer_state = 47
-			transfer_state = 179
-		}
-		#}
-		# if = {
-				# limit= {CRO={exists = yes is_ai=no}}
-		# CRO = {
-			# transfer_state = 103
-			# transfer_state = 109
-			# transfer_state = 104
-		# }
-		# ITA = {
-			# add_ideas = alpine_forts
-			
-			# transfer_state = 105
-			# transfer_state = 108
-			# transfer_state = 107
-			# transfer_state = 178
-			# transfer_state = 47
-			# transfer_state = 179
-		# }
-		# }
-		GER = {
-			transfer_state = 102
-			transfer_state = 715
 			if={
 				limit={
-					175={
+					182={
 						OR= {
 							is_controlled_by = GER
 							is_controlled_by = ITA
@@ -80,24 +61,9 @@ country_event = {
 						}
 					}
 				}
-				transfer_state =175
+				transfer_state =182
 			}
-			else={ENG={transfer_state=175}}
-			if={
-				limit={
-					180={
-						OR= {
-							is_controlled_by = GER
-							is_controlled_by = ITA
-							is_controlled_by = ROM
-							is_controlled_by = HUN
-							is_controlled_by = BUL
-						}
-					}
-				}
-				transfer_state =180
-			}
-			else={ENG={transfer_state=180}}
+			else = { ENG = { transfer_state=182 } }
 		}
 	}
 	option = {
@@ -111,6 +77,60 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = germany.4.a
+	}
+}
+country_event = {
+	id = germany.357
+	title = germany.357.t
+	desc = germany.357.d
+	picture = GFX_report_event_german_speech
+	is_triggered_only = yes
+	fire_only_once = yes
+	timeout_days = 7
+	option = {
+		name = germany.357.a
+        custom_effect_tooltip = "Get 4 Medium Tank Divisions spawned in Bourgogne."
+			division_template = {
+				name = "Panzer Lehr Division"
+				regiments = {
+					medium_armor = { x = 0 y = 0 }
+					medium_armor = { x = 0 y = 1 }
+					medium_armor = { x = 0 y = 2 }
+					medium_armor = { x = 0 y = 3 }
+					medium_armor = { x = 1 y = 0 }
+					medium_armor = { x = 1 y = 1 }
+					medium_armor = { x = 1 y = 2 }
+					medium_armor = { x = 1 y = 3 }
+					medium_armor = { x = 2 y = 0 }
+					medium_armor = { x = 2 y = 1 }
+					medium_armor = { x = 2 y = 2 }
+					mechanized = { x = 3 y = 0 }
+					mechanized = { x = 3 y = 1 }
+					mechanized = { x = 3 y = 2 }
+					mechanized = { x = 3 y = 3 }
+					mechanized = { x = 4 y = 0 }
+					mechanized = { x = 4 y = 1 }
+					mechanized = { x = 4 y = 2 }
+					mechanized = { x = 4 y = 3 }
+					medium_sp_anti_air_brigade = { x = 4 y = 4 }
+				}
+				support = {
+					mot_recon = { x = 0 y = 0 }
+					engineer = { x = 0 y = 1 }
+					artillery = { x = 0 y = 2 }
+					logistics_company = { x = 0 y = 3 }
+					signal_company = { x = 0 y = 4 }
+					maintenance_company = {x = 0 y = 5}
+				}
+			}
+			27 = {
+				for_loop_effect = {
+					end = 4
+					create_unit = {
+						division = "name = \"Panzer Lehr Division\" division_template = \"Panzer Lehr Division\" start_experience_factor = 0.3"
+						owner = GER
+					}
+					}}
 	}
 }
 country_event = {
@@ -331,31 +351,6 @@ country_event = {
 	}
 }
 country_event = {
-	id = germany.8546
-	title = germany.8546.t
-	desc = germany.8546.d
-	picture = GFX_report_event_german_speech
-	is_triggered_only = yes
-	hidden = yes
-	option = {
-		name = germany.8546.a
-		ROM = {transfer_state = 76}
-			POL = {
-			transfer_state = 63
-			transfer_state = 68
-			transfer_state = 66 
-			transfer_state = 67
-			transfer_state = 5
-			transfer_state = 97
-			}
-			SOV = {transfer_state = 677 transfer_state = 181 transfer_state = 65 transfer_state =60 transfer_state = 64 transfer_state = 61 transfer_state = 4 transfer_state = 62 }
-			ENG = {transfer_state =58 transfer_state =59 transfer_state =57 transfer_state = 56 transfer_state = 51}
-			FRA = {transfer_state = 42}
-			USA = {transfer_state = 52 transfer_state = 53 transfer_state = 54 transfer_state = 55 transfer_state = 50 transfer_state =149 transfer_state =148 }
-		  SOV ={puppet = ROM puppet = HUN puppet = BUL puppet = CZE puppet = POL puppet = YUG puppet = ALB}
-	}
-}
-country_event = {
 	id = germany.5
 	title = germany.5.t
 	desc = germany.5.d
@@ -479,66 +474,6 @@ country_event = {
 			}
 		}
 		set_global_flag = sov_yes_pact
-		set_global_flag = sov_yes_poland
-	}
-	option = {
-		name = germany.11.a.2
-		ai_chance = {
-			factor = 90
-			modifier = {
-				factor = 0
-				GER = {
-					OR = {
-						has_wargoal_against = SOV
-						is_justifying_wargoal_against = SOV
-					}
-					NOT = {
-						is_in_faction_with = SOV
-					}
-				}
-			}
-		}
-		add_opinion_modifier = { target = GER modifier = MR_pact }
-		custom_effect_tooltip = germany.11.a.tt.2
-		add_state_claim = 96
-		add_state_claim = 11
-		add_state_claim = 12
-		add_state_claim = 13
-		add_state_claim = 183
-		add_state_claim = 184
-		add_state_claim = 142
-		add_state_claim = 182
-		add_state_claim = 78
-		add_state_claim = 89
-		add_state_claim = 91
-		add_state_claim = 93
-		add_state_claim = 94
-		add_state_claim = 95
-		add_state_claim = 96
-		add_state_claim = 97
-		add_state_claim = 80
-		add_state_claim = 698
-		hidden_effect =  { add_timed_idea = { idea = SOV_molotov_ribbentrop_pact days = 730 } }
-		GER = {
-			country_event = { days = 1 id = germany.12 }
-			effect_tooltip = {
-				add_opinion_modifier = { target = SOV modifier = MR_pact }
-			}
-		}
-				every_country = {
- 				limit = {
- 					original_tag = POL
- 				}
-				10 = {
- 				add_extra_state_shared_building_slots = 3
- 				add_building_construction = {
- 					type = arms_factory
- 					level = 3
- 					instant_build = yes
- 				}
-				}
-				}
-		set_global_flag = sov_yes_pact
 	}
 }
 country_event = {
@@ -582,25 +517,9 @@ country_event = {
 			transfer_state = 91
 			transfer_state = 97
 			transfer_state = 89
-			transfer_state = 698
+			transfer_state = 784
 			country_event = germany.15 
 		}
-		hidden_effect = {
-		96 = {
-			add_building_construction = {
-				type = arms_factory
-				level = 5
-				instant_build = yes
-				}
-		}
-		196 = {
-			remove_building = {
-  			type = arms_factory
-   			level = 5
-			}
-		}
-		}
-		
 	}
 }
 country_event = {
@@ -613,33 +532,6 @@ country_event = {
 		name = germany.12.a
 		hidden_effect = {
 			news_event = { hours = 6 id = news.33 }
-		every_country = {
- 				limit = {
- 					original_tag = SOV
- 				}
- 				white_peace = ENG
- 				white_peace = DEN
-				white_peace = NOR
-				white_peace = HOL
-				white_peace = YUG
- 				white_peace = BEL
-				white_peace = FRA
-				white_peace = NZL
-				white_peace = AST
-				white_peace = SAF
-				white_peace = RAJ
-				white_peace = CAN
-				white_peace = USA
-				white_peace = INS
-				white_peace = YUG
-				white_peace = GRE
-				white_peace = POL
-				white_peace = LUX
-				add_ideas = peace_training
-				add_ideas = war_in_our_neigbour
-				remove_decision = war_bonds
-				remove_ideas = SOV_poland_campaign
- 			}			
 		}
 	}
 }
@@ -953,16 +845,19 @@ country_event = {
 	option = {
 		name = germany.56.a
 		ai_chance = { factor = 100 }
-		transfer_state = 73
+		HUN ={transfer_state = 73
+		transfer_state = 583}
 		hidden_effect = {
-			GER = {
-				annex_country = { target = CZE }
-			}
+		GER = {
+			annex_country = {
+            target = CZE
+            transfer_troops = yes
+        }
 		}
 		hidden_effect = {
 			country_event = { hours = 6 id = news.61 }
 		}
-	}
+	}}
 }
 country_event = {
 	id = germany.74
@@ -1162,16 +1057,4 @@ country_event = {
 		name = germany.121.a
 	}
 }
-country_event = {
-	id = germany.140
-	title = germany.140.t
-	desc = germany.140.d
-	picture = GFX_report_event_generic_sign_treaty
-	is_triggered_only = yes
-	option = {
-		name = germany.140.a
-		GER = {
-		add_ideas = general_staff_crisis
-		}
-	}
-}
+

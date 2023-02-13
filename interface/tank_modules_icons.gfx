@@ -1,185 +1,6 @@
 spriteTypes = {
 
-	spriteType = {
-		name = "GFX_EMI_tank_diesel_engine_L"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_diesel_engine.dds"
-		legacy_lazy_load = no
-	}
 
-	spriteType = {
-		name = "GFX_EMI_tank_gasoline_engine_L"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_gasoline_engine.dds"
-		legacy_lazy_load = no
-	}
-
-	spriteType = {
-		name = "GFX_EMI_tank_gas_turbine_engine_L"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_gas_turbine_engine.dds"
-		legacy_lazy_load = no
-	}
-	spriteType = {
-		name = "GFX_EMI_tank_petrol_electric_engine_L"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_petrol_electric_engine.dds"
-		legacy_lazy_load = no
-	}
-
-
-
-	
-	
-	spriteType = {
-		name = "GFX_EMI_tank_diesel_engine_H"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_diesel_engine.dds"
-		legacy_lazy_load = no
-	}
-
-	spriteType = {
-		name = "GFX_EMI_tank_gasoline_engine_H"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_gasoline_engine.dds"
-		legacy_lazy_load = no
-	}
-
-	spriteType = {
-		name = "GFX_EMI_tank_gas_turbine_engine_H"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_gas_turbine_engine.dds"
-		legacy_lazy_load = no
-	}
-	spriteType = {
-		name = "GFX_EMI_tank_petrol_electric_engine_H"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_petrol_electric_engine.dds"
-		legacy_lazy_load = no
-	}
-	
-	
-	
-	
-	spriteType = {
-		name = "GFX_EMI_tank_diesel_engine_SH"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_diesel_engine.dds"
-		legacy_lazy_load = no
-	}
-
-	spriteType = {
-		name = "GFX_EMI_tank_gasoline_engine_SH"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_gasoline_engine.dds"
-		legacy_lazy_load = no
-	}
-
-	spriteType = {
-		name = "GFX_EMI_tank_gas_turbine_engine_SH"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_gas_turbine_engine.dds"
-		legacy_lazy_load = no
-	}
-	spriteType = {
-		name = "GFX_EMI_tank_petrol_electric_engine_SH"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_petrol_electric_engine.dds"
-		legacy_lazy_load = no
-	}
-	
-
-
-
-
-	spriteType = {
-		name = "GFX_EMI_tank_medium_cannon_2_improved"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_medium_cannon_2.dds"
-		legacy_lazy_load = no
-	}
-	spriteType = {
-		name = "GFX_EMI_tank_medium_cannon_3"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_medium_cannon_3.dds"
-		legacy_lazy_load = no
-	}
-	spriteType = {
-		name = "GFX_EMI_tank_medium_howitzer_3"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_medium_howitzer_3.dds"
-		legacy_lazy_load = no
-	}
-	
-	spriteType = {
-		name = "GFX_EMI_tank_heavy_howitzer2"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_heavy_howitzer_2.dds"
-		legacy_lazy_load = no
-	}
-	spriteType = {
-		name = "GFX_EMI_tank_heavy_howitzer3"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_heavy_howitzer_3.dds"
-		legacy_lazy_load = no
-	}
-	spriteType = {
-		name = "GFX_EMI_tank_high_velocity_cannon_h1"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_high_velocity_cannon.dds"
-		legacy_lazy_load = no
-	}
-	spriteType = {
-		name = "GFX_EMI_tank_high_velocity_cannon_h2"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_high_velocity_cannon_2.dds"
-		legacy_lazy_load = no
-	}
-	spriteType = {
-		name = "GFX_EMI_tank_high_velocity_cannon_h3"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_high_velocity_cannon_3.dds"
-		legacy_lazy_load = no
-	}
-	spriteType = {
-		name = "GFX_EMI_tank_high_velocity_cannon_m1"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_high_velocity_cannon.dds"
-		legacy_lazy_load = no
-	}
-spriteType = {
-		name = "GFX_EMI_tank_close_support_gun2"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_close_support_gun_2.dds"
-		legacy_lazy_load = no
-	}
-	spriteType = {
-		name = "GFX_EMI_tank_close_support_gun3"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_close_support_gun_3.dds"
-		legacy_lazy_load = no
-	}
-	spriteType = {
-		name = "GFX_EMI_tank_high_velocity_cannon_m2"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_high_velocity_cannon_2.dds"
-		legacy_lazy_load = no
-		}
-	spriteType = {  
-			name = "GFX_EMI_tank_high_velocity_cannon_l1"
-			textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_high_velocity_cannon.dds"
-			legacy_lazy_load = no
-		}
-
-	spriteType = {  
-		name = "GFX_EMI_tank_high_velocity_cannon_l2"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_high_velocity_cannon_2.dds"
-		legacy_lazy_load = no
-	}
-
-	spriteType = {  
-		name = "GFX_EMI_tank_high_velocity_cannon_l3"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_high_velocity_cannon_3.dds"
-		legacy_lazy_load = no
-	}
-
-	spriteType = {
-		name = "GFX_EMI_tank_high_velocity_cannon_m3"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_high_velocity_cannon_3.dds"
-		legacy_lazy_load = no
-	}
-
-	spriteType = {
-			name = "GFX_EMI_tank_super_heavy_cannon_1"
-			textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_super_heavy_cannon.dds"
-			legacy_lazy_load = no
-		}
-	spriteType = {
-			name = "GFX_EMI_tank_super_heavy_cannon_2"
-			textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_super_heavy_cannon.dds"
-			legacy_lazy_load = no
-		}
-	spriteType = {
-			name = "GFX_EMI_tank_super_heavy_cannon_3"
-			textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_super_heavy_cannon.dds"
-			legacy_lazy_load = no
-		}
 	spriteType = {
 		name = "GFX_EMI_tank_anti_air_cannon"
 		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_aa_gun.dds"
@@ -215,9 +36,9 @@ spriteType = {
 		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_auto_cannon_2.dds"
 		legacy_lazy_load = no
 	}
-	spriteType = {
+		spriteType = {
 		name = "GFX_EMI_tank_auto_cannon_3"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_auto_cannon_3.dds"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_auto_cannon_2.dds"
 		legacy_lazy_load = no
 	}
 
@@ -459,11 +280,6 @@ spriteType = {
 		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_small_cannon_2.dds"
 		legacy_lazy_load = no
 	}
-	spriteType = {
-		name = "GFX_EMI_tank_small_cannon_3"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_small_cannon_3.dds"
-		legacy_lazy_load = no
-	}
 
 	spriteType = {
 		name = "GFX_EMI_tank_super_heavy_cannon"
@@ -497,19 +313,10 @@ spriteType = {
 
 	spriteType = {
 		name = "GFX_EMI_tank_close_support_gun"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_close_support_gun_1.dds"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_close_support_gun.dds"
 		legacy_lazy_load = no
 	}
-	spriteType = {
-		name = "GFX_EMI_tank_heavy_close_support_gun1"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/heavy_support_gun.dds"
-		legacy_lazy_load = no
-	}
-	spriteType = {
-		name = "GFX_EMI_tank_heavy_close_support_gun2"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/heavy_support_gun.dds"
-		legacy_lazy_load = no
-	}
+
 	spriteType = {
 		name = "GFX_EMI_sloped_armor"
 		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_sloped_armor.dds"
@@ -739,11 +546,7 @@ spriteType = {
 		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_interleaved_roadwheels.dds"
 		legacy_lazy_load = no
 	}
-	spriteType = {
-		name = "GFX_EMI_tank_bogie_suspension_mech"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_bogie_suspension.dds"
-		legacy_lazy_load = no
-	}
+
 	spriteType = {
 		name = "GFX_EMI_tank_non_tracked_suspension_type"
 		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_wheeled_suspension.dds"

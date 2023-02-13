@@ -66,7 +66,7 @@ country_event = {
 			}
 		}
 		add_stability = 0.1
-		add_war_support = 0.1		
+		add_war_support = 0.1
 	}
 }
 country_event = {
@@ -77,7 +77,7 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = britain.13.a
-		FROM = { country_event = { id = france.29} }
+		FROM = { country_event = { id = france.29 } }
 		hidden_effect = {
 			news_event = { id = news.175 }
 		}

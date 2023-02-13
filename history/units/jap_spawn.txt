@@ -1,7 +1,7 @@
 units = {
 	division = {
 		name = "Japan Divisions"
-		location =6424
+		location =9998
 		division_template = "Japan Divisions"
 		start_experience_factor = 0.5
 		start_equipment_factor = 1
@@ -9,7 +9,7 @@ units = {
 	}
 	division = {
 		name = "Japan Divisions"
-		location =6424
+		location =9998
 		division_template = "Japan Divisions"
 		start_experience_factor = 0.5
 		start_equipment_factor = 1
@@ -17,7 +17,7 @@ units = {
 	}
 	division = {
 		name = "Japan Divisions"
-		location =6424
+		location =9998
 		division_template = "Japan Divisions"
 		start_experience_factor = 0.5
 		start_equipment_factor = 1
@@ -25,7 +25,7 @@ units = {
 	}
 	division = {
 		name = "Japan Divisions"
-		location =9090
+		location =9998
 		division_template = "Japan Divisions"
 		start_experience_factor = 0.5
 		start_equipment_factor = 1
@@ -33,7 +33,7 @@ units = {
 	}
 	division = {
 		name = "Japan Divisions"
-		location =9090
+		location =9998
 		division_template = "Japan Divisions"
 		start_experience_factor = 0.5
 		start_equipment_factor = 1
@@ -41,7 +41,7 @@ units = {
 	}
 	division = {
 		name = "Japan Divisions"
-		location =9090
+		location =9998
 		division_template = "Japan Divisions"
 		start_experience_factor = 0.5
 		start_equipment_factor = 1
@@ -49,7 +49,7 @@ units = {
 	}
 	division = {
 		name = "Japan Divisions"
-		location =922
+		location =9998
 		division_template = "Japan Divisions"
 		start_experience_factor = 0.5
 		start_equipment_factor = 1
@@ -57,7 +57,7 @@ units = {
 	}
 	division = {
 		name = "Japan Divisions"
-		location =922
+		location =9998
 		division_template = "Japan Divisions"
 		start_experience_factor = 0.5
 		start_equipment_factor = 1
@@ -65,7 +65,7 @@ units = {
 	}
 	division = {
 		name = "Japan Divisions"
-		location =922
+		location =9998
 		division_template = "Japan Divisions"
 		start_experience_factor = 0.5
 		start_equipment_factor = 1
@@ -73,7 +73,7 @@ units = {
 	}
 	division = {
 		name = "Japan Divisions"
-		location =8979
+		location =9998
 		division_template = "Japan Divisions"
 		start_experience_factor = 0.5
 		start_equipment_factor = 1
@@ -81,7 +81,7 @@ units = {
 	}
 	division = {
 		name = "Japan Divisions"
-		location =8979
+		location =9998
 		division_template = "Japan Divisions"
 		start_experience_factor = 0.5
 		start_equipment_factor = 1
@@ -89,7 +89,7 @@ units = {
 	}
 	division = {
 		name = "Japan Divisions"
-		location =8979
+		location =9998
 		division_template = "Japan Divisions"
 		start_experience_factor = 0.5
 		start_equipment_factor = 1
@@ -97,7 +97,7 @@ units = {
 	}
 	division = {
 		name = "Japan Divisions"
-		location =6311
+		location =9998
 		division_template = "Japan Divisions"
 		start_experience_factor = 0.5
 		start_equipment_factor = 1
@@ -105,7 +105,7 @@ units = {
 	}
 	division = {
 		name = "Japan Divisions"
-		location =6311
+		location =9998
 		division_template = "Japan Divisions"
 		start_experience_factor = 0.5
 		start_equipment_factor = 1
@@ -113,7 +113,7 @@ units = {
 	}
 	division = {
 		name = "Japan Divisions"
-		location =6311
+		location =9998
 		division_template = "Japan Divisions"
 		start_experience_factor = 0.5
 		start_equipment_factor = 1

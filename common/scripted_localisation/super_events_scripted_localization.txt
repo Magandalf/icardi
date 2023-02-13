@@ -3,6 +3,12 @@ defined_text = {
 	name = GetSuperEventPicture
 	text = {
 		trigger = {
+			check_variable = { super_event = 0 }
+		}
+		localization_key = super_event_picture_1
+	}
+	text = {
+		trigger = {
 			check_variable = { super_event = 1 }
 		}
 		localization_key = super_event_picture_1

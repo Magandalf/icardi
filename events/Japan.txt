@@ -127,19 +127,6 @@ country_event = {
 	}
 }
 country_event = {
-	id = japan.10
-	title = japan.10.t
-	desc = japan.10.d
-	picture = GFX_report_event_FDR_speech
-	is_triggered_only = yes
-	option = {
-		name = japan.10.a
-		USA = {
-			add_opinion_modifier = { target = JAP modifier = condemn_aggression }
-		}
-	}
-}
-country_event = {
 	id = japan.144
 	title = japan.144.t
 	desc = japan.144.d

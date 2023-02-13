@@ -269,7 +269,6 @@ PixelShader =
 		float4 main( VS_OUTPUT_WATER Input ) : PDX_COLOR
 		{
 			//return float4( 0, 0, 1, 1 );
-			#define test
 			float waterHeight = MultiSampleTexX( HeightTexture, Input.uv ) / ( 95.7f / 255.0f );
 			float waterShore = saturate( ( waterHeight - 0.954f ) * 25.0f );
 		
@@ -320,7 +319,7 @@ PixelShader =
 		#ifdef NO_REFRACTIONS
 			float3 refractiveColor = float3( 0, 0.1f, 0.2f );
 		#else
-			float3 refractiveColor = tex2D( WaterRefraction, refractiveUV.xy - vRefractionDistortion ).rgb;//underwater structure
+			float3 refractiveColor = tex2D( WaterRefraction, refractiveUV.xy - vRefractionDistortion ).rgb;
 		#endif
 
 			float fresnelBias = 0.5f; // CUBEMAP INTENSITY
@@ -361,7 +360,7 @@ PixelShader =
 			
 		
 			// Grab the shadow term
-		#ifdef test //found the sun
+		#ifdef LOW_END_GFX
 			float3 diffuseLight = vec3(1.0f);
 			float3 specularLight = vec3(0.002f);
 		#else
@@ -389,7 +388,7 @@ PixelShader =
 		#ifdef LOW_END_GFX
 			DebugReturn(vOut, lightingProperties, 0.0f);
 		#else
-			DebugReturn(vOut, lightingProperties, 0.0f);
+			DebugReturn(vOut, lightingProperties, fShadowTerm);
 		#endif
 			return float4( vOut, 1.0f - waterShore );
 		}
